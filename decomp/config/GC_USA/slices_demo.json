@@ -1,0 +1,10 @@
+[
+  {
+    "name": "NuVecAdd",
+    "address": "0x800C173C",
+    "size": 52,
+    "object": "../../crash_bandicoot/decomp_test/test_nuvecadd.o",
+    "symbol": "NuVecAdd"
+  }
+]
+

@@ -56,3 +56,22 @@ python tools/build_demo_units.py --include-mismatch
 ```
 
 This adds `demo/nuvec_add_mismatch` so `progress` shows a controlled non-100% case.
+
+## First real DOL slice pilot
+
+This repo now includes a real-address pilot slice:
+
+- `config/GC_USA/slices_demo.json` (currently `NuVecAdd` at `0x800C173C`)
+
+Run:
+
+```powershell
+python tools/match_dol_slices.py
+```
+
+Expected:
+
+- exit code `0` and `MATCH` when using `test_nuvecadd.o`
+- mismatch when you switch object path in `slices_demo.json` to `test_broken.o`
+
+This is the first building block toward full split+relink+hash flow.
