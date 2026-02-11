@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "name": "numath/NuVecAdd_demo",
+    "target_path": "../../crash_bandicoot/decomp_test/test_nuvecadd.o",
+    "base_path": "../../crash_bandicoot/decomp_test/test_nuvecadd.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../../crash_bandicoot/decomp_test/test_nuvecadd.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": false
+    }
+  }
+]

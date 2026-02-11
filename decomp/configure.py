@@ -101,6 +101,7 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         "  description = FORMAT $out",
         "",
         f"build {unix(ok)}: check {unix(sha_path)}",
+        f"build check: phony {unix(ok)}",
         f"build {unix(report)}: report objdiff.json",
         f"build progress: progress {unix(report)} | {unix(ok)}",
         f"build {unix(baseline)}: report objdiff.json",

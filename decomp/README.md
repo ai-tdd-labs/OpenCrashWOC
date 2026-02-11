@@ -31,3 +31,14 @@ ninja regressions
 ## Next step to make it useful
 
 Populate `config/GC_USA/objdiff_units.json` with real `target_path/base_path` unit entries. Until then, report generation has no function units to compare.
+
+## Included demo unit
+
+This scaffold includes one working demo unit:
+
+- `numath/NuVecAdd_demo`
+
+It compares `test_nuvecadd.o` from `D:\projects\ps2\crash_bandicoot\decomp_test`.
+To intentionally produce a mismatch report, temporarily change `target_path` in `config/GC_USA/objdiff_units.json` to:
+
+`../../crash_bandicoot/decomp_test/test_broken.o`
