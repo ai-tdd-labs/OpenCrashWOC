@@ -45,6 +45,11 @@ def main() -> None:
         action="store_true",
         help="After compile (and auto-slices), run DOL slice matcher",
     )
+    parser.add_argument(
+        "--stamp",
+        default=None,
+        help="Optional output stamp file path to write on success",
+    )
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[1]  # decomp/
@@ -148,6 +153,11 @@ def main() -> None:
     if args.match_dol:
         match_script = root / "tools" / "match_dol_slices.py"
         run(["python", rel(match_script, root)], root)
+
+    if args.stamp:
+        stamp_path = (root / args.stamp).resolve()
+        stamp_path.parent.mkdir(parents=True, exist_ok=True)
+        stamp_path.write_text("ok\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

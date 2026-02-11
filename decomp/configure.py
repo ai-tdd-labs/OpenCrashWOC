@@ -73,6 +73,7 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
     baseline = out_dir / "baseline.json"
     changes = out_dir / "report_changes.json"
     regressions = out_dir / "regressions.md"
+    demo_match_ok = out_dir / "demo_match.ok"
 
     progress_cmd = f"$python configure.py progress --version {version} --build-dir {unix(build_dir)} --report $in"
 
@@ -100,6 +101,10 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         "  command = $python tools/changes_fmt.py $in $out",
         "  description = FORMAT $out",
         "",
+        "rule demo_match",
+        "  command = $python tools/build_demo_units.py --auto-slices --match-dol --stamp $out",
+        "  description = DEMO_MATCH",
+        "",
         f"build {unix(ok)}: check {unix(sha_path)}",
         f"build check: phony {unix(ok)}",
         f"build {unix(report)}: report objdiff.json",
@@ -107,9 +112,11 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"build {unix(baseline)}: report objdiff.json",
         f"build {unix(changes)}: report_changes {unix(report)} | {unix(baseline)}",
         f"build {unix(regressions)}: changes_md {unix(changes)}",
+        f"build {unix(demo_match_ok)}: demo_match | {unix(ok)}",
         f"build baseline: phony {unix(baseline)}",
         f"build changes: phony {unix(changes)}",
         f"build regressions: phony {unix(regressions)}",
+        f"build demo-match: phony {unix(demo_match_ok)}",
     ]
 
     lines.append("default progress" if enable_progress else f"default {unix(ok)}")

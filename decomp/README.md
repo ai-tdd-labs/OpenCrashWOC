@@ -23,6 +23,7 @@ From this directory (`decomp/`):
 python tools/build_demo_units.py
 python configure.py --version GC_USA --dtk D:\projects\ps2\crash_bandicoot\tools\dtk\dtk.exe --objdiff D:\projects\ps2\crash_bandicoot\tools\objdiff\objdiff-cli.exe
 ninja check
+ninja demo-match
 ninja progress
 ninja baseline
 ninja changes
@@ -91,6 +92,12 @@ One-shot equivalent:
 
 ```powershell
 python tools/build_demo_units.py --auto-slices --match-dol
+```
+
+Or through ninja after `configure.py`:
+
+```powershell
+ninja demo-match
 ```
 
 Notes:
