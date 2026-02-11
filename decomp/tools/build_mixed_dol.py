@@ -322,7 +322,12 @@ def main() -> None:
                             root,
                         )
                     if linked_obj is not None:
-                        code = read_text_section_bytes(linked_obj, size)
+                        code = read_obj_symbol_bytes(
+                            linked_obj,
+                            item.get("symbol", item.get("name", "")),
+                            size,
+                            strict_symbol=True,
+                        )
                     else:
                         code = read_obj_symbol_bytes(path, item.get("symbol", item.get("name", "")), size)
             else:
@@ -336,7 +341,12 @@ def main() -> None:
                         root,
                     )
                 if linked_obj is not None:
-                    code = read_text_section_bytes(linked_obj, size)
+                    code = read_obj_symbol_bytes(
+                        linked_obj,
+                        item.get("symbol", item.get("name", "")),
+                        size,
+                        strict_symbol=True,
+                    )
                 else:
                     code = read_obj_symbol_bytes(path, item.get("symbol", item.get("name", "")), size)
             stats["c_obj_entries"] += 1

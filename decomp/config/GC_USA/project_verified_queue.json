@@ -10,7 +10,8 @@
     "last_result": {
       "timestamp": "verified-from-full-source",
       "match": true,
-      "build_object": "build/project_o/code__src__nu3dx__nuglass.o"
+      "build_object": "build/project_o/code__src__nu3dx__nuglass__g0.o",
+      "build_variant": "g0"
     }
   }
 ]

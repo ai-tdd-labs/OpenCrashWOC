@@ -1,0 +1,227 @@
+[
+  {
+    "name": "okdokey",
+    "address": "0x800AC09C",
+    "size": 4,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "okdokey",
+    "source": "../code/src/nu3dx/nuanim.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nuanim__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "isGlassInstance",
+    "address": "0x800AEF98",
+    "size": 100,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "isGlassInstance",
+    "source": "../code/src/nu3dx/nuglass.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nuglass__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "NuMtlUpdate",
+    "address": "0x800B2E24",
+    "size": 4,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "NuMtlUpdate",
+    "source": "../code/src/nu3dx/numtl.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__numtl__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "ReadNuIFFUnknown",
+    "address": "0x800B8CFC",
+    "size": 4,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "ReadNuIFFUnknown",
+    "source": "../code/src/nu3dx/nuscene.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nuscene__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "NuMtxTranslate",
+    "address": "0x800BEB68",
+    "size": 52,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "NuMtxTranslate",
+    "source": "../code/src/numath/numtx.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__numtx__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "NuMtxScale",
+    "address": "0x800BEC30",
+    "size": 196,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "NuMtxScale",
+    "source": "../code/src/numath/numtx.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__numtx__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "NuMtxPreScale",
+    "address": "0x800BEDAC",
+    "size": 148,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "NuMtxPreScale",
+    "source": "../code/src/numath/numtx.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__numtx__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "NuVecAdd",
+    "address": "0x800C173C",
+    "size": 52,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "NuVecAdd",
+    "source": "../code/src/numath/nuvec.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "NuVecScale",
+    "address": "0x800C17A4",
+    "size": 40,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "NuVecScale",
+    "source": "../code/src/numath/nuvec.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "NuVecScaleAccum",
+    "address": "0x800C17CC",
+    "size": 52,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "NuVecScaleAccum",
+    "source": "../code/src/numath/nuvec.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "SetRenderTarget",
+    "address": "0x800C1FAC",
+    "size": 8,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "SetRenderTarget",
+    "source": "../code/src/nuraster/dxframe.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nuraster__dxframe__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "NudxFw_SetRenderTargetSurface",
+    "address": "0x800C1FB4",
+    "size": 8,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "NudxFw_SetRenderTargetSurface",
+    "source": "../code/src/nuraster/dxframe.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nuraster__dxframe__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "DrawStencilShadowQuad",
+    "address": "0x800C5BCC",
+    "size": 4,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "DrawStencilShadowQuad",
+    "source": "../code/src/nuxbox/dummyfunc.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nuxbox__dummyfunc__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "SetPixelShader",
+    "address": "0x800D0FA8",
+    "size": 4,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "SetPixelShader",
+    "source": "../code/src/system/port.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__system__port__g0.o",
+      "build_variant": "g0"
+    }
+  },
+  {
+    "name": "CloseShaders",
+    "address": "0x800D130C",
+    "size": 36,
+    "kind": "ghidra_verified",
+    "status": "matched",
+    "symbol": "CloseShaders",
+    "source": "../code/src/system/port.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__system__port__g0.o",
+      "build_variant": "g0"
+    }
+  }
+]

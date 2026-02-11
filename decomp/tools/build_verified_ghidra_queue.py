@@ -1,21 +1,14 @@
 #!/usr/bin/env python3
-"""Build a verified queue of project functions by compiling full source files and byte-matching symbols."""
+"""Verify Ghidra-mapped source queue by compiling full sources and byte-matching symbols."""
 
 from __future__ import annotations
 
 import argparse
 import json
-import re
 import struct
 import subprocess
 import tempfile
 from pathlib import Path
-
-
-MATCH_COMMENT_RE = re.compile(r"//\s*(?:NGC MATCH|MATCH GCN|MATCH NGC)", re.IGNORECASE)
-FUNC_RE = re.compile(
-    r"(?ms)^[ \t]*(?:[A-Za-z_][\w \t\*\(\),\[\]]*?[ \t]+)?([A-Za-z_]\w*)[ \t]*\([^;{}]*\)[ \t]*\{"
-)
 
 
 def run_maybe_warn(cmd: list[str], cwd: Path, expected_out: Path | None = None) -> bool:
@@ -25,26 +18,6 @@ def run_maybe_warn(cmd: list[str], cwd: Path, expected_out: Path | None = None) 
     if expected_out is not None and expected_out.exists() and expected_out.stat().st_size > 0:
         return True
     return False
-
-
-def find_functions_after_match_comments(text: str) -> list[str]:
-    out: list[str] = []
-    for m in MATCH_COMMENT_RE.finditer(text):
-        sub = text[m.end() :]
-        fm = FUNC_RE.search(sub)
-        if not fm:
-            continue
-        name = fm.group(1)
-        out.append(name)
-    # Deduplicate while preserving order.
-    seen = set()
-    uniq = []
-    for n in out:
-        if n in seen:
-            continue
-        seen.add(n)
-        uniq.append(n)
-    return uniq
 
 
 def u32be(data: bytes, off: int) -> int:
@@ -119,15 +92,7 @@ def load_elf_symbols(obj_data: bytes) -> list[dict]:
         if st_name:
             e = strings.find(b"\x00", st_name)
             name = strings[st_name:e].decode("ascii", "ignore") if e != -1 else ""
-        out.append(
-            {
-                "name": name,
-                "value": st_value,
-                "size": st_size,
-                "info": st_info,
-                "shndx": st_shndx,
-            }
-        )
+        out.append({"name": name, "value": st_value, "size": st_size, "info": st_info, "shndx": st_shndx})
     return out
 
 
@@ -175,7 +140,6 @@ def link_with_abs_symbols(obj_path: Path, func_addr: int, addr_by_name: dict[str
         "}",
     ]
     for n in undefs:
-        # Keep unresolved externs within branch range to allow linker patching.
         a = addr_by_name.get(n, func_addr)
         lines.append(f"{n} = 0x{a:08X};")
     lds.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -188,7 +152,7 @@ def link_with_abs_symbols(obj_path: Path, func_addr: int, addr_by_name: dict[str
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--code-root", default="../code/src", help="Project source root relative to decomp/")
+    parser.add_argument("--queue-file", default="config/GC_USA/ghidra_source_queue.json", help="Input queue relative to decomp/")
     parser.add_argument(
         "--functions-json",
         default=r"D:/projects/ps2/crash_bandicoot/analysis/ghidra/raw/main.dol_functions.json",
@@ -209,8 +173,8 @@ def main() -> None:
         default=r"D:/projects/ps2/crash_bandicoot/tools/compilers/ProDG-v3.5/ngcld.exe",
         help="Path to ngcld.exe",
     )
-    parser.add_argument("--out-queue", default="config/GC_USA/project_verified_queue.json", help="Output queue JSON")
-    parser.add_argument("--limit-files", type=int, default=0, help="Optional cap on source files with match comments")
+    parser.add_argument("--out-queue", default="config/GC_USA/ghidra_verified_queue.json", help="Output queue relative to decomp/")
+    parser.add_argument("--limit", type=int, default=0, help="Optional max queue entries to verify")
     parser.add_argument(
         "--variants",
         default="g0,default",
@@ -220,10 +184,13 @@ def main() -> None:
 
     decomp_root = Path(__file__).resolve().parents[1]
     repo_root = decomp_root.parent
-    code_root = (decomp_root / args.code_root).resolve()
-    dol_data = (decomp_root / args.dol).resolve().read_bytes()
+    queue_path = (decomp_root / args.queue_file).resolve()
+    queue = json.loads(queue_path.read_text(encoding="utf-8"))
+    if args.limit > 0:
+        queue = queue[: args.limit]
+
     funcs = json.loads(Path(args.functions_json).resolve().read_text(encoding="utf-8"))
-    info: dict[str, dict] = {}
+    info_by_name = {str(f.get("name", "")): f for f in funcs if f.get("name")}
     addr_by_name: dict[str, int] = {}
     for f in funcs:
         name = str(f.get("name", ""))
@@ -231,34 +198,22 @@ def main() -> None:
         if not name or not addr_hex:
             continue
         try:
-            addr = int(addr_hex, 16)
+            addr_by_name[name] = int(addr_hex, 16)
         except ValueError:
             continue
-        if name not in addr_by_name:
-            addr_by_name[name] = addr
-        if int(f.get("size") or 0) > 0 and not f.get("external") and not f.get("thunk") and name not in info:
-            info[name] = f
 
+    dol_data = (decomp_root / args.dol).resolve().read_bytes()
     prodg = Path(args.prodg_dir).resolve()
     cpp = prodg / "cpp.exe"
     cc1 = prodg / "cc1.exe"
     asm = prodg / "NgcAs.exe"
     ngcld = Path(args.ngcld).resolve()
 
-    build_i = decomp_root / "build" / "project_i"
-    build_s = decomp_root / "build" / "project_s"
-    build_o = decomp_root / "build" / "project_o"
+    build_i = decomp_root / "build" / "ghidra_i"
+    build_s = decomp_root / "build" / "ghidra_s"
+    build_o = decomp_root / "build" / "ghidra_o"
     for d in (build_i, build_s, build_o):
         d.mkdir(parents=True, exist_ok=True)
-
-    sources = []
-    for c in sorted(code_root.rglob("*.c")):
-        txt = c.read_text(encoding="utf-8", errors="ignore")
-        names = find_functions_after_match_comments(txt)
-        if names:
-            sources.append((c, names))
-    if args.limit_files > 0:
-        sources = sources[: args.limit_files]
 
     raw_variants = [x.strip().lower() for x in args.variants.split(",") if x.strip()]
     variants: list[str] = []
@@ -268,14 +223,22 @@ def main() -> None:
     if not variants:
         variants = ["g0", "default"]
 
-    verified: list[dict] = []
-    scanned = 0
-    for src, names in sources:
-        scanned += 1
-        rel = src.relative_to(repo_root).as_posix()
-        stem = rel.replace("/", "__").replace(".c", "")
+    source_to_items: dict[str, list[dict]] = {}
+    for item in queue:
+        src = str(item.get("source", "")).strip()
+        name = str(item.get("name", "")).strip()
+        if not src or not name:
+            continue
+        source_to_items.setdefault(src, []).append(item)
 
-        built_objs: list[tuple[str, Path]] = []
+    built_by_source: dict[str, list[tuple[str, Path]]] = {}
+    for src_rel in sorted(source_to_items.keys()):
+        src_abs = (decomp_root / src_rel).resolve()
+        if not src_abs.exists():
+            continue
+        rel = src_abs.relative_to(repo_root).as_posix()
+        stem = rel.replace("/", "__").replace(".c", "")
+        built: list[tuple[str, Path]] = []
         for variant in variants:
             suffix = f"__{variant}"
             i_out = build_i / f"{stem}{suffix}.i"
@@ -305,56 +268,68 @@ def main() -> None:
             )
             if not ok or not o_out.exists():
                 continue
-            built_objs.append((variant, o_out))
+            built.append((variant, o_out))
+        if built:
+            built_by_source[src_rel] = built
 
+    verified: list[dict] = []
+    scanned = 0
+    for item in queue:
+        name = str(item.get("name", "")).strip()
+        source = str(item.get("source", "")).strip()
+        if not name or not source:
+            continue
+        scanned += 1
+        built_objs = built_by_source.get(source, [])
         if not built_objs:
             continue
 
-        for name in names:
-            finfo = info.get(name)
-            if not finfo:
-                continue
-            address = int(str(finfo["address"]), 16)
-            size = int(finfo["size"])
-            if size <= 0:
-                continue
+        finfo = info_by_name.get(name)
+        if not finfo:
+            continue
+        try:
+            address = int(str(finfo.get("address", "")), 16)
+        except ValueError:
+            continue
+        size = int(finfo.get("size") or 0)
+        if size <= 0:
+            continue
 
-            matched_variant = None
-            matched_obj = None
-            for variant, obj_path in built_objs:
-                try:
-                    linked = link_with_abs_symbols(obj_path, address, addr_by_name, ngcld, repo_root)
-                    obj_for_read = linked if linked is not None else obj_path
-                    obj_b = read_obj_symbol_bytes(obj_for_read, name, size)
-                    dol_b = read_dol_bytes(dol_data, address, size)
-                    if obj_b == dol_b:
-                        matched_variant = variant
-                        matched_obj = obj_path
-                        break
-                except Exception:
-                    continue
-            if matched_obj is None:
+        matched_variant = None
+        matched_obj = None
+        for variant, obj_path in built_objs:
+            try:
+                linked = link_with_abs_symbols(obj_path, address, addr_by_name, ngcld, repo_root)
+                obj_for_read = linked if linked is not None else obj_path
+                obj_b = read_obj_symbol_bytes(obj_for_read, name, size)
+                dol_b = read_dol_bytes(dol_data, address, size)
+                if obj_b == dol_b:
+                    matched_variant = variant
+                    matched_obj = obj_path
+                    break
+            except Exception:
                 continue
+        if matched_obj is None:
+            continue
 
-            verified.append(
-                {
-                    "name": name,
-                    "address": f"0x{address:08X}",
-                    "size": size,
-                    "kind": "project_verified",
-                    "status": "matched",
-                    "symbol": name,
-                    "source": rel,
-                    "last_result": {
-                        "timestamp": "verified-from-full-source",
-                        "match": True,
-                        "build_object": str(matched_obj.relative_to(decomp_root)).replace("\\", "/"),
-                        "build_variant": matched_variant,
-                    },
-                }
-            )
+        verified.append(
+            {
+                "name": name,
+                "address": f"0x{address:08X}",
+                "size": size,
+                "kind": "ghidra_verified",
+                "status": "matched",
+                "symbol": name,
+                "source": source,
+                "last_result": {
+                    "timestamp": "verified-from-ghidra-source-queue",
+                    "match": True,
+                    "build_object": str(matched_obj.relative_to(decomp_root)).replace("\\", "/"),
+                    "build_variant": matched_variant,
+                },
+            }
+        )
 
-    # Dedup by name
     best = {}
     for v in verified:
         best[v["name"]] = v
@@ -362,7 +337,8 @@ def main() -> None:
     out_path = (decomp_root / args.out_queue).resolve()
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(out, indent=2) + "\n", encoding="utf-8")
-    print(f"Scanned source files: {scanned}")
+    print(f"Scanned queue entries: {scanned}")
+    print(f"Sources compiled: {len(built_by_source)}")
     print(f"Verified matched functions: {len(out)}")
     print(f"Wrote {out_path}")
 

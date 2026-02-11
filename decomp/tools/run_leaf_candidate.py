@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import struct
 import subprocess
 import tempfile
@@ -27,7 +28,10 @@ def run_maybe_warn(cmd: list[str], cwd: Path, expected_out: Path | None = None) 
 
 
 def rel(path: Path, start: Path) -> str:
-    return str(path.relative_to(start)).replace("\\", "/")
+    try:
+        return str(path.relative_to(start)).replace("\\", "/")
+    except ValueError:
+        return os.path.relpath(str(path), str(start)).replace("\\", "/")
 
 
 def u32be(data: bytes, off: int) -> int:
@@ -216,6 +220,13 @@ def words_hex(data: bytes) -> list[str]:
     return [f"{struct.unpack_from('>I', data, i)[0]:08x}" for i in range(0, len(data), 4)]
 
 
+def first_diff_word(a: bytes, b: bytes) -> int:
+    for i in range(0, min(len(a), len(b)), 4):
+        if a[i : i + 4] != b[i : i + 4]:
+            return i // 4
+    return -1
+
+
 def load_queue(path: Path) -> list[dict]:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -335,6 +346,7 @@ def main() -> None:
         dol_data = (root / args.dol).resolve().read_bytes()
         dol_b = read_dol_bytes(dol_data, address, size)
         linked_obj = None
+        compare_mode = "raw_symbol"
         if args.resolve_link:
             try:
                 linked_obj = link_object_with_abs_symbols(
@@ -348,6 +360,7 @@ def main() -> None:
                 linked_obj = None
 
         if linked_obj is not None:
+            compare_mode = "linked_text"
             obj_b = read_text_section_bytes(linked_obj, size)
         else:
             obj_b = read_obj_symbol_bytes(o_out, symbol, size)
@@ -366,14 +379,18 @@ def main() -> None:
         raise SystemExit(3)
 
     is_match = dol_b == obj_b
+    diff_word = first_diff_word(dol_b, obj_b) if not is_match else -1
+    obj_all_zero = all(x == 0 for x in obj_b)
 
-    print(f"{name} @ 0x{address:08X} size={size}: {'MATCH' if is_match else 'MISMATCH'}")
+    print(f"{name} @ 0x{address:08X} size={size}: {'MATCH' if is_match else 'MISMATCH'} ({compare_mode})")
     if not is_match:
         dol_w = words_hex(dol_b)
         obj_w = words_hex(obj_b)
         for i, (a, b) in enumerate(zip(dol_w, obj_w)):
             if a != b:
                 print(f"  [{i:02d}] dol={a} obj={b}")
+        if obj_all_zero:
+            print("  note: compiled bytes are all zero in compare window")
 
     if args.update_queue:
         now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -383,6 +400,9 @@ def main() -> None:
             "match": is_match,
             "build_object": str(o_out.relative_to(root)).replace("\\", "/"),
             "link_resolve": bool(args.resolve_link),
+            "compare_mode": compare_mode,
+            "first_diff_word": diff_word,
+            "obj_all_zero": obj_all_zero,
         }
         save_queue(queue_path, items)
         print(f"Updated queue: {queue_path}")

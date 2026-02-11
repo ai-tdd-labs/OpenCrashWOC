@@ -9,10 +9,13 @@
     "source": "candidates_project/FindAIType/FindAIType.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/FindAIType.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -25,10 +28,13 @@
     "source": "candidates_project/InitAI/InitAI.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/InitAI.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -41,10 +47,13 @@
     "source": "candidates_project/UpdateDRAINDAMAGE/UpdateDRAINDAMAGE.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/UpdateDRAINDAMAGE.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -57,10 +66,13 @@
     "source": "candidates_project/ResetCRUNCHTIME/ResetCRUNCHTIME.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/ResetCRUNCHTIME.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -73,10 +85,13 @@
     "source": "candidates_project/SpaceCrunchFunction_NewPoint/SpaceCrunchFunction_NewPoint.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/SpaceCrunchFunction_NewPoint.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -89,10 +104,13 @@
     "source": "candidates_project/RatioDifferenceAlongLine/RatioDifferenceAlongLine.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/RatioDifferenceAlongLine.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -105,10 +123,13 @@
     "source": "candidates_project/FindAILabel/FindAILabel.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/FindAILabel.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -121,10 +142,13 @@
     "source": "candidates_project/PlayerLateralInRange/PlayerLateralInRange.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/PlayerLateralInRange.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -137,26 +161,13 @@
     "source": "candidates_project/PlayerLateralOutOfRange/PlayerLateralOutOfRange.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/PlayerLateralOutOfRange.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitBugAreas",
-    "address": "0x80078F2C",
-    "size": 68,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitBugAreas",
-    "source": "candidates_project/InitBugAreas/InitBugAreas.c",
-    "notes": "Imported from gamecode\\bug.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitBugAreas.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -169,10 +180,13 @@
     "source": "candidates_project/JudderGameCamera/JudderGameCamera.c",
     "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/JudderGameCamera.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
@@ -185,26 +199,13 @@
     "source": "candidates_project/BlendGameCamera/BlendGameCamera.c",
     "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/BlendGameCamera.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "GetALONG",
-    "address": "0x8004967C",
-    "size": 180,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "GetALONG",
-    "source": "candidates_project/GetALONG/GetALONG.c",
-    "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/GetALONG.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
@@ -217,10 +218,13 @@
     "source": "candidates_project/FurtherALONG/FurtherALONG.c",
     "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/FurtherALONG.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
@@ -233,10 +237,13 @@
     "source": "candidates_project/FurtherBEHIND/FurtherBEHIND.c",
     "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/FurtherBEHIND.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
@@ -249,10 +256,13 @@
     "source": "candidates_project/NuSplineFindPartial/NuSplineFindPartial.c",
     "notes": "Imported from gamecode\\chase.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuSplineFindPartial.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -265,10 +275,13 @@
     "source": "candidates_project/NextCrate/NextCrate.c",
     "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/NextCrate.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 4,
+      "obj_all_zero": false
     }
   },
   {
@@ -281,26 +294,13 @@
     "source": "candidates_project/CloseCrates/CloseCrates.c",
     "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/CloseCrates.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitCrateExplosions",
-    "address": "0x80015190",
-    "size": 44,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitCrateExplosions",
-    "source": "candidates_project/InitCrateExplosions/InitCrateExplosions.c",
-    "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitCrateExplosions.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -313,26 +313,32 @@
     "source": "candidates_project/DestroyAllNitroCrates/DestroyAllNitroCrates.c",
     "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/DestroyAllNitroCrates.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
-    "name": "HitCrates",
-    "address": "0x800A1358",
-    "size": 180,
+    "name": "InitCrateExplosions",
+    "address": "0x80015190",
+    "size": 44,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "HitCrates",
-    "source": "candidates_project/HitCrates/HitCrates.c",
+    "symbol": "InitCrateExplosions",
+    "source": "candidates_project/InitCrateExplosions/InitCrateExplosions.c",
     "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/HitCrates.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/InitCrateExplosions.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -345,26 +351,13 @@
     "source": "candidates_project/CrateRayCast/CrateRayCast.c",
     "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/CrateRayCast.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "ResetPlayer",
-    "address": "0x8005082C",
-    "size": 32,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "ResetPlayer",
-    "source": "candidates_project/ResetPlayer/ResetPlayer.c",
-    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/ResetPlayer.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -377,10 +370,13 @@
     "source": "candidates_project/RemoveCreature/RemoveCreature.c",
     "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/RemoveCreature.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -393,10 +389,13 @@
     "source": "candidates_project/CloseCreatures/CloseCreatures.c",
     "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/CloseCreatures.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -409,10 +408,13 @@
     "source": "candidates_project/PurgeCharacterModels/PurgeCharacterModels.c",
     "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/PurgeCharacterModels.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -425,26 +427,13 @@
     "source": "candidates_project/NewRumble/NewRumble.c",
     "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/NewRumble.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DrawCharacterModel",
-    "address": "0x800DB00C",
-    "size": 148,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DrawCharacterModel",
-    "source": "candidates_project/DrawCharacterModel/DrawCharacterModel.c",
-    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawCharacterModel.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -457,10 +446,13 @@
     "source": "candidates_project/UpdateAnimPacket/UpdateAnimPacket.c",
     "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/UpdateAnimPacket.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -473,10 +465,13 @@
     "source": "candidates_project/ResetAnimPacket/ResetAnimPacket.c",
     "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/ResetAnimPacket.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -489,10 +484,13 @@
     "source": "candidates_project/LoadCutSceneCharacters/LoadCutSceneCharacters.c",
     "notes": "Imported from gamecode\\cut.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/LoadCutSceneCharacters.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -505,266 +503,13 @@
     "source": "candidates_project/UpdateCutMovie/UpdateCutMovie.c",
     "notes": "Imported from gamecode\\cut.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/UpdateCutMovie.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "MakeDirLightColour",
-    "address": "0x80022388",
-    "size": 36,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "MakeDirLightColour",
-    "source": "candidates_project/MakeDirLightColour/MakeDirLightColour.c",
-    "notes": "Imported from gamecode\\cut.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/MakeDirLightColour.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "MakeLightDirection",
-    "address": "0x800223AC",
-    "size": 72,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "MakeLightDirection",
-    "source": "candidates_project/MakeLightDirection/MakeLightDirection.c",
-    "notes": "Imported from gamecode\\cut.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/MakeLightDirection.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "CombinationCharacterBD",
-    "address": "0x80027B24",
-    "size": 80,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "CombinationCharacterBD",
-    "source": "candidates_project/CombinationCharacterBD/CombinationCharacterBD.c",
-    "notes": "Imported from gamecode\\font3d.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/CombinationCharacterBD.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "CombinationCharacterBC",
-    "address": "0x80027B74",
-    "size": 80,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "CombinationCharacterBC",
-    "source": "candidates_project/CombinationCharacterBC/CombinationCharacterBC.c",
-    "notes": "Imported from gamecode\\font3d.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/CombinationCharacterBC.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "ResetDeath",
-    "address": "0x80031030",
-    "size": 72,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "ResetDeath",
-    "source": "candidates_project/ResetDeath/ResetDeath.c",
-    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/ResetDeath.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DrawNextVehicle",
-    "address": "0x8002CF38",
-    "size": 60,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DrawNextVehicle",
-    "source": "candidates_project/DrawNextVehicle/DrawNextVehicle.c",
-    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawNextVehicle.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "OpenGame",
-    "address": "0x80030E08",
-    "size": 52,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "OpenGame",
-    "source": "candidates_project/OpenGame/OpenGame.c",
-    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/OpenGame.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "ResetTimer",
-    "address": "0x80038100",
-    "size": 36,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "ResetTimer",
-    "source": "candidates_project/ResetTimer/ResetTimer.c",
-    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/ResetTimer.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "ClockOff",
-    "address": "0x8002E9E8",
-    "size": 44,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "ClockOff",
-    "source": "candidates_project/ClockOff/ClockOff.c",
-    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/ClockOff.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "FindClock",
-    "address": "0x8002EA14",
-    "size": 60,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "FindClock",
-    "source": "candidates_project/FindClock/FindClock.c",
-    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/FindClock.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitSplineTable",
-    "address": "0x8003A82C",
-    "size": 40,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitSplineTable",
-    "source": "candidates_project/InitSplineTable/InitSplineTable.c",
-    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitSplineTable.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NearestSplinePoint",
-    "address": "0x8003B288",
-    "size": 36,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NearestSplinePoint",
-    "source": "candidates_project/NearestSplinePoint/NearestSplinePoint.c",
-    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NearestSplinePoint.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "WumpaRayCast",
-    "address": "0x8003BCA0",
-    "size": 88,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "WumpaRayCast",
-    "source": "candidates_project/WumpaRayCast/WumpaRayCast.c",
-    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/WumpaRayCast.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "AddGameDebris",
-    "address": "0x8003F8B8",
-    "size": 36,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "AddGameDebris",
-    "source": "candidates_project/AddGameDebris/AddGameDebris.c",
-    "notes": "Imported from gamecode\\game_deb.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/AddGameDebris.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "CountGameObjects",
-    "address": "0x8003DF40",
-    "size": 56,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "CountGameObjects",
-    "source": "candidates_project/CountGameObjects/CountGameObjects.c",
-    "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/CountGameObjects.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "RemoveGameObject",
-    "address": "0x8003E078",
-    "size": 92,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "RemoveGameObject",
-    "source": "candidates_project/RemoveGameObject/RemoveGameObject.c",
-    "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/RemoveGameObject.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -777,570 +522,108 @@
     "source": "candidates_project/CreatureTopBelow/CreatureTopBelow.c",
     "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
       "build_object": "build/leaf_o/CreatureTopBelow.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
-    "name": "WumpaCollisions",
-    "address": "0x80081C5C",
-    "size": 40,
+    "name": "MakeDirLightColour",
+    "address": "0x80022388",
+    "size": 36,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "WumpaCollisions",
-    "source": "candidates_project/WumpaCollisions/WumpaCollisions.c",
-    "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
+    "symbol": "MakeDirLightColour",
+    "source": "candidates_project/MakeDirLightColour/MakeDirLightColour.c",
+    "notes": "Imported from gamecode\\cut.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/WumpaCollisions.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/MakeDirLightColour.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
-    "name": "HitItems",
-    "address": "0x8003CFDC",
-    "size": 96,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "HitItems",
-    "source": "candidates_project/HitItems/HitItems.c",
-    "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/HitItems.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "ResetProjectiles",
-    "address": "0x80042D0C",
-    "size": 88,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "ResetProjectiles",
-    "source": "candidates_project/ResetProjectiles/ResetProjectiles.c",
-    "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/ResetProjectiles.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DrawFireBossLevelExtra",
-    "address": "0x8004C000",
-    "size": 48,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DrawFireBossLevelExtra",
-    "source": "candidates_project/DrawFireBossLevelExtra/DrawFireBossLevelExtra.c",
-    "notes": "Imported from gamecode\\jeep.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawFireBossLevelExtra.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "RotateDirectionalLight",
-    "address": "0x8004E028",
-    "size": 80,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "RotateDirectionalLight",
-    "source": "candidates_project/RotateDirectionalLight/RotateDirectionalLight.c",
-    "notes": "Imported from gamecode\\lights.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/RotateDirectionalLight.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "SetLights",
-    "address": "0x800B2E28",
-    "size": 8,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "SetLights",
-    "source": "candidates_project/SetLights/SetLights.c",
-    "notes": "Imported from gamecode\\lights.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/SetLights.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "LoadFont3D",
-    "address": "0x8004F7A8",
-    "size": 84,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "LoadFont3D",
-    "source": "candidates_project/LoadFont3D/LoadFont3D.c",
-    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/LoadFont3D.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitCreatureModels",
-    "address": "0x8004F7FC",
-    "size": 92,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitCreatureModels",
-    "source": "candidates_project/InitCreatureModels/InitCreatureModels.c",
-    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitCreatureModels.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitCreatures",
-    "address": "0x8004F858",
-    "size": 80,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitCreatures",
-    "source": "candidates_project/InitCreatures/InitCreatures.c",
-    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitCreatures.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "CreateFadeMtl",
-    "address": "0x8004F8B8",
-    "size": 92,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "CreateFadeMtl",
-    "source": "candidates_project/CreateFadeMtl/CreateFadeMtl.c",
-    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/CreateFadeMtl.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DrawFade",
-    "address": "0x8004F9B0",
-    "size": 92,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DrawFade",
-    "source": "candidates_project/DrawFade/DrawFade.c",
-    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawFade.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "HandlePauseRender",
-    "address": "0x80050E90",
+    "name": "MakeLightDirection",
+    "address": "0x800223AC",
     "size": 72,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "HandlePauseRender",
-    "source": "candidates_project/HandlePauseRender/HandlePauseRender.c",
-    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
+    "symbol": "MakeLightDirection",
+    "source": "candidates_project/MakeLightDirection/MakeLightDirection.c",
+    "notes": "Imported from gamecode\\cut.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/HandlePauseRender.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/MakeLightDirection.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
-    "name": "DrawPanel3DArrow",
-    "address": "0x80058F34",
-    "size": 96,
+    "name": "CombinationCharacterBD",
+    "address": "0x80027B24",
+    "size": 80,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "DrawPanel3DArrow",
-    "source": "candidates_project/DrawPanel3DArrow/DrawPanel3DArrow.c",
-    "notes": "Imported from gamecode\\move.c NGC MATCH comment.",
+    "symbol": "CombinationCharacterBD",
+    "source": "candidates_project/CombinationCharacterBD/CombinationCharacterBD.c",
+    "notes": "Imported from gamecode\\font3d.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/DrawPanel3DArrow.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/CombinationCharacterBD.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
-    "name": "ResetRings",
-    "address": "0x80058F94",
-    "size": 44,
+    "name": "CombinationCharacterBC",
+    "address": "0x80027B74",
+    "size": 80,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "ResetRings",
-    "source": "candidates_project/ResetRings/ResetRings.c",
-    "notes": "Imported from gamecode\\move.c NGC MATCH comment.",
+    "symbol": "CombinationCharacterBC",
+    "source": "candidates_project/CombinationCharacterBC/CombinationCharacterBC.c",
+    "notes": "Imported from gamecode\\font3d.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/ResetRings.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/CombinationCharacterBC.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
-    "name": "UpdateChaseRunAnim",
-    "address": "0x8003D03C",
-    "size": 88,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "UpdateChaseRunAnim",
-    "source": "candidates_project/UpdateChaseRunAnim/UpdateChaseRunAnim.c",
-    "notes": "Imported from gamecode\\move.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/UpdateChaseRunAnim.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NewLanguage",
-    "address": "0x8004DFEC",
+    "name": "DrawNextVehicle",
+    "address": "0x8002CF38",
     "size": 60,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "NewLanguage",
-    "source": "candidates_project/NewLanguage/NewLanguage.c",
-    "notes": "Imported from gamecode\\text.c NGC MATCH comment.",
+    "symbol": "DrawNextVehicle",
+    "source": "candidates_project/DrawNextVehicle/DrawNextVehicle.c",
+    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/NewLanguage.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DrawAtlas",
-    "address": "0x80074288",
-    "size": 96,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DrawAtlas",
-    "source": "candidates_project/DrawAtlas/DrawAtlas.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawAtlas.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DeadGliderWB",
-    "address": "0x80064A74",
-    "size": 44,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DeadGliderWB",
-    "source": "candidates_project/DeadGliderWB/DeadGliderWB.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DeadGliderWB.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "ProcessSatellites",
-    "address": "0x80068690",
-    "size": 92,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "ProcessSatellites",
-    "source": "candidates_project/ProcessSatellites/ProcessSatellites.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/ProcessSatellites.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "ProcessSpaceStations",
-    "address": "0x800686EC",
-    "size": 92,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "ProcessSpaceStations",
-    "source": "candidates_project/ProcessSpaceStations/ProcessSpaceStations.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/ProcessSpaceStations.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitAsteroids",
-    "address": "0x8006A720",
-    "size": 56,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitAsteroids",
-    "source": "candidates_project/InitAsteroids/InitAsteroids.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitAsteroids.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "GenerateGliderLines",
-    "address": "0x8006BBC0",
-    "size": 92,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "GenerateGliderLines",
-    "source": "candidates_project/GenerateGliderLines/GenerateGliderLines.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/GenerateGliderLines.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitGunBoat",
-    "address": "0x8006D284",
-    "size": 48,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitGunBoat",
-    "source": "candidates_project/InitGunBoat/InitGunBoat.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitGunBoat.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DrawGunBoat",
-    "address": "0x8006D2B4",
-    "size": 76,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DrawGunBoat",
-    "source": "candidates_project/DrawGunBoat/DrawGunBoat.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawGunBoat.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "GetGunBoatBestTarget",
-    "address": "0x8006D300",
-    "size": 96,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "GetGunBoatBestTarget",
-    "source": "candidates_project/GetGunBoatBestTarget/GetGunBoatBestTarget.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/GetGunBoatBestTarget.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitBigGuns",
-    "address": "0x80072464",
-    "size": 40,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitBigGuns",
-    "source": "candidates_project/InitBigGuns/InitBigGuns.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitBigGuns.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "CollideWithBattleShips",
-    "address": "0x8006E568",
-    "size": 92,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "CollideWithBattleShips",
-    "source": "candidates_project/CollideWithBattleShips/CollideWithBattleShips.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/CollideWithBattleShips.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DrawWeatherBoss_a",
-    "address": "0x8006F214",
-    "size": 92,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DrawWeatherBoss_a",
-    "source": "candidates_project/DrawWeatherBoss_a/DrawWeatherBoss_a.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawWeatherBoss_a.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DrawWeatherBoss",
-    "address": "0x80072438",
-    "size": 44,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DrawWeatherBoss",
-    "source": "candidates_project/DrawWeatherBoss/DrawWeatherBoss.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawWeatherBoss.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "GetCurrentWeatherResearchObjectives",
-    "address": "0x800735C0",
-    "size": 56,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "GetCurrentWeatherResearchObjectives",
-    "source": "candidates_project/GetCurrentWeatherResearchObjectives/GetCurrentWeatherResearchObjectives.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/GetCurrentWeatherResearchObjectives.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "CollidePlayerPoint",
-    "address": "0x80073808",
-    "size": 88,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "CollidePlayerPoint",
-    "source": "candidates_project/CollidePlayerPoint/CollidePlayerPoint.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/CollidePlayerPoint.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitWBBolts",
-    "address": "0x8007B208",
-    "size": 76,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitWBBolts",
-    "source": "candidates_project/InitWBBolts/InitWBBolts.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitWBBolts.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitTrail",
-    "address": "0x80077D14",
-    "size": 64,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitTrail",
-    "source": "candidates_project/InitTrail/InitTrail.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitTrail.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DrawJeepRocks",
-    "address": "0x80079778",
-    "size": 88,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DrawJeepRocks",
-    "source": "candidates_project/DrawJeepRocks/DrawJeepRocks.c",
-    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawJeepRocks.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DebrisMalloc",
-    "address": "0x800802E0",
-    "size": 60,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DebrisMalloc",
-    "source": "candidates_project/DebrisMalloc/DebrisMalloc.c",
-    "notes": "Imported from gamelib\\debris.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DebrisMalloc.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/DrawNextVehicle.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
@@ -1353,474 +636,355 @@
     "source": "candidates_project/AddVariableShotDebrisEffect/AddVariableShotDebrisEffect.c",
     "notes": "Imported from gamelib\\debris.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/AddVariableShotDebrisEffect.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
-    "name": "CameraEmitterDistance",
-    "address": "0x80083210",
-    "size": 60,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "CameraEmitterDistance",
-    "source": "candidates_project/CameraEmitterDistance/CameraEmitterDistance.c",
-    "notes": "Imported from gamelib\\debris.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/CameraEmitterDistance.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "edppPtlDestroy",
-    "address": "0x8008849C",
-    "size": 80,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "edppPtlDestroy",
-    "source": "candidates_project/edppPtlDestroy/edppPtlDestroy.c",
-    "notes": "Imported from gamelib\\edptl.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/edppPtlDestroy.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "edppDestroyAllParticles",
-    "address": "0x800884EC",
-    "size": 60,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "edppDestroyAllParticles",
-    "source": "candidates_project/edppDestroyAllParticles/edppDestroyAllParticles.c",
-    "notes": "Imported from gamelib\\edptl.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/edppDestroyAllParticles.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "edppDestroyAllEffects",
-    "address": "0x80088528",
-    "size": 48,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "edppDestroyAllEffects",
-    "source": "candidates_project/edppDestroyAllEffects/edppDestroyAllEffects.c",
-    "notes": "Imported from gamelib\\edptl.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/edppDestroyAllEffects.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "ParticleReset",
-    "address": "0x800895E0",
-    "size": 48,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "ParticleReset",
-    "source": "candidates_project/ParticleReset/ParticleReset.c",
-    "notes": "Imported from gamelib\\edptl.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/ParticleReset.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "instNuGCutRigidSysUpdate",
-    "address": "0x8008BB34",
-    "size": 48,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "instNuGCutRigidSysUpdate",
-    "source": "candidates_project/instNuGCutRigidSysUpdate/instNuGCutRigidSysUpdate.c",
-    "notes": "Imported from gamelib\\gcutscn.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/instNuGCutRigidSysUpdate.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuWindInit",
-    "address": "0x8008E538",
-    "size": 28,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuWindInit",
-    "source": "candidates_project/NuWindInit/NuWindInit.c",
-    "notes": "Imported from gamelib\\nuwind.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuWindInit.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "TerrainPlatformMoveCheck",
-    "address": "0x80080BEC",
-    "size": 80,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "TerrainPlatformMoveCheck",
-    "source": "candidates_project/TerrainPlatformMoveCheck/TerrainPlatformMoveCheck.c",
-    "notes": "Imported from gamelib\\terrain.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/TerrainPlatformMoveCheck.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "EShadowInfo",
-    "address": "0x800A120C",
-    "size": 68,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "EShadowInfo",
-    "source": "candidates_project/EShadowInfo/EShadowInfo.c",
-    "notes": "Imported from gamelib\\terrain.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/EShadowInfo.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NewShadowPlat",
-    "address": "0x80061544",
-    "size": 32,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NewShadowPlat",
-    "source": "candidates_project/NewShadowPlat/NewShadowPlat.c",
-    "notes": "Imported from gamelib\\terrain.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NewShadowPlat.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "InitSkinning",
-    "address": "0x800AD8E8",
-    "size": 60,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "InitSkinning",
-    "source": "candidates_project/InitSkinning/InitSkinning.c",
-    "notes": "Imported from nu3dx\\nucvtskin.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitSkinning.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "CloseSkinning",
-    "address": "0x800AD924",
-    "size": 56,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "CloseSkinning",
-    "source": "candidates_project/CloseSkinning/CloseSkinning.c",
-    "notes": "Imported from nu3dx\\nucvtskin.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/CloseSkinning.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuPs2CreateSkin",
-    "address": "0x800AED30",
-    "size": 60,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuPs2CreateSkin",
-    "source": "candidates_project/NuPs2CreateSkin/NuPs2CreateSkin.c",
-    "notes": "Imported from nu3dx\\nucvtskin.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuPs2CreateSkin.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuGlassInit",
-    "address": "0x800AF31C",
+    "name": "ClockOff",
+    "address": "0x8002E9E8",
     "size": 44,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "NuGlassInit",
-    "source": "candidates_project/NuGlassInit/NuGlassInit.c",
-    "notes": "Imported from nu3dx\\nuglass.c NGC MATCH comment.",
+    "symbol": "ClockOff",
+    "source": "candidates_project/ClockOff/ClockOff.c",
+    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/NuGlassInit.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/ClockOff.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
-    "name": "NuGobjInit",
-    "address": "0x800AF700",
-    "size": 88,
+    "name": "FindClock",
+    "address": "0x8002EA14",
+    "size": 60,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "NuGobjInit",
-    "source": "candidates_project/NuGobjInit/NuGobjInit.c",
-    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "symbol": "FindClock",
+    "source": "candidates_project/FindClock/FindClock.c",
+    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/NuGobjInit.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/FindClock.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
-    "name": "NuGobjClose",
-    "address": "0x800AF758",
-    "size": 88,
+    "name": "OpenGame",
+    "address": "0x80030E08",
+    "size": 52,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "NuGobjClose",
-    "source": "candidates_project/NuGobjClose/NuGobjClose.c",
-    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "symbol": "OpenGame",
+    "source": "candidates_project/OpenGame/OpenGame.c",
+    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/NuGobjClose.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/OpenGame.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
-    "name": "NuGobjAddGeom",
-    "address": "0x800AF8A4",
-    "size": 56,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuGobjAddGeom",
-    "source": "candidates_project/NuGobjAddGeom/NuGobjAddGeom.c",
-    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuGobjAddGeom.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuGobjAddFaceOnGeom",
-    "address": "0x800AF8DC",
-    "size": 56,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuGobjAddFaceOnGeom",
-    "source": "candidates_project/NuGobjAddFaceOnGeom/NuGobjAddFaceOnGeom.c",
-    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuGobjAddFaceOnGeom.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuGeomCreate",
-    "address": "0x800AFE84",
-    "size": 68,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuGeomCreate",
-    "source": "candidates_project/NuGeomCreate/NuGeomCreate.c",
-    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuGeomCreate.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuFaceOnGeomCreate",
-    "address": "0x800AFEC8",
-    "size": 68,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuFaceOnGeomCreate",
-    "source": "candidates_project/NuFaceOnGeomCreate/NuFaceOnGeomCreate.c",
-    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuFaceOnGeomCreate.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuGeomAddPrim",
-    "address": "0x800B00C8",
-    "size": 56,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuGeomAddPrim",
-    "source": "candidates_project/NuGeomAddPrim/NuGeomAddPrim.c",
-    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuGeomAddPrim.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuGeomAddSkin",
-    "address": "0x800B0100",
-    "size": 56,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuGeomAddSkin",
-    "source": "candidates_project/NuGeomAddSkin/NuGeomAddSkin.c",
-    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuGeomAddSkin.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuAnimUV",
-    "address": "0x800B01BC",
+    "name": "ResetDeath",
+    "address": "0x80031030",
     "size": 72,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "NuAnimUV",
-    "source": "candidates_project/NuAnimUV/NuAnimUV.c",
-    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "symbol": "ResetDeath",
+    "source": "candidates_project/ResetDeath/ResetDeath.c",
+    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/NuAnimUV.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/ResetDeath.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
-    "name": "NuHazeClose",
-    "address": "0x800B0668",
-    "size": 24,
+    "name": "ResetTimer",
+    "address": "0x80038100",
+    "size": 36,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "NuHazeClose",
-    "source": "candidates_project/NuHazeClose/NuHazeClose.c",
-    "notes": "Imported from nu3dx\\nuhaze.c NGC MATCH comment.",
+    "symbol": "ResetTimer",
+    "source": "candidates_project/ResetTimer/ResetTimer.c",
+    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/NuHazeClose.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/ResetTimer.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
     }
   },
   {
-    "name": "NuHGobjCreate",
-    "address": "0x800B06F8",
+    "name": "InitSplineTable",
+    "address": "0x8003A82C",
+    "size": 40,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "InitSplineTable",
+    "source": "candidates_project/InitSplineTable/InitSplineTable.c",
+    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/InitSplineTable.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "NearestSplinePoint",
+    "address": "0x8003B288",
+    "size": 36,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NearestSplinePoint",
+    "source": "candidates_project/NearestSplinePoint/NearestSplinePoint.c",
+    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NearestSplinePoint.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "WumpaRayCast",
+    "address": "0x8003BCA0",
+    "size": 88,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "WumpaRayCast",
+    "source": "candidates_project/WumpaRayCast/WumpaRayCast.c",
+    "notes": "Imported from gamecode\\game.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/WumpaRayCast.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "HitItems",
+    "address": "0x8003CFDC",
+    "size": 96,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "HitItems",
+    "source": "candidates_project/HitItems/HitItems.c",
+    "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/HitItems.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "UpdateChaseRunAnim",
+    "address": "0x8003D03C",
+    "size": 88,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "UpdateChaseRunAnim",
+    "source": "candidates_project/UpdateChaseRunAnim/UpdateChaseRunAnim.c",
+    "notes": "Imported from gamecode\\move.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/UpdateChaseRunAnim.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "CountGameObjects",
+    "address": "0x8003DF40",
+    "size": 56,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "CountGameObjects",
+    "source": "candidates_project/CountGameObjects/CountGameObjects.c",
+    "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 16:02 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/CountGameObjects.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "RemoveGameObject",
+    "address": "0x8003E078",
+    "size": 92,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "RemoveGameObject",
+    "source": "candidates_project/RemoveGameObject/RemoveGameObject.c",
+    "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 16:02 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/RemoveGameObject.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "AddGameDebris",
+    "address": "0x8003F8B8",
+    "size": 36,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "AddGameDebris",
+    "source": "candidates_project/AddGameDebris/AddGameDebris.c",
+    "notes": "Imported from gamecode\\game_deb.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/AddGameDebris.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "ResetProjectiles",
+    "address": "0x80042D0C",
+    "size": 88,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "ResetProjectiles",
+    "source": "candidates_project/ResetProjectiles/ResetProjectiles.c",
+    "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/ResetProjectiles.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "GetALONG",
+    "address": "0x8004967C",
+    "size": 180,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "GetALONG",
+    "source": "candidates_project/GetALONG/GetALONG.c",
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/GetALONG.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "DrawFireBossLevelExtra",
+    "address": "0x8004C000",
+    "size": 48,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DrawFireBossLevelExtra",
+    "source": "candidates_project/DrawFireBossLevelExtra/DrawFireBossLevelExtra.c",
+    "notes": "Imported from gamecode\\jeep.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DrawFireBossLevelExtra.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NewLanguage",
+    "address": "0x8004DFEC",
+    "size": 60,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NewLanguage",
+    "source": "candidates_project/NewLanguage/NewLanguage.c",
+    "notes": "Imported from gamecode\\text.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NewLanguage.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "RotateDirectionalLight",
+    "address": "0x8004E028",
     "size": 80,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "NuHGobjCreate",
-    "source": "candidates_project/NuHGobjCreate/NuHGobjCreate.c",
-    "notes": "Imported from nu3dx\\nuhgobj.c NGC MATCH comment.",
+    "symbol": "RotateDirectionalLight",
+    "source": "candidates_project/RotateDirectionalLight/RotateDirectionalLight.c",
+    "notes": "Imported from gamecode\\lights.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:52 UTC",
       "match": false,
-      "build_object": "build/leaf_o/NuHGobjCreate.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuHGobjDestroy",
-    "address": "0x800B0928",
-    "size": 40,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuHGobjDestroy",
-    "source": "candidates_project/NuHGobjDestroy/NuHGobjDestroy.c",
-    "notes": "Imported from nu3dx\\nuhgobj.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuHGobjDestroy.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuLightGetLight",
-    "address": "0x800B17C8",
-    "size": 40,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuLightGetLight",
-    "source": "candidates_project/NuLightGetLight/NuLightGetLight.c",
-    "notes": "Imported from nu3dx\\nulight.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuLightGetLight.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuLightClearStoredLights",
-    "address": "0x800B1DC8",
-    "size": 16,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuLightClearStoredLights",
-    "source": "candidates_project/NuLightClearStoredLights/NuLightClearStoredLights.c",
-    "notes": "Imported from nu3dx\\nulight.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuLightClearStoredLights.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuMtlRead",
-    "address": "0x800B2D18",
-    "size": 72,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuMtlRead",
-    "source": "candidates_project/NuMtlRead/NuMtlRead.c",
-    "notes": "Imported from nu3dx\\numtl.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuMtlRead.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/RotateDirectionalLight.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -1833,10 +997,1220 @@
     "source": "candidates_project/NuMtlSetStencilRender/NuMtlSetStencilRender.c",
     "notes": "Imported from nu3dx\\numtl.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuMtlSetStencilRender.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "LoadFont3D",
+    "address": "0x8004F7A8",
+    "size": 84,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "LoadFont3D",
+    "source": "candidates_project/LoadFont3D/LoadFont3D.c",
+    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/LoadFont3D.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "InitCreatureModels",
+    "address": "0x8004F7FC",
+    "size": 92,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "InitCreatureModels",
+    "source": "candidates_project/InitCreatureModels/InitCreatureModels.c",
+    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/InitCreatureModels.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "InitCreatures",
+    "address": "0x8004F858",
+    "size": 80,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "InitCreatures",
+    "source": "candidates_project/InitCreatures/InitCreatures.c",
+    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/InitCreatures.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "CreateFadeMtl",
+    "address": "0x8004F8B8",
+    "size": 92,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "CreateFadeMtl",
+    "source": "candidates_project/CreateFadeMtl/CreateFadeMtl.c",
+    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:53 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/CreateFadeMtl.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "DrawFade",
+    "address": "0x8004F9B0",
+    "size": 92,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DrawFade",
+    "source": "candidates_project/DrawFade/DrawFade.c",
+    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:53 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DrawFade.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "ResetPlayer",
+    "address": "0x8005082C",
+    "size": 32,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "ResetPlayer",
+    "source": "candidates_project/ResetPlayer/ResetPlayer.c",
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/ResetPlayer.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "HandlePauseRender",
+    "address": "0x80050E90",
+    "size": 72,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "HandlePauseRender",
+    "source": "candidates_project/HandlePauseRender/HandlePauseRender.c",
+    "notes": "Imported from gamecode\\main.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/HandlePauseRender.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "DrawPanel3DArrow",
+    "address": "0x80058F34",
+    "size": 96,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DrawPanel3DArrow",
+    "source": "candidates_project/DrawPanel3DArrow/DrawPanel3DArrow.c",
+    "notes": "Imported from gamecode\\move.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DrawPanel3DArrow.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "ResetRings",
+    "address": "0x80058F94",
+    "size": 44,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "ResetRings",
+    "source": "candidates_project/ResetRings/ResetRings.c",
+    "notes": "Imported from gamecode\\move.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/ResetRings.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NewShadowPlat",
+    "address": "0x80061544",
+    "size": 32,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NewShadowPlat",
+    "source": "candidates_project/NewShadowPlat/NewShadowPlat.c",
+    "notes": "Imported from gamelib\\terrain.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NewShadowPlat.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "DeadGliderWB",
+    "address": "0x80064A74",
+    "size": 44,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DeadGliderWB",
+    "source": "candidates_project/DeadGliderWB/DeadGliderWB.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DeadGliderWB.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "ProcessSatellites",
+    "address": "0x80068690",
+    "size": 92,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "ProcessSatellites",
+    "source": "candidates_project/ProcessSatellites/ProcessSatellites.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/ProcessSatellites.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "ProcessSpaceStations",
+    "address": "0x800686EC",
+    "size": 92,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "ProcessSpaceStations",
+    "source": "candidates_project/ProcessSpaceStations/ProcessSpaceStations.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/ProcessSpaceStations.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "InitAsteroids",
+    "address": "0x8006A720",
+    "size": 56,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "InitAsteroids",
+    "source": "candidates_project/InitAsteroids/InitAsteroids.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/InitAsteroids.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "GenerateGliderLines",
+    "address": "0x8006BBC0",
+    "size": 92,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "GenerateGliderLines",
+    "source": "candidates_project/GenerateGliderLines/GenerateGliderLines.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/GenerateGliderLines.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "InitGunBoat",
+    "address": "0x8006D284",
+    "size": 48,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "InitGunBoat",
+    "source": "candidates_project/InitGunBoat/InitGunBoat.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/InitGunBoat.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "DrawGunBoat",
+    "address": "0x8006D2B4",
+    "size": 76,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DrawGunBoat",
+    "source": "candidates_project/DrawGunBoat/DrawGunBoat.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DrawGunBoat.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "GetGunBoatBestTarget",
+    "address": "0x8006D300",
+    "size": 96,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "GetGunBoatBestTarget",
+    "source": "candidates_project/GetGunBoatBestTarget/GetGunBoatBestTarget.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/GetGunBoatBestTarget.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "CollideWithBattleShips",
+    "address": "0x8006E568",
+    "size": 92,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "CollideWithBattleShips",
+    "source": "candidates_project/CollideWithBattleShips/CollideWithBattleShips.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/CollideWithBattleShips.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "DrawWeatherBoss_a",
+    "address": "0x8006F214",
+    "size": 92,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DrawWeatherBoss_a",
+    "source": "candidates_project/DrawWeatherBoss_a/DrawWeatherBoss_a.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DrawWeatherBoss_a.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "DrawWeatherBoss",
+    "address": "0x80072438",
+    "size": 44,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DrawWeatherBoss",
+    "source": "candidates_project/DrawWeatherBoss/DrawWeatherBoss.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DrawWeatherBoss.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "InitBigGuns",
+    "address": "0x80072464",
+    "size": 40,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "InitBigGuns",
+    "source": "candidates_project/InitBigGuns/InitBigGuns.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/InitBigGuns.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "GetCurrentWeatherResearchObjectives",
+    "address": "0x800735C0",
+    "size": 56,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "GetCurrentWeatherResearchObjectives",
+    "source": "candidates_project/GetCurrentWeatherResearchObjectives/GetCurrentWeatherResearchObjectives.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/GetCurrentWeatherResearchObjectives.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "CollidePlayerPoint",
+    "address": "0x80073808",
+    "size": 88,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "CollidePlayerPoint",
+    "source": "candidates_project/CollidePlayerPoint/CollidePlayerPoint.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/CollidePlayerPoint.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "DrawAtlas",
+    "address": "0x80074288",
+    "size": 96,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DrawAtlas",
+    "source": "candidates_project/DrawAtlas/DrawAtlas.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DrawAtlas.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "InitTrail",
+    "address": "0x80077D14",
+    "size": 64,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "InitTrail",
+    "source": "candidates_project/InitTrail/InitTrail.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/InitTrail.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "InitBugAreas",
+    "address": "0x80078F2C",
+    "size": 68,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "InitBugAreas",
+    "source": "candidates_project/InitBugAreas/InitBugAreas.c",
+    "notes": "Imported from gamecode\\bug.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/InitBugAreas.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "DrawJeepRocks",
+    "address": "0x80079778",
+    "size": 88,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DrawJeepRocks",
+    "source": "candidates_project/DrawJeepRocks/DrawJeepRocks.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DrawJeepRocks.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "InitWBBolts",
+    "address": "0x8007B208",
+    "size": 76,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "InitWBBolts",
+    "source": "candidates_project/InitWBBolts/InitWBBolts.c",
+    "notes": "Imported from gamecode\\vehicle.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/InitWBBolts.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "DebrisMalloc",
+    "address": "0x800802E0",
+    "size": 60,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DebrisMalloc",
+    "source": "candidates_project/DebrisMalloc/DebrisMalloc.c",
+    "notes": "Imported from gamelib\\debris.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DebrisMalloc.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "TerrainPlatformMoveCheck",
+    "address": "0x80080BEC",
+    "size": 80,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "TerrainPlatformMoveCheck",
+    "source": "candidates_project/TerrainPlatformMoveCheck/TerrainPlatformMoveCheck.c",
+    "notes": "Imported from gamelib\\terrain.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/TerrainPlatformMoveCheck.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "WumpaCollisions",
+    "address": "0x80081C5C",
+    "size": 40,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "WumpaCollisions",
+    "source": "candidates_project/WumpaCollisions/WumpaCollisions.c",
+    "notes": "Imported from gamecode\\game_obj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/WumpaCollisions.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": true
+    }
+  },
+  {
+    "name": "CameraEmitterDistance",
+    "address": "0x80083210",
+    "size": 60,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "CameraEmitterDistance",
+    "source": "candidates_project/CameraEmitterDistance/CameraEmitterDistance.c",
+    "notes": "Imported from gamelib\\debris.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/CameraEmitterDistance.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "edppPtlDestroy",
+    "address": "0x8008849C",
+    "size": 80,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "edppPtlDestroy",
+    "source": "candidates_project/edppPtlDestroy/edppPtlDestroy.c",
+    "notes": "Imported from gamelib\\edptl.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/edppPtlDestroy.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "edppDestroyAllParticles",
+    "address": "0x800884EC",
+    "size": 60,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "edppDestroyAllParticles",
+    "source": "candidates_project/edppDestroyAllParticles/edppDestroyAllParticles.c",
+    "notes": "Imported from gamelib\\edptl.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/edppDestroyAllParticles.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 6,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "edppDestroyAllEffects",
+    "address": "0x80088528",
+    "size": 48,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "edppDestroyAllEffects",
+    "source": "candidates_project/edppDestroyAllEffects/edppDestroyAllEffects.c",
+    "notes": "Imported from gamelib\\edptl.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/edppDestroyAllEffects.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "ParticleReset",
+    "address": "0x800895E0",
+    "size": 48,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "ParticleReset",
+    "source": "candidates_project/ParticleReset/ParticleReset.c",
+    "notes": "Imported from gamelib\\edptl.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/ParticleReset.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "instNuGCutRigidSysUpdate",
+    "address": "0x8008BB34",
+    "size": 48,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "instNuGCutRigidSysUpdate",
+    "source": "candidates_project/instNuGCutRigidSysUpdate/instNuGCutRigidSysUpdate.c",
+    "notes": "Imported from gamelib\\gcutscn.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/instNuGCutRigidSysUpdate.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuWindInit",
+    "address": "0x8008E538",
+    "size": 28,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuWindInit",
+    "source": "candidates_project/NuWindInit/NuWindInit.c",
+    "notes": "Imported from gamelib\\nuwind.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuWindInit.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 1,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "EShadowInfo",
+    "address": "0x800A120C",
+    "size": 68,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "EShadowInfo",
+    "source": "candidates_project/EShadowInfo/EShadowInfo.c",
+    "notes": "Imported from gamelib\\terrain.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/EShadowInfo.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "HitCrates",
+    "address": "0x800A1358",
+    "size": 180,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "HitCrates",
+    "source": "candidates_project/HitCrates/HitCrates.c",
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/HitCrates.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "okdokey",
+    "address": "0x800AC09C",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "okdokey",
+    "source": "../code/src/nu3dx/nuanim.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nuanim__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "InitSkinning",
+    "address": "0x800AD8E8",
+    "size": 60,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "InitSkinning",
+    "source": "candidates_project/InitSkinning/InitSkinning.c",
+    "notes": "Imported from nu3dx\\nucvtskin.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/InitSkinning.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "CloseSkinning",
+    "address": "0x800AD924",
+    "size": 56,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "CloseSkinning",
+    "source": "candidates_project/CloseSkinning/CloseSkinning.c",
+    "notes": "Imported from nu3dx\\nucvtskin.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/CloseSkinning.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuPs2CreateSkin",
+    "address": "0x800AED30",
+    "size": 60,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuPs2CreateSkin",
+    "source": "candidates_project/NuPs2CreateSkin/NuPs2CreateSkin.c",
+    "notes": "Imported from nu3dx\\nucvtskin.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuPs2CreateSkin.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "isGlassInstance",
+    "address": "0x800AEF98",
+    "size": 100,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "isGlassInstance",
+    "source": "../code/src/nu3dx/nuglass.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nuglass__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuGlassInit",
+    "address": "0x800AF31C",
+    "size": 44,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuGlassInit",
+    "source": "candidates_project/NuGlassInit/NuGlassInit.c",
+    "notes": "Imported from nu3dx\\nuglass.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuGlassInit.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuGobjInit",
+    "address": "0x800AF700",
+    "size": 88,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuGobjInit",
+    "source": "candidates_project/NuGobjInit/NuGobjInit.c",
+    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuGobjInit.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuGobjClose",
+    "address": "0x800AF758",
+    "size": 88,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuGobjClose",
+    "source": "candidates_project/NuGobjClose/NuGobjClose.c",
+    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuGobjClose.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuGobjAddGeom",
+    "address": "0x800AF8A4",
+    "size": 56,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuGobjAddGeom",
+    "source": "candidates_project/NuGobjAddGeom/NuGobjAddGeom.c",
+    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuGobjAddGeom.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuGobjAddFaceOnGeom",
+    "address": "0x800AF8DC",
+    "size": 56,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuGobjAddFaceOnGeom",
+    "source": "candidates_project/NuGobjAddFaceOnGeom/NuGobjAddFaceOnGeom.c",
+    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuGobjAddFaceOnGeom.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuGeomCreate",
+    "address": "0x800AFE84",
+    "size": 68,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuGeomCreate",
+    "source": "candidates_project/NuGeomCreate/NuGeomCreate.c",
+    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuGeomCreate.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 5,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuFaceOnGeomCreate",
+    "address": "0x800AFEC8",
+    "size": 68,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuFaceOnGeomCreate",
+    "source": "candidates_project/NuFaceOnGeomCreate/NuFaceOnGeomCreate.c",
+    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuFaceOnGeomCreate.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 4,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuGeomAddPrim",
+    "address": "0x800B00C8",
+    "size": 56,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuGeomAddPrim",
+    "source": "candidates_project/NuGeomAddPrim/NuGeomAddPrim.c",
+    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuGeomAddPrim.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuGeomAddSkin",
+    "address": "0x800B0100",
+    "size": 56,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuGeomAddSkin",
+    "source": "candidates_project/NuGeomAddSkin/NuGeomAddSkin.c",
+    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuGeomAddSkin.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuAnimUV",
+    "address": "0x800B01BC",
+    "size": 72,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuAnimUV",
+    "source": "candidates_project/NuAnimUV/NuAnimUV.c",
+    "notes": "Imported from nu3dx\\nugobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuAnimUV.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuHazeClose",
+    "address": "0x800B0668",
+    "size": 24,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuHazeClose",
+    "source": "candidates_project/NuHazeClose/NuHazeClose.c",
+    "notes": "Imported from nu3dx\\nuhaze.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuHazeClose.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuHGobjCreate",
+    "address": "0x800B06F8",
+    "size": 80,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuHGobjCreate",
+    "source": "candidates_project/NuHGobjCreate/NuHGobjCreate.c",
+    "notes": "Imported from nu3dx\\nuhgobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuHGobjCreate.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 4,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuHGobjDestroy",
+    "address": "0x800B0928",
+    "size": 40,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuHGobjDestroy",
+    "source": "candidates_project/NuHGobjDestroy/NuHGobjDestroy.c",
+    "notes": "Imported from nu3dx\\nuhgobj.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuHGobjDestroy.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 4,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuLightGetLight",
+    "address": "0x800B17C8",
+    "size": 40,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuLightGetLight",
+    "source": "candidates_project/NuLightGetLight/NuLightGetLight.c",
+    "notes": "Imported from nu3dx\\nulight.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuLightGetLight.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuLightClearStoredLights",
+    "address": "0x800B1DC8",
+    "size": 16,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuLightClearStoredLights",
+    "source": "candidates_project/NuLightClearStoredLights/NuLightClearStoredLights.c",
+    "notes": "Imported from nu3dx\\nulight.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuLightClearStoredLights.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 1,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuMtlRead",
+    "address": "0x800B2D18",
+    "size": 72,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuMtlRead",
+    "source": "candidates_project/NuMtlRead/NuMtlRead.c",
+    "notes": "Imported from nu3dx\\numtl.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuMtlRead.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 6,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuMtlUpdate",
+    "address": "0x800B2E24",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuMtlUpdate",
+    "source": "../code/src/nu3dx/numtl.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__numtl__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "SetLights",
+    "address": "0x800B2E28",
+    "size": 8,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "SetLights",
+    "source": "candidates_project/SetLights/SetLights.c",
+    "notes": "Imported from gamecode\\lights.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/SetLights.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -1849,10 +2223,13 @@
     "source": "candidates_project/NuMtlClearGlassList/NuMtlClearGlassList.c",
     "notes": "Imported from nu3dx\\numtl.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuMtlClearGlassList.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -1865,10 +2242,13 @@
     "source": "candidates_project/NuMtlRenderUpd/NuMtlRenderUpd.c",
     "notes": "Imported from nu3dx\\numtl.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuMtlRenderUpd.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -1881,26 +2261,13 @@
     "source": "candidates_project/NuMtlClearOt/NuMtlClearOt.c",
     "notes": "Imported from nu3dx\\numtl.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuMtlClearOt.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuRndrInit",
-    "address": "0x800B4594",
-    "size": 76,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuRndrInit",
-    "source": "candidates_project/NuRndrInit/NuRndrInit.c",
-    "notes": "Imported from nu3dx\\nurndr.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuRndrInit.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -1913,10 +2280,13 @@
     "source": "candidates_project/NuRndrEndScene/NuRndrEndScene.c",
     "notes": "Imported from nu3dx\\nurndr.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuRndrEndScene.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -1936,19 +2306,22 @@
     }
   },
   {
-    "name": "NuRndrSwapScreen",
-    "address": "0x800D4C74",
-    "size": 8,
+    "name": "NuRndrInit",
+    "address": "0x800B4594",
+    "size": 76,
     "kind": "project_match",
     "status": "mismatch",
-    "symbol": "NuRndrSwapScreen",
-    "source": "candidates_project/NuRndrSwapScreen/NuRndrSwapScreen.c",
+    "symbol": "NuRndrInit",
+    "source": "candidates_project/NuRndrInit/NuRndrInit.c",
     "notes": "Imported from nu3dx\\nurndr.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
-      "build_object": "build/leaf_o/NuRndrSwapScreen.o",
-      "link_resolve": true
+      "build_object": "build/leaf_o/NuRndrInit.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -1961,10 +2334,13 @@
     "source": "candidates_project/NuRndrItemDist/NuRndrItemDist.c",
     "notes": "Imported from nu3dx\\nurndr.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuRndrItemDist.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -1977,10 +2353,13 @@
     "source": "candidates_project/NuRndrFx/NuRndrFx.c",
     "notes": "Imported from nu3dx\\nurndr.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuRndrFx.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -1993,10 +2372,13 @@
     "source": "candidates_project/ReadNuIFFGeomDef/ReadNuIFFGeomDef.c",
     "notes": "Imported from nu3dx\\nuscene.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/ReadNuIFFGeomDef.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2009,10 +2391,13 @@
     "source": "candidates_project/ReadNuIFFFaceOnGeom/ReadNuIFFFaceOnGeom.c",
     "notes": "Imported from nu3dx\\nuscene.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:50 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/ReadNuIFFFaceOnGeom.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2025,11 +2410,30 @@
     "source": "candidates_project/ReadNuIFFGeomSkin/ReadNuIFFGeomSkin.c",
     "notes": "Imported from nu3dx\\nuscene.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/ReadNuIFFGeomSkin.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 4,
+      "obj_all_zero": false
     }
+  },
+  {
+    "name": "ReadNuIFFUnknown",
+    "address": "0x800B8CFC",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "ReadNuIFFUnknown",
+    "source": "../code/src/nu3dx/nuscene.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nuscene__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "ReadNuIFFNameTable",
@@ -2041,10 +2445,13 @@
     "source": "candidates_project/ReadNuIFFNameTable/ReadNuIFFNameTable.c",
     "notes": "Imported from nu3dx\\nuscene.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/ReadNuIFFNameTable.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 2,
+      "obj_all_zero": false
     }
   },
   {
@@ -2057,10 +2464,13 @@
     "source": "candidates_project/NuTexGetDecalInfo/NuTexGetDecalInfo.c",
     "notes": "Imported from nu3dx\\nutex.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuTexGetDecalInfo.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2089,10 +2499,13 @@
     "source": "candidates_project/NuTexReadBitmap/NuTexReadBitmap.c",
     "notes": "Imported from nu3dx\\nutex.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuTexReadBitmap.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 5,
+      "obj_all_zero": false
     }
   },
   {
@@ -2105,10 +2518,13 @@
     "source": "candidates_project/NuDynamicWaterClose/NuDynamicWaterClose.c",
     "notes": "Imported from nu3dx\\nuwater.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuDynamicWaterClose.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 2,
+      "obj_all_zero": false
     }
   },
   {
@@ -2121,10 +2537,13 @@
     "source": "candidates_project/NuWaterLoad/NuWaterLoad.c",
     "notes": "Imported from nu3dx\\nuwater.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuWaterLoad.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 4,
+      "obj_all_zero": false
     }
   },
   {
@@ -2137,10 +2556,13 @@
     "source": "candidates_project/NuWaterClose/NuWaterClose.c",
     "notes": "Imported from nu3dx\\nuwater.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuWaterClose.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -2153,10 +2575,13 @@
     "source": "candidates_project/NuFileExists/NuFileExists.c",
     "notes": "Imported from nucore\\nufile.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuFileExists.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2169,10 +2594,13 @@
     "source": "candidates_project/NuFileReadFloat/NuFileReadFloat.c",
     "notes": "Imported from nucore\\nufile.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuFileReadFloat.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2185,10 +2613,13 @@
     "source": "candidates_project/NuFileReadInt/NuFileReadInt.c",
     "notes": "Imported from nucore\\nufile.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuFileReadInt.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -2201,10 +2632,13 @@
     "source": "candidates_project/NuFileReadShort/NuFileReadShort.c",
     "notes": "Imported from nucore\\nufile.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuFileReadShort.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 2,
+      "obj_all_zero": false
     }
   },
   {
@@ -2217,26 +2651,13 @@
     "source": "candidates_project/NuFileReadChar/NuFileReadChar.c",
     "notes": "Imported from nucore\\nufile.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuFileReadChar.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "NuDatClose",
-    "address": "0x800D4230",
-    "size": 8,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "NuDatClose",
-    "source": "candidates_project/NuDatClose/NuDatClose.c",
-    "notes": "Imported from nucore\\nufile.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/NuDatClose.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 5,
+      "obj_all_zero": false
     }
   },
   {
@@ -2249,11 +2670,142 @@
     "source": "candidates_project/NuMemSetExternal/NuMemSetExternal.c",
     "notes": "Imported from nucore\\numem.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuMemSetExternal.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 1,
+      "obj_all_zero": false
     }
+  },
+  {
+    "name": "NuMtxTranslate",
+    "address": "0x800BEB68",
+    "size": 52,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuMtxTranslate",
+    "source": "../code/src/numath/numtx.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__numtx__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuMtxScale",
+    "address": "0x800BEC30",
+    "size": 196,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuMtxScale",
+    "source": "../code/src/numath/numtx.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__numtx__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuMtxPreScale",
+    "address": "0x800BEDAC",
+    "size": 148,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuMtxPreScale",
+    "source": "../code/src/numath/numtx.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__numtx__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuVecAdd",
+    "address": "0x800C173C",
+    "size": 52,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuVecAdd",
+    "source": "../code/src/numath/nuvec.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuVecScale",
+    "address": "0x800C17A4",
+    "size": 40,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuVecScale",
+    "source": "../code/src/numath/nuvec.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuVecScaleAccum",
+    "address": "0x800C17CC",
+    "size": 52,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuVecScaleAccum",
+    "source": "../code/src/numath/nuvec.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "SetRenderTarget",
+    "address": "0x800C1FAC",
+    "size": 8,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "SetRenderTarget",
+    "source": "../code/src/nuraster/dxframe.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nuraster__dxframe__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NudxFw_SetRenderTargetSurface",
+    "address": "0x800C1FB4",
+    "size": 8,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NudxFw_SetRenderTargetSurface",
+    "source": "../code/src/nuraster/dxframe.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nuraster__dxframe__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "makenuvec",
@@ -2265,10 +2817,13 @@
     "source": "candidates_project/makenuvec/makenuvec.c",
     "notes": "Imported from nuxbox\\crash_xbox.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/makenuvec.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2281,10 +2836,13 @@
     "source": "candidates_project/RemoveWaterCausticTextures/RemoveWaterCausticTextures.c",
     "notes": "Imported from nuxbox\\crash_xbox.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/RemoveWaterCausticTextures.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 2,
+      "obj_all_zero": false
     }
   },
   {
@@ -2297,10 +2855,13 @@
     "source": "candidates_project/NuRndrGScnObj/NuRndrGScnObj.c",
     "notes": "Imported from nuxbox\\dummyfunc.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuRndrGScnObj.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 4,
+      "obj_all_zero": false
     }
   },
   {
@@ -2313,10 +2874,13 @@
     "source": "candidates_project/randyfloat/randyfloat.c",
     "notes": "Imported from nuxbox\\dummyfunc.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/randyfloat.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -2329,11 +2893,30 @@
     "source": "candidates_project/NuSpecialDrawAt/NuSpecialDrawAt.c",
     "notes": "Imported from nuxbox\\dummyfunc.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuSpecialDrawAt.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
+  },
+  {
+    "name": "DrawStencilShadowQuad",
+    "address": "0x800C5BCC",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "DrawStencilShadowQuad",
+    "source": "../code/src/nuxbox/dummyfunc.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nuxbox__dummyfunc__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "NuGobjAverageTextureSpaceVerts",
@@ -2345,42 +2928,13 @@
     "source": "candidates_project/NuGobjAverageTextureSpaceVerts/NuGobjAverageTextureSpaceVerts.c",
     "notes": "Imported from nuxbox\\dummyfunc.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/NuGobjAverageTextureSpaceVerts.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "timeGetTime",
-    "address": "0x800CEAF4",
-    "size": 32,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "timeGetTime",
-    "source": "candidates_project/timeGetTime/timeGetTime.c",
-    "notes": "Imported from system\\crashlib.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/timeGetTime.o",
-      "link_resolve": true
-    }
-  },
-  {
-    "name": "DBTimerStart",
-    "address": "0x800CF3D4",
-    "size": 64,
-    "kind": "project_match",
-    "status": "mismatch",
-    "symbol": "DBTimerStart",
-    "source": "candidates_project/DBTimerStart/DBTimerStart.c",
-    "notes": "Imported from system\\crashlib.c NGC MATCH comment.",
-    "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DBTimerStart.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2393,10 +2947,13 @@
     "source": "candidates_project/GCFileSize/GCFileSize.c",
     "notes": "Imported from system\\gc\\fs.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/GCFileSize.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2409,10 +2966,13 @@
     "source": "candidates_project/GS_SetAlphaCompare/GS_SetAlphaCompare.c",
     "notes": "Imported from system\\gs\\gs.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/GS_SetAlphaCompare.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -2425,10 +2985,13 @@
     "source": "candidates_project/GS_ARGBTORGBA/GS_ARGBTORGBA.c",
     "notes": "Imported from system\\gs\\gs.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/GS_ARGBTORGBA.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 7,
+      "obj_all_zero": false
     }
   },
   {
@@ -2441,10 +3004,13 @@
     "source": "candidates_project/GS_RenderClearBlack/GS_RenderClearBlack.c",
     "notes": "Imported from system\\gs\\gs.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/GS_RenderClearBlack.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2457,10 +3023,13 @@
     "source": "candidates_project/GS_SetOrthMatrix/GS_SetOrthMatrix.c",
     "notes": "Imported from system\\gs\\gs.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/GS_SetOrthMatrix.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2473,10 +3042,13 @@
     "source": "candidates_project/GS_SetViewport/GS_SetViewport.c",
     "notes": "Imported from system\\gs\\gs.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/GS_SetViewport.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2489,10 +3061,51 @@
     "source": "candidates_project/GS_LoadWorldMatrixIdentity/GS_LoadWorldMatrixIdentity.c",
     "notes": "Imported from system\\gs\\gs.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/GS_LoadWorldMatrixIdentity.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "timeGetTime",
+    "address": "0x800CEAF4",
+    "size": 32,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "timeGetTime",
+    "source": "candidates_project/timeGetTime/timeGetTime.c",
+    "notes": "Imported from system\\crashlib.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/timeGetTime.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "DBTimerStart",
+    "address": "0x800CF3D4",
+    "size": 64,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DBTimerStart",
+    "source": "candidates_project/DBTimerStart/DBTimerStart.c",
+    "notes": "Imported from system\\crashlib.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DBTimerStart.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   },
   {
@@ -2505,10 +3118,13 @@
     "source": "candidates_project/GS_DeleteBuffer/GS_DeleteBuffer.c",
     "notes": "Imported from system\\gs\\gsbuffer.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/GS_DeleteBuffer.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 3,
+      "obj_all_zero": false
     }
   },
   {
@@ -2521,11 +3137,30 @@
     "source": "candidates_project/SetIdentity/SetIdentity.c",
     "notes": "Imported from system\\gsmatrix.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/SetIdentity.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
+  },
+  {
+    "name": "SetPixelShader",
+    "address": "0x800D0FA8",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "SetPixelShader",
+    "source": "../code/src/system/port.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__system__port__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "GetPlayerPosition",
@@ -2537,10 +3172,86 @@
     "source": "candidates_project/GetPlayerPosition/GetPlayerPosition.c",
     "notes": "Imported from system\\port.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:51 UTC",
+      "timestamp": "2026-02-11 15:51 UTC",
       "match": false,
       "build_object": "build/leaf_o/GetPlayerPosition.o",
-      "link_resolve": true
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "CloseShaders",
+    "address": "0x800D130C",
+    "size": 36,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "CloseShaders",
+    "source": "../code/src/system/port.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__system__port__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuDatClose",
+    "address": "0x800D4230",
+    "size": 8,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuDatClose",
+    "source": "candidates_project/NuDatClose/NuDatClose.c",
+    "notes": "Imported from nucore\\nufile.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuDatClose.o",
+      "link_resolve": true,
+      "compare_mode": "linked_text",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "NuRndrSwapScreen",
+    "address": "0x800D4C74",
+    "size": 8,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "NuRndrSwapScreen",
+    "source": "candidates_project/NuRndrSwapScreen/NuRndrSwapScreen.c",
+    "notes": "Imported from nu3dx\\nurndr.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:51 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NuRndrSwapScreen.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
+    }
+  },
+  {
+    "name": "DrawCharacterModel",
+    "address": "0x800DB00C",
+    "size": 148,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "DrawCharacterModel",
+    "source": "candidates_project/DrawCharacterModel/DrawCharacterModel.c",
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 15:52 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/DrawCharacterModel.o",
+      "link_resolve": true,
+      "compare_mode": "raw_symbol",
+      "first_diff_word": 0,
+      "obj_all_zero": false
     }
   }
 ]
