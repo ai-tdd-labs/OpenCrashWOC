@@ -31,6 +31,20 @@ def load_units(path: Path) -> list[dict]:
     return data
 
 
+def load_version_config(version: str) -> dict[str, str]:
+    path = Path("config") / version / "config.yml"
+    out: dict[str, str] = {}
+    if not path.is_file():
+        return out
+    for raw in path.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or ":" not in line:
+            continue
+        k, v = line.split(":", 1)
+        out[k.strip()] = v.strip().strip("'\"")
+    return out
+
+
 def write_objdiff_json(version: str) -> None:
     units_path = Path("config") / version / "objdiff_units.json"
     units = load_units(units_path)
@@ -74,6 +88,11 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
     changes = out_dir / "report_changes.json"
     regressions = out_dir / "regressions.md"
     demo_match_ok = out_dir / "demo_match.ok"
+    candidate_dol = out_dir / "main.candidate.dol"
+    candidate_slices = out_dir / "candidate_slices.json"
+    dol_diff_report = out_dir / "dol_diff.txt"
+    version_cfg = load_version_config(version)
+    ref_dol = version_cfg.get("object", "../../crash_bandicoot/roms/gc/usa_v1.00/extracted/main.dol")
 
     progress_cmd = f"$python configure.py progress --version {version} --build-dir {unix(build_dir)} --report $in"
 
@@ -105,6 +124,14 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         "  command = $python tools/build_demo_units.py --auto-slices --match-dol --stamp $out",
         "  description = DEMO_MATCH",
         "",
+        "rule candidate_dol",
+        f"  command = $python tools/build_candidate_dol_from_queue.py --ref-dol {ref_dol} --out $out --slices-out {unix(candidate_slices)}",
+        "  description = CANDIDATE_DOL",
+        "",
+        "rule dol_diff",
+        f"  command = $python tools/dol_diff_report.py --base {ref_dol} --target $in --out $out",
+        "  description = DOL_DIFF",
+        "",
         f"build {unix(ok)}: check {unix(sha_path)}",
         f"build check: phony {unix(ok)}",
         f"build {unix(report)}: report objdiff.json",
@@ -113,10 +140,14 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"build {unix(changes)}: report_changes {unix(report)} | {unix(baseline)}",
         f"build {unix(regressions)}: changes_md {unix(changes)}",
         f"build {unix(demo_match_ok)}: demo_match | {unix(ok)}",
+        f"build {unix(candidate_dol)}: candidate_dol | {unix(ok)}",
+        f"build {unix(dol_diff_report)}: dol_diff {unix(candidate_dol)}",
         f"build baseline: phony {unix(baseline)}",
         f"build changes: phony {unix(changes)}",
         f"build regressions: phony {unix(regressions)}",
         f"build demo-match: phony {unix(demo_match_ok)}",
+        f"build candidate-dol: phony {unix(candidate_dol)}",
+        f"build full-dol-diff: phony {unix(dol_diff_report)}",
     ]
 
     lines.append("default progress" if enable_progress else f"default {unix(ok)}")

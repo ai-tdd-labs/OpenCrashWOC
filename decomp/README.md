@@ -24,6 +24,8 @@ python tools/build_demo_units.py
 python configure.py --version GC_USA --dtk D:\projects\ps2\crash_bandicoot\tools\dtk\dtk.exe --objdiff D:\projects\ps2\crash_bandicoot\tools\objdiff\objdiff-cli.exe
 ninja check
 ninja demo-match
+ninja candidate-dol
+ninja full-dol-diff
 ninja progress
 ninja baseline
 ninja changes
@@ -66,6 +68,13 @@ Auto-build queue from Ghidra exports and run a batch:
 python tools/build_leaf_queue_from_ghidra.py --limit 12
 python tools/normalize_candidate_sources.py
 python tools/run_leaf_queue.py --limit 5
+```
+
+Build a candidate full DOL from matched queue slices and diff it against original:
+
+```powershell
+python tools/build_candidate_dol_from_queue.py --out build/GC_USA/main.candidate.dol
+python tools/dol_diff_report.py --target build/GC_USA/main.candidate.dol --out build/GC_USA/dol_diff.txt
 ```
 
 ## Included demo unit

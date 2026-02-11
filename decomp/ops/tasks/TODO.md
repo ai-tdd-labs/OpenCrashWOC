@@ -12,6 +12,8 @@
 - [x] Batch-run first N leaf candidates and write result statuses.
 - [ ] Improve candidate C shaping for branch-layout sensitive near-matches.
 - [ ] Resolve `compare_error` cases (symbol-size mismatch) in candidate runner.
+- [x] Add candidate full-DOL patch flow from matched queue slices.
+- [x] Add full-DOL byte/hash diff report against original.
 
 ## Next (TP/TWW/MP4 style parity)
 
