@@ -35,6 +35,16 @@ def main() -> None:
         action="store_true",
         help="Add an intentional mismatch unit (broken add vs add)",
     )
+    parser.add_argument(
+        "--auto-slices",
+        action="store_true",
+        help="After compile, auto-generate config/GC_USA/slices_demo.json from built objects",
+    )
+    parser.add_argument(
+        "--match-dol",
+        action="store_true",
+        help="After compile (and auto-slices), run DOL slice matcher",
+    )
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[1]  # decomp/
@@ -119,7 +129,26 @@ def main() -> None:
     print(f"Built {len(targets)} demo objects")
     print(f"Wrote {out_path}")
 
+    if args.auto_slices or args.match_dol:
+        auto_slice_script = root / "tools" / "auto_slice_from_objects.py"
+        run(
+            [
+                "python",
+                rel(auto_slice_script, root),
+                "--objects-dir",
+                "build/demo_o",
+                "--glob",
+                "*.o",
+                "--out",
+                "config/GC_USA/slices_demo.json",
+            ],
+            root,
+        )
+
+    if args.match_dol:
+        match_script = root / "tools" / "match_dol_slices.py"
+        run(["python", rel(match_script, root)], root)
+
 
 if __name__ == "__main__":
     main()
-

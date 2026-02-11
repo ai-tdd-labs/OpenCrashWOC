@@ -76,3 +76,23 @@ Expected:
 - mismatch when you swap one object to a broken variant (e.g. `nuvec_add_broken_demo.o`)
 
 This is the first building block toward full split+relink+hash flow.
+
+### Auto slice generation
+
+You can auto-generate slice addresses from compiled objects:
+
+```powershell
+python tools/build_demo_units.py
+python tools/auto_slice_from_objects.py --objects-dir build/demo_o --glob "*.o" --out config/GC_USA/slices_demo.json
+python tools/match_dol_slices.py
+```
+
+One-shot equivalent:
+
+```powershell
+python tools/build_demo_units.py --auto-slices --match-dol
+```
+
+Notes:
+- default mode only keeps objects with a unique hit in DOL text.
+- use `--allow-ambiguous` to keep multi-hit objects (uses first hit).

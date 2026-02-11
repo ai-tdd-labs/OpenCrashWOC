@@ -1,37 +1,37 @@
 [
   {
-    "name": "NuVecAdd_demo",
+    "name": "nuvec_add_demo",
     "address": "0x800C173C",
     "size": 52,
     "object": "build/demo_o/nuvec_add_demo.o",
     "symbol": "NuVecAdd_demo"
   },
   {
-    "name": "NuVecSub_demo",
-    "address": "0x800C1770",
-    "size": 52,
-    "object": "build/demo_o/nuvec_sub_demo.o",
-    "symbol": "NuVecSub_demo"
+    "name": "nuvec_dot_demo",
+    "address": "0x8007B178",
+    "size": 40,
+    "object": "build/demo_o/nuvec_dot_demo.o",
+    "symbol": "NuVecDot_demo"
   },
   {
-    "name": "NuVecScale_demo",
+    "name": "nuvec_lensq_demo",
+    "address": "0x800C18A4",
+    "size": 28,
+    "object": "build/demo_o/nuvec_lensq_demo.o",
+    "symbol": "NuVecLenSq_demo"
+  },
+  {
+    "name": "nuvec_scale_demo",
     "address": "0x800C17A4",
     "size": 40,
     "object": "build/demo_o/nuvec_scale_demo.o",
     "symbol": "NuVecScale_demo"
   },
   {
-    "name": "NuVecDot_demo",
-    "address": "0x800C1840",
-    "size": 40,
-    "object": "build/demo_o/nuvec_dot_demo.o",
-    "symbol": "NuVecDot_demo"
-  },
-  {
-    "name": "NuVecLenSq_demo",
-    "address": "0x800C18A4",
-    "size": 28,
-    "object": "build/demo_o/nuvec_lensq_demo.o",
-    "symbol": "NuVecLenSq_demo"
+    "name": "nuvec_sub_demo",
+    "address": "0x800C1770",
+    "size": 52,
+    "object": "build/demo_o/nuvec_sub_demo.o",
+    "symbol": "NuVecSub_demo"
   }
 ]
