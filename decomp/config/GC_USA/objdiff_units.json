@@ -1,72 +1,324 @@
 [
   {
-    "name": "demo/nuvec_add_demo",
-    "target_path": "build/demo_o/nuvec_add_demo.o",
-    "base_path": "build/demo_o/nuvec_add_demo.o",
-    "metadata": {
-      "complete": true,
-      "source_path": "demo_src/nuvec_add_demo.c",
-      "progress_categories": [
-        "dol",
-        "engine"
-      ],
-      "auto_generated": false
-    }
-  },
-  {
-    "name": "demo/nuvec_sub_demo",
-    "target_path": "build/demo_o/nuvec_sub_demo.o",
-    "base_path": "build/demo_o/nuvec_sub_demo.o",
-    "metadata": {
-      "complete": true,
-      "source_path": "demo_src/nuvec_sub_demo.c",
-      "progress_categories": [
-        "dol",
-        "engine"
-      ],
-      "auto_generated": false
-    }
-  },
-  {
-    "name": "demo/nuvec_scale_demo",
-    "target_path": "build/demo_o/nuvec_scale_demo.o",
-    "base_path": "build/demo_o/nuvec_scale_demo.o",
-    "metadata": {
-      "complete": true,
-      "source_path": "demo_src/nuvec_scale_demo.c",
-      "progress_categories": [
-        "dol",
-        "engine"
-      ],
-      "auto_generated": false
-    }
-  },
-  {
-    "name": "demo/nuvec_dot_demo",
+    "name": "auto/FUN_8007b178",
     "target_path": "build/demo_o/nuvec_dot_demo.o",
     "base_path": "build/demo_o/nuvec_dot_demo.o",
     "metadata": {
       "complete": true,
-      "source_path": "demo_src/nuvec_dot_demo.c",
+      "source_path": "",
       "progress_categories": [
         "dol",
         "engine"
       ],
-      "auto_generated": false
+      "auto_generated": true
     }
   },
   {
-    "name": "demo/nuvec_lensq_demo",
+    "name": "auto/NuRndrFlush/NuRndrFlush",
+    "target_path": "build/leaf_o/NuRndrFlush.o",
+    "base_path": "build/leaf_o/NuRndrFlush.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "candidates_project/NuRndrFlush/NuRndrFlush.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/NuTexSetTexture/NuTexSetTexture",
+    "target_path": "build/leaf_o/NuTexSetTexture.o",
+    "base_path": "build/leaf_o/NuTexSetTexture.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "candidates_project/NuTexSetTexture/NuTexSetTexture.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/NuVecAdd",
+    "target_path": "build/demo_o/nuvec_add_demo.o",
+    "base_path": "build/demo_o/nuvec_add_demo.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/NuVecMagSqr",
     "target_path": "build/demo_o/nuvec_lensq_demo.o",
     "base_path": "build/demo_o/nuvec_lensq_demo.o",
     "metadata": {
       "complete": true,
-      "source_path": "demo_src/nuvec_lensq_demo.c",
+      "source_path": "",
       "progress_categories": [
         "dol",
         "engine"
       ],
-      "auto_generated": false
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/NuVecScale",
+    "target_path": "build/demo_o/nuvec_scale_demo.o",
+    "base_path": "build/demo_o/nuvec_scale_demo.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/NuVecSub",
+    "target_path": "build/demo_o/nuvec_sub_demo.o",
+    "base_path": "build/demo_o/nuvec_sub_demo.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/dummyfunc/DrawStencilShadowQuad",
+    "target_path": "build/ghidra_o/code__src__nuxbox__dummyfunc__g0.o",
+    "base_path": "build/ghidra_o/code__src__nuxbox__dummyfunc__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/nuxbox/dummyfunc.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/dxframe/NudxFw_SetRenderTargetSurface",
+    "target_path": "build/ghidra_o/code__src__nuraster__dxframe__g0.o",
+    "base_path": "build/ghidra_o/code__src__nuraster__dxframe__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/nuraster/dxframe.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/dxframe/SetRenderTarget",
+    "target_path": "build/ghidra_o/code__src__nuraster__dxframe__g0.o",
+    "base_path": "build/ghidra_o/code__src__nuraster__dxframe__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/nuraster/dxframe.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/nuanim/okdokey",
+    "target_path": "build/ghidra_o/code__src__nu3dx__nuanim__g0.o",
+    "base_path": "build/ghidra_o/code__src__nu3dx__nuanim__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/nu3dx/nuanim.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/nuglass/isGlassInstance",
+    "target_path": "build/project_o/code__src__nu3dx__nuglass__g0.o",
+    "base_path": "build/project_o/code__src__nu3dx__nuglass__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "code/src/nu3dx/nuglass.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/nuglass/isGlassInstance",
+    "target_path": "build/ghidra_o/code__src__nu3dx__nuglass__g0.o",
+    "base_path": "build/ghidra_o/code__src__nu3dx__nuglass__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/nu3dx/nuglass.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/numtl/NuMtlUpdate",
+    "target_path": "build/ghidra_o/code__src__nu3dx__numtl__g0.o",
+    "base_path": "build/ghidra_o/code__src__nu3dx__numtl__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/nu3dx/numtl.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/numtx/NuMtxPreScale",
+    "target_path": "build/ghidra_o/code__src__numath__numtx__g0.o",
+    "base_path": "build/ghidra_o/code__src__numath__numtx__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/numath/numtx.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/numtx/NuMtxScale",
+    "target_path": "build/ghidra_o/code__src__numath__numtx__g0.o",
+    "base_path": "build/ghidra_o/code__src__numath__numtx__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/numath/numtx.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/numtx/NuMtxTranslate",
+    "target_path": "build/ghidra_o/code__src__numath__numtx__g0.o",
+    "base_path": "build/ghidra_o/code__src__numath__numtx__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/numath/numtx.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/nuscene/ReadNuIFFUnknown",
+    "target_path": "build/ghidra_o/code__src__nu3dx__nuscene__g0.o",
+    "base_path": "build/ghidra_o/code__src__nu3dx__nuscene__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/nu3dx/nuscene.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/nuvec/NuVecAdd",
+    "target_path": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+    "base_path": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/numath/nuvec.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/nuvec/NuVecScale",
+    "target_path": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+    "base_path": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/numath/nuvec.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/nuvec/NuVecScaleAccum",
+    "target_path": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+    "base_path": "build/ghidra_o/code__src__numath__nuvec__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/numath/nuvec.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/port/CloseShaders",
+    "target_path": "build/ghidra_o/code__src__system__port__g0.o",
+    "base_path": "build/ghidra_o/code__src__system__port__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/system/port.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
+    }
+  },
+  {
+    "name": "auto/port/SetPixelShader",
+    "target_path": "build/ghidra_o/code__src__system__port__g0.o",
+    "base_path": "build/ghidra_o/code__src__system__port__g0.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "../code/src/system/port.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": true
     }
   }
 ]

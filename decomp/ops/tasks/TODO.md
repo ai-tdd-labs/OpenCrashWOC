@@ -26,15 +26,15 @@
 - [ ] Add per-function mismatch diagnostics (first-diff index + relocation/opcode class) to speed up C-shaping.
 - [x] Auto-promote verified full-source matches into `project_match_queue` state updates.
 - [x] Add Ghidra source-queue verifier (`ghidra_source_queue` -> `ghidra_verified_queue`) with multi-variant compile and byte-compare.
-- [ ] Run recurring Ghidra-source verification sweeps and track verified growth per run.
-- [ ] Merge `ghidra_verified_queue` into persistent project match-state promotion flow.
+- [x] Run recurring Ghidra-source verification sweeps and track verified growth per run.
+- [x] Merge `ghidra_verified_queue` into persistent project match-state promotion flow.
 
 ## Next (TP/TWW/MP4 style parity)
 
 - [ ] Add stable split config coverage for larger DOL regions.
 - [x] Introduce source/object mapping conventions per module.
 - [x] Generate project-level function/module maps (`function_map.json`, `module_map.json`).
-- [ ] Generate objdiff units from mapping data (not hand-edited JSON).
+- [x] Generate objdiff units from mapping data (not hand-edited JSON).
 - [ ] Add relink stage for partial linked image.
 - [x] Generate partial relink input artifacts (C object list + linker script skeleton).
 - [x] Execute linker-based partial relink using generated script and validate section bytes.
@@ -48,5 +48,5 @@
 
 - [x] Integrate Ghidra export helper into candidate queue.
 - [x] Add CI checks for tooling/progress summary generation.
-- [ ] Track match metrics history in CSV/JSON.
-- [ ] Add CI gate that publishes `C entries`/`ASM entries` and verified-match delta per run.
+- [x] Track match metrics history in CSV/JSON.
+- [x] Add CI gate that publishes `C entries`/`ASM entries` and verified-match delta per run.

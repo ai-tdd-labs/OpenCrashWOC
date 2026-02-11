@@ -4,228 +4,100 @@
     "address": "0x800032A0",
     "size": 152,
     "kind": "ghidra_source",
-    "status": "mismatch",
+    "status": "todo",
     "symbol": "FindAIType",
     "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/FindAIType.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 0,
-      "obj_all_zero": false
-    }
+    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c"
   },
   {
     "name": "LoadAI",
     "address": "0x80003338",
     "size": 428,
     "kind": "ghidra_source",
-    "status": "mismatch",
+    "status": "todo",
     "symbol": "LoadAI",
     "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/LoadAI.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 0,
-      "obj_all_zero": false
-    }
+    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c"
   },
   {
     "name": "InitAI",
     "address": "0x800034E4",
     "size": 152,
     "kind": "ghidra_source",
-    "status": "mismatch",
+    "status": "todo",
     "symbol": "InitAI",
     "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/InitAI.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 3,
-      "obj_all_zero": false
-    }
-  },
-  {
-    "name": "ResetAI",
-    "address": "0x8000357C",
-    "size": 616,
-    "kind": "ghidra_source",
-    "status": "mismatch",
-    "symbol": "ResetAI",
-    "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/ResetAI.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 0,
-      "obj_all_zero": false
-    }
+    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c"
   },
   {
     "name": "UpdateDRAINDAMAGE",
     "address": "0x800037E4",
     "size": 68,
     "kind": "ghidra_source",
-    "status": "mismatch",
+    "status": "todo",
     "symbol": "UpdateDRAINDAMAGE",
     "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/UpdateDRAINDAMAGE.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 3,
-      "obj_all_zero": false
-    }
-  },
-  {
-    "name": "DrawDRAINDAMAGE",
-    "address": "0x80003828",
-    "size": 744,
-    "kind": "ghidra_source",
-    "status": "mismatch",
-    "symbol": "DrawDRAINDAMAGE",
-    "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawDRAINDAMAGE.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 0,
-      "obj_all_zero": false
-    }
+    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c"
   },
   {
     "name": "WaterCrunchFunction_Punch1",
     "address": "0x80003B10",
     "size": 216,
     "kind": "ghidra_source",
-    "status": "mismatch",
+    "status": "todo",
     "symbol": "WaterCrunchFunction_Punch1",
     "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/WaterCrunchFunction_Punch1.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 0,
-      "obj_all_zero": false
-    }
+    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c"
   },
   {
     "name": "WaterCrunchFunction_Punch2",
     "address": "0x80003BE8",
     "size": 84,
     "kind": "ghidra_source",
-    "status": "mismatch",
+    "status": "todo",
     "symbol": "WaterCrunchFunction_Punch2",
     "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/WaterCrunchFunction_Punch2.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 0,
-      "obj_all_zero": false
-    }
+    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c"
   },
   {
     "name": "WaterCrunchFunction_Spladoosh",
     "address": "0x80003C3C",
     "size": 168,
     "kind": "ghidra_source",
-    "status": "mismatch",
+    "status": "todo",
     "symbol": "WaterCrunchFunction_Spladoosh",
     "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/WaterCrunchFunction_Spladoosh.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 0,
-      "obj_all_zero": false
-    }
+    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c"
   },
   {
     "name": "CrateBounceReaction",
     "address": "0x80003D8C",
     "size": 392,
     "kind": "ghidra_source",
-    "status": "mismatch",
+    "status": "todo",
     "symbol": "CrateBounceReaction",
     "source": "../code/src/gamecode/crate.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/CrateBounceReaction.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 0,
-      "obj_all_zero": false
-    }
+    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
   },
   {
     "name": "DrawWeatherBossLevelExtra",
     "address": "0x80004D00",
     "size": 440,
     "kind": "ghidra_source",
-    "status": "mismatch",
+    "status": "todo",
     "symbol": "DrawWeatherBossLevelExtra",
     "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/DrawWeatherBossLevelExtra.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 0,
-      "obj_all_zero": false
-    }
+    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
     "name": "ResetCRUNCHTIME",
     "address": "0x800050A8",
     "size": 96,
     "kind": "ghidra_source",
-    "status": "mismatch",
+    "status": "todo",
     "symbol": "ResetCRUNCHTIME",
     "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c",
-    "last_result": {
-      "timestamp": "2026-02-11 16:05 UTC",
-      "match": false,
-      "build_object": "build/leaf_o/ResetCRUNCHTIME.o",
-      "link_resolve": true,
-      "compare_mode": "raw_symbol",
-      "first_diff_word": 3,
-      "obj_all_zero": false
-    }
+    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c"
   },
   {
     "name": "SpaceCrunchFunction_NewPoint",
@@ -318,16 +190,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/bug.c"
   },
   {
-    "name": "JonExtraDraw",
-    "address": "0x80009274",
-    "size": 1860,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "JonExtraDraw",
-    "source": "../code/src/gamecode/deb3.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/deb3.c"
-  },
-  {
     "name": "JudderGameCamera",
     "address": "0x80009AF4",
     "size": 132,
@@ -344,26 +206,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "BlendGameCamera",
-    "source": "../code/src/gamecode/camera.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/camera.c"
-  },
-  {
-    "name": "InitRails",
-    "address": "0x80009BC4",
-    "size": 680,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "InitRails",
-    "source": "../code/src/gamecode/camera.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/camera.c"
-  },
-  {
-    "name": "MoveRailPosition",
-    "address": "0x8000A678",
-    "size": 864,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "MoveRailPosition",
     "source": "../code/src/gamecode/camera.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/camera.c"
   },
@@ -408,26 +250,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/chase.c"
   },
   {
-    "name": "InitChases",
-    "address": "0x8000E44C",
-    "size": 1508,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "InitChases",
-    "source": "../code/src/gamecode/chase.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/chase.c"
-  },
-  {
-    "name": "UpdateCrateBallsOfFireDoors",
-    "address": "0x8000EA30",
-    "size": 952,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UpdateCrateBallsOfFireDoors",
-    "source": "../code/src/gamecode/chase.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/chase.c"
-  },
-  {
     "name": "ResetChases",
     "address": "0x8000EDE8",
     "size": 284,
@@ -436,16 +258,6 @@
     "symbol": "ResetChases",
     "source": "../code/src/gamecode/chase.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/chase.c"
-  },
-  {
-    "name": "AddTempWumpa",
-    "address": "0x8000EF04",
-    "size": 1020,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AddTempWumpa",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
     "name": "NearestChaserDistance",
@@ -468,26 +280,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/chase.c"
   },
   {
-    "name": "DrawCreatures",
-    "address": "0x80010274",
-    "size": 1120,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawCreatures",
-    "source": "../code/src/gamecode/creature.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
-    "name": "cloudInit",
-    "address": "0x800106D4",
-    "size": 700,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "cloudInit",
-    "source": "../code/src/gamecode/cloudfx.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/cloudfx.c"
-  },
-  {
     "name": "cloudRender",
     "address": "0x80010990",
     "size": 332,
@@ -504,16 +296,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "InitClouds",
-    "source": "../code/src/gamecode/cloudfx.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/cloudfx.c"
-  },
-  {
-    "name": "DoClouds",
-    "address": "0x80010C08",
-    "size": 704,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DoClouds",
     "source": "../code/src/gamecode/cloudfx.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/cloudfx.c"
   },
@@ -568,26 +350,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
   },
   {
-    "name": "DrawCrates",
-    "address": "0x800112E8",
-    "size": 1856,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawCrates",
-    "source": "../code/src/gamecode/crate.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
-  },
-  {
-    "name": "ReadCrateData",
-    "address": "0x800124BC",
-    "size": 764,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ReadCrateData",
-    "source": "../code/src/gamecode/crate.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
-  },
-  {
     "name": "GetCrateType",
     "address": "0x800127B8",
     "size": 244,
@@ -638,82 +400,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
-    "name": "CalculateSingleLightProportion",
-    "address": "0x800131DC",
-    "size": 1332,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "CalculateSingleLightProportion",
-    "source": "../code/src/gamecode/lights.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/lights.c"
-  },
-  {
-    "name": "AddExtraLife",
-    "address": "0x80013710",
-    "size": 944,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AddExtraLife",
-    "source": "../code/src/gamecode/crate.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
-  },
-  {
-    "name": "UpdateCrates",
-    "address": "0x80013AC0",
-    "size": 2736,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UpdateCrates",
-    "source": "../code/src/gamecode/crate.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
-  },
-  {
-    "name": "ResetCrates",
-    "address": "0x80014698",
-    "size": 2808,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ResetCrates",
-    "source": "../code/src/gamecode/crate.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
-  },
-  {
     "name": "InitCrateExplosions",
     "address": "0x80015190",
     "size": 44,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "InitCrateExplosions",
-    "source": "../code/src/gamecode/crate.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
-  },
-  {
-    "name": "AddCrateExplosion",
-    "address": "0x800151BC",
-    "size": 1144,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AddCrateExplosion",
-    "source": "../code/src/gamecode/crate.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
-  },
-  {
-    "name": "UpdateCrateExplosions",
-    "address": "0x80015634",
-    "size": 556,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UpdateCrateExplosions",
-    "source": "../code/src/gamecode/crate.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
-  },
-  {
-    "name": "DrawCrateExplosions",
-    "address": "0x80015860",
-    "size": 848,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawCrateExplosions",
     "source": "../code/src/gamecode/crate.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
   },
@@ -734,16 +426,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "CrateBottomAbove",
-    "source": "../code/src/gamecode/crate.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
-  },
-  {
-    "name": "WipeCrates",
-    "address": "0x80015F84",
-    "size": 660,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "WipeCrates",
     "source": "../code/src/gamecode/crate.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
   },
@@ -788,26 +470,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/crate.c"
   },
   {
-    "name": "AddMechanicalDebris",
-    "address": "0x80016C7C",
-    "size": 564,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AddMechanicalDebris",
-    "source": "../code/src/gamecode/game_deb.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game_deb.c"
-  },
-  {
-    "name": "InBugArea",
-    "address": "0x80016EB0",
-    "size": 584,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "InBugArea",
-    "source": "../code/src/gamecode/bug.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/bug.c"
-  },
-  {
     "name": "ResetPlayerMoves",
     "address": "0x800170F8",
     "size": 252,
@@ -816,16 +478,6 @@
     "symbol": "ResetPlayerMoves",
     "source": "../code/src/gamecode/creature.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
-    "name": "CheckFinish",
-    "address": "0x800171F4",
-    "size": 1196,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "CheckFinish",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
     "name": "RemoveCreature",
@@ -848,16 +500,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
   },
   {
-    "name": "ManageCreatures",
-    "address": "0x80017768",
-    "size": 2312,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ManageCreatures",
-    "source": "../code/src/gamecode/creature.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
     "name": "ModelAnimDuration",
     "address": "0x80018070",
     "size": 252,
@@ -868,32 +510,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
   },
   {
-    "name": "LoadCharacterModel",
-    "address": "0x8001816C",
-    "size": 1272,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "LoadCharacterModel",
-    "source": "../code/src/gamecode/creature.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
     "name": "PurgeCharacterModels",
     "address": "0x80018664",
     "size": 96,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "PurgeCharacterModels",
-    "source": "../code/src/gamecode/creature.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
-    "name": "LoadCharacterModels",
-    "address": "0x800186C4",
-    "size": 732,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "LoadCharacterModels",
     "source": "../code/src/gamecode/creature.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
   },
@@ -914,26 +536,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "PlayerStartPos",
-    "source": "../code/src/gamecode/creature.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
-    "name": "NewCharacterIdle",
-    "address": "0x80018C1C",
-    "size": 956,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NewCharacterIdle",
-    "source": "../code/src/gamecode/creature.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
-    "name": "AddCreature",
-    "address": "0x80019020",
-    "size": 876,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AddCreature",
     "source": "../code/src/gamecode/creature.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
   },
@@ -968,26 +570,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
   },
   {
-    "name": "ProcessCreatures",
-    "address": "0x8001CFD0",
-    "size": 1008,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ProcessCreatures",
-    "source": "../code/src/gamecode/creature.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
-    "name": "EvalModelAnim",
-    "address": "0x8001D3C0",
-    "size": 680,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "EvalModelAnim",
-    "source": "../code/src/gamecode/creature.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
     "name": "ResetAnimPacket",
     "address": "0x8001F9C0",
     "size": 48,
@@ -996,16 +578,6 @@
     "symbol": "ResetAnimPacket",
     "source": "../code/src/gamecode/creature.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
-    "name": "Draw3DCharacter",
-    "address": "0x8001F9F0",
-    "size": 1204,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "Draw3DCharacter",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
     "name": "DrawCredits",
@@ -1088,16 +660,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/cut.c"
   },
   {
-    "name": "LoadCutMovie",
-    "address": "0x80020B44",
-    "size": 856,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "LoadCutMovie",
-    "source": "../code/src/gamecode/cut.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/cut.c"
-  },
-  {
     "name": "UpdateCutMovieCamera",
     "address": "0x80020FA8",
     "size": 272,
@@ -1138,36 +700,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/cut.c"
   },
   {
-    "name": "PlayCutMovie",
-    "address": "0x80021340",
-    "size": 1280,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "PlayCutMovie",
-    "source": "../code/src/gamecode/cut.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/cut.c"
-  },
-  {
-    "name": "UpdateGameCut",
-    "address": "0x80021A04",
-    "size": 792,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UpdateGameCut",
-    "source": "../code/src/gamecode/cut.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/cut.c"
-  },
-  {
-    "name": "DrawGameCut",
-    "address": "0x80021D1C",
-    "size": 684,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawGameCut",
-    "source": "../code/src/gamecode/cut.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/cut.c"
-  },
-  {
     "name": "CreatureTopBelow",
     "address": "0x80021FC8",
     "size": 44,
@@ -1198,56 +730,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/cut.c"
   },
   {
-    "name": "SetCutSceneLights",
-    "address": "0x800223F4",
-    "size": 2488,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "SetCutSceneLights",
-    "source": "../code/src/gamecode/cut.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/cut.c"
-  },
-  {
-    "name": "RBodyMove",
-    "address": "0x80023194",
-    "size": 668,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "RBodyMove",
-    "source": "../code/src/gamecode/deb3.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/deb3.c"
-  },
-  {
-    "name": "ProcDeb3",
-    "address": "0x8002371C",
-    "size": 1520,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ProcDeb3",
-    "source": "../code/src/gamecode/deb3.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/deb3.c"
-  },
-  {
-    "name": "AddDeb3Ang",
-    "address": "0x80023D0C",
-    "size": 1544,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AddDeb3Ang",
-    "source": "../code/src/gamecode/deb3.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/deb3.c"
-  },
-  {
-    "name": "NuRndrAddFootPrint",
-    "address": "0x80026998",
-    "size": 2152,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuRndrAddFootPrint",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
     "name": "DrawDeb3",
     "address": "0x80027200",
     "size": 412,
@@ -1256,16 +738,6 @@
     "symbol": "DrawDeb3",
     "source": "../code/src/gamecode/deb3.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/deb3.c"
-  },
-  {
-    "name": "RemapAccentedCharacter",
-    "address": "0x8002759C",
-    "size": 816,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "RemapAccentedCharacter",
-    "source": "../code/src/gamecode/font3d.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/font3d.c"
   },
   {
     "name": "Reset3DFontObjects",
@@ -1308,36 +780,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/font3d.c"
   },
   {
-    "name": "Text3D",
-    "address": "0x80027BC4",
-    "size": 2348,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "Text3D",
-    "source": "../code/src/gamecode/font3d.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/font3d.c"
-  },
-  {
-    "name": "Text3D2",
-    "address": "0x800284F0",
-    "size": 2508,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "Text3D2",
-    "source": "../code/src/gamecode/font3d.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/font3d.c"
-  },
-  {
-    "name": "JonProbe",
-    "address": "0x80028EE8",
-    "size": 1968,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "JonProbe",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
     "name": "DrawTempCharacter",
     "address": "0x80029920",
     "size": 412,
@@ -1378,72 +820,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
-    "name": "HubStart",
-    "address": "0x8002A2C8",
-    "size": 740,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "HubStart",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "UpdateMask",
-    "address": "0x8002A5AC",
-    "size": 2172,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UpdateMask",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
     "name": "StartHGobjAnim",
     "address": "0x8002BD50",
     "size": 64,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "StartHGobjAnim",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "ResetGame",
-    "address": "0x8002BE5C",
-    "size": 620,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ResetGame",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "InitVehicleToggles",
-    "address": "0x8002C0C8",
-    "size": 576,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "InitVehicleToggles",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "ResetVehicleControl",
-    "address": "0x8002C308",
-    "size": 2396,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ResetVehicleControl",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "ToggleVehicle",
-    "address": "0x8002CC64",
-    "size": 724,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ToggleVehicle",
     "source": "../code/src/gamecode/game.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
@@ -1458,36 +840,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
-    "name": "AddKaboom",
-    "address": "0x8002CF74",
-    "size": 624,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AddKaboom",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "UpdateKabooms",
-    "address": "0x8002D1E4",
-    "size": 1564,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UpdateKabooms",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "DrawKabooms",
-    "address": "0x8002D800",
-    "size": 524,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawKabooms",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
     "name": "InitPositions",
     "address": "0x8002DA0C",
     "size": 256,
@@ -1496,16 +848,6 @@
     "symbol": "InitPositions",
     "source": "../code/src/gamecode/game.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "DrawChases",
-    "address": "0x8002E6E4",
-    "size": 572,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawChases",
-    "source": "../code/src/gamecode/chase.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/chase.c"
   },
   {
     "name": "AddVariableShotDebrisEffect",
@@ -1568,32 +910,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
-    "name": "LoadWumpa",
-    "address": "0x8002EC80",
-    "size": 624,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "LoadWumpa",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
     "name": "InitWumpa",
     "address": "0x8002EEF0",
     "size": 164,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "InitWumpa",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "ResetWumpa",
-    "address": "0x8002EF94",
-    "size": 1196,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ResetWumpa",
     "source": "../code/src/gamecode/game.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
@@ -1624,36 +946,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "DrawWumpa",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "AddFlyingWumpa",
-    "address": "0x8002F6AC",
-    "size": 644,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AddFlyingWumpa",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "UpdateMaskFeathers",
-    "address": "0x8002F930",
-    "size": 1152,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UpdateMaskFeathers",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "DrawMaskFeathers",
-    "address": "0x8002FDB0",
-    "size": 544,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawMaskFeathers",
     "source": "../code/src/gamecode/game.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
@@ -1694,16 +986,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "DefaultTimeTrialNames",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "NewGame",
-    "address": "0x80030424",
-    "size": 2532,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NewGame",
     "source": "../code/src/gamecode/game.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
@@ -1768,42 +1050,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
-    "name": "GetMenuInfo",
-    "address": "0x80031748",
-    "size": 788,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "GetMenuInfo",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "NewMenu",
-    "address": "0x80031A5C",
-    "size": 660,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NewMenu",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
     "name": "ResetLoadSaveCharacter",
     "address": "0x80031CF0",
     "size": 136,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "ResetLoadSaveCharacter",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "ResetCheckpoint",
-    "address": "0x80037C54",
-    "size": 556,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ResetCheckpoint",
     "source": "../code/src/gamecode/game.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
@@ -1858,26 +1110,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/cut.c"
   },
   {
-    "name": "InitGameMode",
-    "address": "0x80038198",
-    "size": 1084,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "InitGameMode",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "CalculateGamePercentage",
-    "address": "0x80038B24",
-    "size": 656,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "CalculateGamePercentage",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
     "name": "GemPathTransporter",
     "address": "0x8003A004",
     "size": 180,
@@ -1888,42 +1120,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
-    "name": "DrawTransporters",
-    "address": "0x8003A0B8",
-    "size": 1292,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawTransporters",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "ResetAkuAkuAdvice",
-    "address": "0x8003A5C4",
-    "size": 556,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ResetAkuAkuAdvice",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
     "name": "InitSplineTable",
     "address": "0x8003A82C",
     "size": 40,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "InitSplineTable",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "SplinePointTilt",
-    "address": "0x8003A854",
-    "size": 2284,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "SplinePointTilt",
     "source": "../code/src/gamecode/game.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
@@ -1984,16 +1186,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "DistanceToLine",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "RatioAlongLine",
-    "address": "0x8003B5F8",
-    "size": 648,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "RatioAlongLine",
     "source": "../code/src/gamecode/game.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
@@ -2208,16 +1400,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
-    "name": "NewBuzz",
-    "address": "0x8003E158",
-    "size": 732,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NewBuzz",
-    "source": "../code/src/gamecode/creature.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/creature.c"
-  },
-  {
     "name": "GameObjectOverlap",
     "address": "0x8003E874",
     "size": 452,
@@ -2284,16 +1466,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "FindAnglesZX",
-    "source": "../code/src/gamecode/game_obj.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game_obj.c"
-  },
-  {
-    "name": "GetSurfaceInfo",
-    "address": "0x80040E0C",
-    "size": 1028,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "GetSurfaceInfo",
     "source": "../code/src/gamecode/game_obj.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/game_obj.c"
   },
@@ -2378,16 +1550,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
   },
   {
-    "name": "CreatureRayCast",
-    "address": "0x80044E38",
-    "size": 720,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "CreatureRayCast",
-    "source": "../code/src/gamecode/game_obj.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game_obj.c"
-  },
-  {
     "name": "InstSceneLoad",
     "address": "0x80045108",
     "size": 188,
@@ -2426,26 +1588,6 @@
     "symbol": "InstClose",
     "source": "../code/src/gamecode/inst.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/inst.c"
-  },
-  {
-    "name": "DerotateMovementVector",
-    "address": "0x800459E8",
-    "size": 2260,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DerotateMovementVector",
-    "source": "../code/src/gamelib/terrain.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
-    "name": "ProcessJeepMovement",
-    "address": "0x80046928",
-    "size": 1552,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ProcessJeepMovement",
-    "source": "../code/src/gamecode/jeep.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/jeep.c"
   },
   {
     "name": "FindTerrainType",
@@ -2498,26 +1640,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/jeep.c"
   },
   {
-    "name": "RBodyImpact",
-    "address": "0x800483EC",
-    "size": 1704,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "RBodyImpact",
-    "source": "../code/src/gamecode/deb3.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/deb3.c"
-  },
-  {
-    "name": "NuMtxInvH",
-    "address": "0x80048D6C",
-    "size": 1360,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuMtxInvH",
-    "source": "../code/src/numath/numtx.c",
-    "notes": "Mapped from Ghidra Source: code/numath/numtx.c"
-  },
-  {
     "name": "UpdateBugLight",
     "address": "0x800493AC",
     "size": 496,
@@ -2536,16 +1658,6 @@
     "symbol": "GetALONG",
     "source": "../code/src/gamecode/camera.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/camera.c"
-  },
-  {
-    "name": "DrawFireBoss",
-    "address": "0x8004A4D0",
-    "size": 592,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawFireBoss",
-    "source": "../code/src/gamecode/jeep.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/jeep.c"
   },
   {
     "name": "CheckAgainstFireBoss",
@@ -2578,26 +1690,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "FireBossWaterFire",
-    "address": "0x8004C204",
-    "size": 664,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "FireBossWaterFire",
-    "source": "../code/src/gamecode/jeep.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/jeep.c"
-  },
-  {
-    "name": "LoadLights",
-    "address": "0x8004C534",
-    "size": 632,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "LoadLights",
-    "source": "../code/src/gamecode/lights.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/lights.c"
-  },
-  {
     "name": "NewLanguage",
     "address": "0x8004DFEC",
     "size": 60,
@@ -2628,16 +1720,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/numtl.c"
   },
   {
-    "name": "SetLevelLights",
-    "address": "0x8004E0D8",
-    "size": 1112,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "SetLevelLights",
-    "source": "../code/src/gamecode/lights.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/lights.c"
-  },
-  {
     "name": "NuLstCreate",
     "address": "0x8004E904",
     "size": 176,
@@ -2666,26 +1748,6 @@
     "symbol": "NuLstGetNext",
     "source": "../code/src/gamecode/listman.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/listman.c"
-  },
-  {
-    "name": "UpdateSaveSlots",
-    "address": "0x8004EAFC",
-    "size": 592,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UpdateSaveSlots",
-    "source": "../code/src/gamecode/loadsave.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/loadsave.c"
-  },
-  {
-    "name": "DrawGameSlot",
-    "address": "0x8004ED4C",
-    "size": 1028,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawGameSlot",
-    "source": "../code/src/gamecode/loadsave.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/loadsave.c"
   },
   {
     "name": "DrawGameSlots",
@@ -2788,16 +1850,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/main.c"
   },
   {
-    "name": "InitWorld",
-    "address": "0x8004FAF0",
-    "size": 1700,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "InitWorld",
-    "source": "../code/src/gamecode/main.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/main.c"
-  },
-  {
     "name": "ResetSuperBuffer2",
     "address": "0x80050194",
     "size": 208,
@@ -2824,16 +1876,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "MAHLoadingMessage",
-    "source": "../code/src/gamecode/main.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/main.c"
-  },
-  {
-    "name": "LoadLevel",
-    "address": "0x800504B0",
-    "size": 576,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "LoadLevel",
     "source": "../code/src/gamecode/main.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/main.c"
   },
@@ -2938,52 +1980,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/main.c"
   },
   {
-    "name": "NuDynamicWaterInit",
-    "address": "0x800514F8",
-    "size": 1232,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuDynamicWaterInit",
-    "source": "../code/src/nu3dx/nuwater.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuwater.c"
-  },
-  {
-    "name": "ResetPlayerEvents",
-    "address": "0x800534CC",
-    "size": 556,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ResetPlayerEvents",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
     "name": "CheckPlayerEvents",
     "address": "0x800537D0",
     "size": 268,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "CheckPlayerEvents",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
-    "name": "AnimateCRASH",
-    "address": "0x80054D28",
-    "size": 1504,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AnimateCRASH",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
-    "name": "MoveSWIMMING",
-    "address": "0x80055308",
-    "size": 532,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "MoveSWIMMING",
     "source": "../code/src/gamecode/move.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
   },
@@ -2998,42 +2000,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
   },
   {
-    "name": "MoveCOCO",
-    "address": "0x800555E0",
-    "size": 2240,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "MoveCOCO",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
-    "name": "AnimateCOCO",
-    "address": "0x80055EA0",
-    "size": 672,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AnimateCOCO",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
     "name": "MoveOFFROADER",
     "address": "0x8005642C",
     "size": 172,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "MoveOFFROADER",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
-    "name": "AnimateOFFROADER",
-    "address": "0x800564D8",
-    "size": 832,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AnimateOFFROADER",
     "source": "../code/src/gamecode/move.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
   },
@@ -3048,32 +2020,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
   },
   {
-    "name": "AnimateMECH",
-    "address": "0x800569B8",
-    "size": 1344,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AnimateMECH",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
     "name": "MoveFIREENGINE",
     "address": "0x80056EF8",
     "size": 220,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "MoveFIREENGINE",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
-    "name": "MoveGYRO",
-    "address": "0x80056FD4",
-    "size": 1672,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "MoveGYRO",
     "source": "../code/src/gamecode/move.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
   },
@@ -3088,32 +2040,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
   },
   {
-    "name": "DrawCarpet",
-    "address": "0x800577F8",
-    "size": 760,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawCarpet",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
     "name": "MoveSUBMARINE",
     "address": "0x80057AF0",
     "size": 248,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "MoveSUBMARINE",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
-    "name": "MoveMINECART",
-    "address": "0x80057BE8",
-    "size": 2532,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "MoveMINECART",
     "source": "../code/src/gamecode/move.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
   },
@@ -3138,32 +2070,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
   },
   {
-    "name": "AnimateMINETUB",
-    "address": "0x800587DC",
-    "size": 520,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AnimateMINETUB",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
     "name": "ResetGates",
     "address": "0x800589E4",
     "size": 104,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "ResetGates",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
-    "name": "UpdateArrow",
-    "address": "0x80058A4C",
-    "size": 1256,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UpdateArrow",
     "source": "../code/src/gamecode/move.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
   },
@@ -3184,46 +2096,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "ResetRings",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
-    "name": "DrawRings",
-    "address": "0x80058FC0",
-    "size": 516,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawRings",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
-    "name": "AddAward",
-    "address": "0x80059E00",
-    "size": 2044,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AddAward",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
-    "name": "AnimateSNOWBOARD",
-    "address": "0x8005A5FC",
-    "size": 688,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AnimateSNOWBOARD",
-    "source": "../code/src/gamecode/move.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
-  },
-  {
-    "name": "CheckRings",
-    "address": "0x8005B014",
-    "size": 1080,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "CheckRings",
     "source": "../code/src/gamecode/move.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/move.c"
   },
@@ -3278,16 +2150,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/panel.c"
   },
   {
-    "name": "Draw3DCheckpointLetters",
-    "address": "0x8005B9F8",
-    "size": 572,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "Draw3DCheckpointLetters",
-    "source": "../code/src/gamecode/panel.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/panel.c"
-  },
-  {
     "name": "DrawGameMessage",
     "address": "0x8005BC34",
     "size": 472,
@@ -3304,36 +2166,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "DrawTimeTrialTimes",
-    "source": "../code/src/gamecode/panel.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/panel.c"
-  },
-  {
-    "name": "BigOutOf",
-    "address": "0x8005BE70",
-    "size": 1592,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "BigOutOf",
-    "source": "../code/src/gamecode/panel.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/panel.c"
-  },
-  {
-    "name": "DrawWorldToPanelWumpa",
-    "address": "0x8005C4A8",
-    "size": 752,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawWorldToPanelWumpa",
-    "source": "../code/src/gamecode/panel.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/panel.c"
-  },
-  {
-    "name": "DrawPanel",
-    "address": "0x8005C798",
-    "size": 796,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawPanel",
     "source": "../code/src/gamecode/panel.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/panel.c"
   },
@@ -3368,32 +2200,12 @@
     "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
   },
   {
-    "name": "NuMtxRotateY",
-    "address": "0x80061564",
-    "size": 708,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuMtxRotateY",
-    "source": "../code/src/numath/numtx.c",
-    "notes": "Mapped from Ghidra Source: code/numath/numtx.c"
-  },
-  {
     "name": "DrawCRUNCHTIME",
     "address": "0x80061828",
     "size": 404,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "DrawCRUNCHTIME",
-    "source": "../code/src/gamecode/ai.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/ai.c"
-  },
-  {
-    "name": "ResetDRAINDAMAGE",
-    "address": "0x800619BC",
-    "size": 680,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ResetDRAINDAMAGE",
     "source": "../code/src/gamecode/ai.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/ai.c"
   },
@@ -3438,16 +2250,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "DrawBattleShip",
-    "address": "0x800626E8",
-    "size": 2528,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawBattleShip",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "ExplodeGlider",
     "address": "0x80064984",
     "size": 240,
@@ -3488,16 +2290,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "ZoffaSmoke",
-    "address": "0x80064DCC",
-    "size": 2784,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ZoffaSmoke",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "CalculateLocatorDirection",
     "address": "0x80065C30",
     "size": 188,
@@ -3506,16 +2298,6 @@
     "symbol": "CalculateLocatorDirection",
     "source": "../code/src/gamelib/gcutscn.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
-  },
-  {
-    "name": "InitSpaceStation",
-    "address": "0x80065E30",
-    "size": 668,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "InitSpaceStation",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
     "name": "TeleportManager",
@@ -3578,16 +2360,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "DrawSpaceStations",
-    "address": "0x80068748",
-    "size": 616,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawSpaceStations",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "InitGliderBullets",
     "address": "0x800689B0",
     "size": 248,
@@ -3604,16 +2376,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "GrabGliderBullet",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "AddGliderBullet",
-    "address": "0x80068CA8",
-    "size": 1340,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AddGliderBullet",
     "source": "../code/src/gamecode/vehicle.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
@@ -3678,26 +2440,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "DrawPlane",
-    "address": "0x800695D0",
-    "size": 1012,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawPlane",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "ProcessWeatherBossLevel",
-    "address": "0x800699C4",
-    "size": 612,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ProcessWeatherBossLevel",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "ProcessWeatherResearchLevel",
     "address": "0x8006A040",
     "size": 416,
@@ -3758,26 +2500,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "DrawAsteroid",
-    "address": "0x8006A758",
-    "size": 860,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawAsteroid",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "ProcessAsteroid",
-    "address": "0x8006AAB4",
-    "size": 1980,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ProcessAsteroid",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "ProcessAsteroids",
     "address": "0x8006B270",
     "size": 144,
@@ -3828,16 +2550,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "SafeFromCollisions",
-    "address": "0x8006B6C4",
-    "size": 1136,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "SafeFromCollisions",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "LinesIntersectEllipse",
     "address": "0x8006BB34",
     "size": 140,
@@ -3864,16 +2576,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "GetCurrentFarmObjectives",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "GrabGliderBomb",
-    "address": "0x8006BE04",
-    "size": 1296,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "GrabGliderBomb",
     "source": "../code/src/gamecode/vehicle.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
@@ -3958,16 +2660,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "InitBigGun",
-    "address": "0x8006D610",
-    "size": 1044,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "InitBigGun",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "DrawBigGun",
     "address": "0x8006DA24",
     "size": 508,
@@ -4018,16 +2710,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "CollideWithBattleShip",
-    "address": "0x8006DFFC",
-    "size": 1388,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "CollideWithBattleShip",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "CollideWithBattleShips",
     "address": "0x8006E568",
     "size": 92,
@@ -4048,16 +2730,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "GetBattleShipBestTarget",
-    "address": "0x8006E79C",
-    "size": 724,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "GetBattleShipBestTarget",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "ProcessBattleShip",
     "address": "0x8006EA70",
     "size": 184,
@@ -4074,16 +2746,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "ProcessBattleShips",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "InitWeatherBoss_a",
-    "address": "0x8006ECB8",
-    "size": 1280,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "InitWeatherBoss_a",
     "source": "../code/src/gamecode/vehicle.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
@@ -4118,16 +2780,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "DrawGliderTarget",
-    "address": "0x8006F470",
-    "size": 536,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawGliderTarget",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "DrawTorpedoTarget",
     "address": "0x8006F688",
     "size": 300,
@@ -4158,26 +2810,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "ProcessFireFlyLevel",
-    "address": "0x8006F988",
-    "size": 1140,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ProcessFireFlyLevel",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "ResetVehicleLevel",
-    "address": "0x80071420",
-    "size": 1648,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ResetVehicleLevel",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "DrawWeatherResearchLevelExtra",
     "address": "0x80071A90",
     "size": 296,
@@ -4194,16 +2826,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "DrawExtraCreatures",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "ProcessWBIntro",
-    "address": "0x80071C7C",
-    "size": 1388,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ProcessWBIntro",
     "source": "../code/src/gamecode/vehicle.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
@@ -4368,26 +2990,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "WeatherBossReset",
-    "address": "0x80073D7C",
-    "size": 556,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "WeatherBossReset",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "InitWBIntro",
-    "address": "0x80073FA8",
-    "size": 600,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "InitWBIntro",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "GetCurrentWeatherBossObjectives",
     "address": "0x80074200",
     "size": 136,
@@ -4408,82 +3010,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "ControlAtlas",
-    "address": "0x800742E8",
-    "size": 644,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ControlAtlas",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "ProcessMovementAtlas",
-    "address": "0x8007456C",
-    "size": 816,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ProcessMovementAtlas",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "UnembedRayCastAtlas",
-    "address": "0x8007489C",
-    "size": 1544,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UnembedRayCastAtlas",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "UnembedRayCastAtlasSimple",
-    "address": "0x80074EA4",
-    "size": 632,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "UnembedRayCastAtlasSimple",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "AdjustAtlasRotations",
-    "address": "0x8007511C",
-    "size": 524,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "AdjustAtlasRotations",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "ProcessPlatformsAtlas",
     "address": "0x80075328",
     "size": 216,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "ProcessPlatformsAtlas",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "TerrainAtlas",
-    "address": "0x80075400",
-    "size": 940,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "TerrainAtlas",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "CheckAtlasGround",
-    "address": "0x800757AC",
-    "size": 612,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "CheckAtlasGround",
     "source": "../code/src/gamecode/vehicle.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
@@ -4518,16 +3050,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "MoveAtlas",
-    "address": "0x80075BBC",
-    "size": 624,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "MoveAtlas",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "InitEarthBoss",
     "address": "0x80075E2C",
     "size": 256,
@@ -4554,26 +3076,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "DrawJonny",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "ProcessRumblePanel",
-    "address": "0x80077214",
-    "size": 1084,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ProcessRumblePanel",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "RumbleHeadUpDisplay",
-    "address": "0x80077650",
-    "size": 1072,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "RumbleHeadUpDisplay",
     "source": "../code/src/gamecode/vehicle.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
@@ -4628,16 +3130,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "FadeOutLastTrail",
-    "address": "0x80077D54",
-    "size": 1156,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "FadeOutLastTrail",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
     "name": "InitBugAreas",
     "address": "0x80078F2C",
     "size": 68,
@@ -4688,26 +3180,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
-    "name": "RumbleCam",
-    "address": "0x80079E2C",
-    "size": 788,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "RumbleCam",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "FlyWumpa",
-    "address": "0x8007A344",
-    "size": 712,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "FlyWumpa",
-    "source": "../code/src/gamecode/game.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game.c"
-  },
-  {
     "name": "DrawVehMasks",
     "address": "0x8007A60C",
     "size": 440,
@@ -4736,26 +3208,6 @@
     "symbol": "NuQuatToMtx",
     "source": "../code/src/numath/nuquat.c",
     "notes": "Mapped from Ghidra Source: code/numath/nuquat.c"
-  },
-  {
-    "name": "CylinderCuboidOverlapXZ",
-    "address": "0x8007BFA8",
-    "size": 860,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "CylinderCuboidOverlapXZ",
-    "source": "../code/src/gamecode/game_obj.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game_obj.c"
-  },
-  {
-    "name": "ProcessHovaBlimp",
-    "address": "0x8007CB50",
-    "size": 972,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ProcessHovaBlimp",
-    "source": "../code/src/gamecode/vehicle.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
   },
   {
     "name": "PtInsideSpline",
@@ -4808,16 +3260,6 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/visidat.c"
   },
   {
-    "name": "GenDebIndexSpheroid",
-    "address": "0x8007ED08",
-    "size": 760,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "GenDebIndexSpheroid",
-    "source": "../code/src/gamelib/debris.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/debris.c"
-  },
-  {
     "name": "CreateCopyMat",
     "address": "0x800801F0",
     "size": 240,
@@ -4838,26 +3280,6 @@
     "notes": "Mapped from Ghidra Source: code/gamelib/debris.c"
   },
   {
-    "name": "SetupDebris",
-    "address": "0x8008031C",
-    "size": 1060,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "SetupDebris",
-    "source": "../code/src/gamelib/debris.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/debris.c"
-  },
-  {
-    "name": "HitTerrain",
-    "address": "0x8008079C",
-    "size": 1104,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "HitTerrain",
-    "source": "../code/src/gamelib/terrain.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
     "name": "TerrainPlatformMoveCheck",
     "address": "0x80080BEC",
     "size": 80,
@@ -4866,16 +3288,6 @@
     "symbol": "TerrainPlatformMoveCheck",
     "source": "../code/src/gamelib/terrain.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
-    "name": "DebFree",
-    "address": "0x80080CBC",
-    "size": 696,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DebFree",
-    "source": "../code/src/gamelib/debris.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/debris.c"
   },
   {
     "name": "DebFreeInstantly",
@@ -4918,32 +3330,12 @@
     "notes": "Mapped from Ghidra Source: code/gamecode/game_obj.c"
   },
   {
-    "name": "PickupPower",
-    "address": "0x80081C84",
-    "size": 700,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "PickupPower",
-    "source": "../code/src/gamecode/game_obj.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/game_obj.c"
-  },
-  {
     "name": "DebrisSetup",
     "address": "0x80081F40",
     "size": 32,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "DebrisSetup",
-    "source": "../code/src/gamelib/debris.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/debris.c"
-  },
-  {
-    "name": "DebrisDraw",
-    "address": "0x80082040",
-    "size": 1144,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DebrisDraw",
     "source": "../code/src/gamelib/debris.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/debris.c"
   },
@@ -5058,16 +3450,6 @@
     "notes": "Mapped from Ghidra Source: code/gamelib/edfile.c"
   },
   {
-    "name": "edgraInitAllClumps",
-    "address": "0x80084B74",
-    "size": 632,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "edgraInitAllClumps",
-    "source": "../code/src/gamelib/edgra.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/edgra.c"
-  },
-  {
     "name": "edgraDetermineNearestClump",
     "address": "0x80084E1C",
     "size": 276,
@@ -5158,42 +3540,12 @@
     "notes": "Mapped from Ghidra Source: code/gamelib/edptl.c"
   },
   {
-    "name": "FileLoadSingleEffectType",
-    "address": "0x800889D8",
-    "size": 932,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "FileLoadSingleEffectType",
-    "source": "../code/src/gamelib/edptl.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/edptl.c"
-  },
-  {
-    "name": "edppLoadEffects",
-    "address": "0x80088D7C",
-    "size": 1328,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "edppLoadEffects",
-    "source": "../code/src/gamelib/edptl.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/edptl.c"
-  },
-  {
     "name": "edppRestartAllEffectsInLevel",
     "address": "0x800892AC",
     "size": 280,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "edppRestartAllEffectsInLevel",
-    "source": "../code/src/gamelib/edptl.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/edptl.c"
-  },
-  {
-    "name": "edppMergeEffects",
-    "address": "0x800893C4",
-    "size": 540,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "edppMergeEffects",
     "source": "../code/src/gamelib/edptl.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/edptl.c"
   },
@@ -5278,16 +3630,6 @@
     "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
   },
   {
-    "name": "instNuGCutSceneClipTest",
-    "address": "0x80089C0C",
-    "size": 552,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "instNuGCutSceneClipTest",
-    "source": "../code/src/gamelib/gcutscn.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
-  },
-  {
     "name": "instNuGCutSceneUpdate",
     "address": "0x80089E34",
     "size": 172,
@@ -5328,16 +3670,6 @@
     "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
   },
   {
-    "name": "instNuGCutCamSysUpdate",
-    "address": "0x8008A0B4",
-    "size": 1276,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "instNuGCutCamSysUpdate",
-    "source": "../code/src/gamelib/gcutscn.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
-  },
-  {
     "name": "instNuGCutCamSysStart",
     "address": "0x8008A5B0",
     "size": 92,
@@ -5354,16 +3686,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuGCutLocatorSysFixPtrs",
-    "source": "../code/src/gamelib/gcutscn.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
-  },
-  {
-    "name": "NuGCutLocatorCalcMtx",
-    "address": "0x8008A714",
-    "size": 544,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuGCutLocatorCalcMtx",
     "source": "../code/src/gamelib/gcutscn.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
   },
@@ -5448,16 +3770,6 @@
     "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
   },
   {
-    "name": "NuAtan2",
-    "address": "0x8008AE90",
-    "size": 568,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuAtan2",
-    "source": "../code/src/numath/nutrig.c",
-    "notes": "Mapped from Ghidra Source: code/numath/nutrig.c"
-  },
-  {
     "name": "NuGCutRigidSysFixPtrs",
     "address": "0x8008B0C8",
     "size": 212,
@@ -5478,32 +3790,12 @@
     "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
   },
   {
-    "name": "NuGCutCharAnimProcess",
-    "address": "0x8008B3B4",
-    "size": 648,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuGCutCharAnimProcess",
-    "source": "../code/src/gamelib/gcutscn.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
-  },
-  {
     "name": "NuGCutRigidSysFixUp",
     "address": "0x8008B63C",
     "size": 60,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuGCutRigidSysFixUp",
-    "source": "../code/src/gamelib/gcutscn.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
-  },
-  {
-    "name": "instNuCGutRigidSysCreate",
-    "address": "0x8008B678",
-    "size": 536,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "instNuCGutRigidSysCreate",
     "source": "../code/src/gamelib/gcutscn.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
   },
@@ -5554,16 +3846,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuGCutCharSysFixPtrs",
-    "source": "../code/src/gamelib/gcutscn.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
-  },
-  {
-    "name": "instNuCGutCharSysCreate",
-    "address": "0x8008BD3C",
-    "size": 980,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "instNuCGutCharSysCreate",
     "source": "../code/src/gamelib/gcutscn.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/gcutscn.c"
   },
@@ -5668,42 +3950,12 @@
     "notes": "Mapped from Ghidra Source: code/gamelib/glutils.c"
   },
   {
-    "name": "NuBridgeCreate",
-    "address": "0x8008C95C",
-    "size": 1032,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuBridgeCreate",
-    "source": "../code/src/gamelib/nubridge.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/nubridge.c"
-  },
-  {
-    "name": "NuBridgeDraw",
-    "address": "0x8008E1A4",
-    "size": 888,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuBridgeDraw",
-    "source": "../code/src/gamelib/nubridge.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/nubridge.c"
-  },
-  {
     "name": "NuWindInit",
     "address": "0x8008E538",
     "size": 28,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuWindInit",
-    "source": "../code/src/gamelib/nuwind.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/nuwind.c"
-  },
-  {
-    "name": "NuWindCreate",
-    "address": "0x8008E5E8",
-    "size": 556,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuWindCreate",
     "source": "../code/src/gamelib/nuwind.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/nuwind.c"
   },
@@ -5718,32 +3970,12 @@
     "notes": "Mapped from Ghidra Source: code/gamelib/nuwind.c"
   },
   {
-    "name": "BestRailPosition",
-    "address": "0x8008F0DC",
-    "size": 1576,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "BestRailPosition",
-    "source": "../code/src/gamecode/camera.c",
-    "notes": "Mapped from Ghidra Source: code/gamecode/camera.c"
-  },
-  {
     "name": "TerrainPlatformOldUpdate",
     "address": "0x80092698",
     "size": 144,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "TerrainPlatformOldUpdate",
-    "source": "../code/src/gamelib/terrain.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
-    "name": "TerrainPlatformNewUpdate",
-    "address": "0x8009272C",
-    "size": 1228,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "TerrainPlatformNewUpdate",
     "source": "../code/src/gamelib/terrain.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
   },
@@ -5764,46 +3996,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "DeRotatePoint",
-    "source": "../code/src/gamelib/terrain.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
-    "name": "CheckSphere",
-    "address": "0x80097D54",
-    "size": 848,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "CheckSphere",
-    "source": "../code/src/gamelib/terrain.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
-    "name": "CheckSphereTer",
-    "address": "0x800980A4",
-    "size": 704,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "CheckSphereTer",
-    "source": "../code/src/gamelib/terrain.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
-    "name": "HitWallSpline",
-    "address": "0x80098364",
-    "size": 2220,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "HitWallSpline",
-    "source": "../code/src/gamelib/terrain.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
-    "name": "ScanTerrain",
-    "address": "0x80099BB4",
-    "size": 1820,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ScanTerrain",
     "source": "../code/src/gamelib/terrain.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
   },
@@ -5866,36 +4058,6 @@
     "symbol": "NewShadowMaskPlatRot",
     "source": "../code/src/gamelib/terrain.c",
     "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
-    "name": "NewTerrainScaleY",
-    "address": "0x800A2174",
-    "size": 1552,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NewTerrainScaleY",
-    "source": "../code/src/gamelib/terrain.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
-    "name": "NewRayCast",
-    "address": "0x800A28C8",
-    "size": 568,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NewRayCast",
-    "source": "../code/src/gamelib/terrain.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
-  },
-  {
-    "name": "buildBitCountTable",
-    "address": "0x800A9768",
-    "size": 704,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "buildBitCountTable",
-    "source": "../code/src/nu3dx/nuanim.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuanim.c"
   },
   {
     "name": "NuAnimDataRead",
@@ -6008,66 +4170,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nuanim.c"
   },
   {
-    "name": "NuAnimCurve2SetApplyToJoint",
-    "address": "0x800AA1E8",
-    "size": 1332,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuAnimCurve2SetApplyToJoint",
-    "source": "../code/src/nu3dx/nuanim.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuanim.c"
-  },
-  {
-    "name": "NuAnimCurve2SetApplyToJointBasic",
-    "address": "0x800AA71C",
-    "size": 776,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuAnimCurve2SetApplyToJointBasic",
-    "source": "../code/src/nu3dx/nuanim.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuanim.c"
-  },
-  {
-    "name": "NuAnimCurveSetApplyToJoint2",
-    "address": "0x800AAA24",
-    "size": 1528,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuAnimCurveSetApplyToJoint2",
-    "source": "../code/src/nu3dx/nuanim.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuanim.c"
-  },
-  {
-    "name": "NuAnimCurveSetApplyToJointBasic",
-    "address": "0x800AB01C",
-    "size": 844,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuAnimCurveSetApplyToJointBasic",
-    "source": "../code/src/nu3dx/nuanim.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuanim.c"
-  },
-  {
-    "name": "NuAnimCurveSetApplyBlendToJoint2",
-    "address": "0x800AB368",
-    "size": 2044,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuAnimCurveSetApplyBlendToJoint2",
-    "source": "../code/src/nu3dx/nuanim.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuanim.c"
-  },
-  {
-    "name": "NuAnimCurveSetApplyToMatrix",
-    "address": "0x800ABB64",
-    "size": 668,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuAnimCurveSetApplyToMatrix",
-    "source": "../code/src/nu3dx/nuanim.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuanim.c"
-  },
-  {
     "name": "NuAnimDataFixPtrs",
     "address": "0x800ABE00",
     "size": 504,
@@ -6098,16 +4200,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nuanim.c"
   },
   {
-    "name": "NuAnimCurve2CalcVal",
-    "address": "0x800AC0A0",
-    "size": 824,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuAnimCurve2CalcVal",
-    "source": "../code/src/nu3dx/nuanim.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuanim.c"
-  },
-  {
     "name": "NuAnimData2FixPtrs",
     "address": "0x800AC3D8",
     "size": 324,
@@ -6134,16 +4226,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuCameraCreate",
-    "source": "../code/src/nu3dx/nucamera.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nucamera.c"
-  },
-  {
-    "name": "NuCameraSet",
-    "address": "0x800ACB3C",
-    "size": 932,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuCameraSet",
     "source": "../code/src/nu3dx/nucamera.c",
     "notes": "Mapped from Ghidra Source: code/nu3dx/nucamera.c"
   },
@@ -6278,16 +4360,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nuglass.c"
   },
   {
-    "name": "NuGlassProcessScene",
-    "address": "0x800AEFFC",
-    "size": 700,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuGlassProcessScene",
-    "source": "../code/src/nu3dx/nuglass.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuglass.c"
-  },
-  {
     "name": "NuGlassLoad",
     "address": "0x800AF2B8",
     "size": 100,
@@ -6408,26 +4480,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nugobj.c"
   },
   {
-    "name": "NuGobjCalcFaceOnDims",
-    "address": "0x800AF914",
-    "size": 712,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuGobjCalcFaceOnDims",
-    "source": "../code/src/nu3dx/nugobj.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nugobj.c"
-  },
-  {
-    "name": "NuGobjCalcDims",
-    "address": "0x800AFBDC",
-    "size": 680,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuGobjCalcDims",
-    "source": "../code/src/nu3dx/nugobj.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nugobj.c"
-  },
-  {
     "name": "NuGeomCreate",
     "address": "0x800AFE84",
     "size": 68,
@@ -6538,16 +4590,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nuhaze.c"
   },
   {
-    "name": "NuHazeInit",
-    "address": "0x800B03D4",
-    "size": 660,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuHazeInit",
-    "source": "../code/src/nu3dx/nuhaze.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuhaze.c"
-  },
-  {
     "name": "NuHazeClose",
     "address": "0x800B0668",
     "size": 24,
@@ -6618,16 +4660,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nuhgobj.c"
   },
   {
-    "name": "ReadNuIFFHGobjSet",
-    "address": "0x800B0C0C",
-    "size": 2100,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ReadNuIFFHGobjSet",
-    "source": "../code/src/nu3dx/nuhgobj.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuhgobj.c"
-  },
-  {
     "name": "NuHGobjPOIMtx",
     "address": "0x800B1440",
     "size": 104,
@@ -6674,16 +4706,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuLightSetAmbientLight",
-    "source": "../code/src/nu3dx/nulight.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nulight.c"
-  },
-  {
-    "name": "NuLightSetDirectionalLights",
-    "address": "0x800B1868",
-    "size": 536,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuLightSetDirectionalLights",
     "source": "../code/src/nu3dx/nulight.c",
     "notes": "Mapped from Ghidra Source: code/nu3dx/nulight.c"
   },
@@ -6756,16 +4778,6 @@
     "symbol": "DrawBazookaToken",
     "source": "../code/src/gamecode/vehicle.c",
     "notes": "Mapped from Ghidra Source: code/gamecode/vehicle.c"
-  },
-  {
-    "name": "NuLgtArcLaserDraw",
-    "address": "0x800B206C",
-    "size": 2600,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuLgtArcLaserDraw",
-    "source": "../code/src/nu3dx/nulight.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nulight.c"
   },
   {
     "name": "NuMtlCreate",
@@ -6918,16 +4930,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/numtl.c"
   },
   {
-    "name": "NuMtlRenderFaceOn",
-    "address": "0x800B3844",
-    "size": 968,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuMtlRenderFaceOn",
-    "source": "../code/src/nu3dx/numtl.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/numtl.c"
-  },
-  {
     "name": "NuMtlRenderGlass",
     "address": "0x800B3C0C",
     "size": 144,
@@ -6984,16 +4986,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuMtlRenderUpd",
-    "source": "../code/src/nu3dx/numtl.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/numtl.c"
-  },
-  {
-    "name": "NuMtlSetRenderStates",
-    "address": "0x800B3FBC",
-    "size": 712,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuMtlSetRenderStates",
     "source": "../code/src/nu3dx/numtl.c",
     "notes": "Mapped from Ghidra Source: code/nu3dx/numtl.c"
   },
@@ -7058,16 +5050,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
   },
   {
-    "name": "NuRndrGobj",
-    "address": "0x800B4674",
-    "size": 996,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuRndrGobj",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
     "name": "NuRndrTri2d",
     "address": "0x800B4F90",
     "size": 380,
@@ -7084,56 +5066,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuRndrTri3d",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
-    "name": "NuRndrStrip3d",
-    "address": "0x800B52E4",
-    "size": 596,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuRndrStrip3d",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
-    "name": "NuHGobjRndr",
-    "address": "0x800B5538",
-    "size": 672,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuHGobjRndr",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
-    "name": "NuHGobjEvalAnim2",
-    "address": "0x800B57D8",
-    "size": 556,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuHGobjEvalAnim2",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
-    "name": "NuHGobjEvalAnim",
-    "address": "0x800B5A04",
-    "size": 612,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuHGobjEvalAnim",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
-    "name": "NuHGobjEvalAnimBlend",
-    "address": "0x800B5C68",
-    "size": 644,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuHGobjEvalAnimBlend",
     "source": "../code/src/nu3dx/nurndr.c",
     "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
   },
@@ -7168,16 +5100,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
   },
   {
-    "name": "NuRndrFaceItem",
-    "address": "0x800B60D0",
-    "size": 700,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuRndrFaceItem",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
     "name": "NuRndrGeomItem",
     "address": "0x800B638C",
     "size": 484,
@@ -7198,26 +5120,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
   },
   {
-    "name": "NuRndrBlendedSkinItem",
-    "address": "0x800B6668",
-    "size": 576,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuRndrBlendedSkinItem",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
-    "name": "NuHGobjRndrMtxDwa",
-    "address": "0x800B68A8",
-    "size": 732,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuHGobjRndrMtxDwa",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
     "name": "NuHGobjRndrMtx",
     "address": "0x800B6B84",
     "size": 36,
@@ -7228,32 +5130,12 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
   },
   {
-    "name": "NuHGobjEval",
-    "address": "0x800B6BA8",
-    "size": 596,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuHGobjEval",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
     "name": "NuRndrFx",
     "address": "0x800B7458",
     "size": 32,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuRndrFx",
-    "source": "../code/src/nu3dx/nurndr.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
-  },
-  {
-    "name": "NuRndrWaterRip",
-    "address": "0x800B78EC",
-    "size": 616,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuRndrWaterRip",
     "source": "../code/src/nu3dx/nurndr.c",
     "notes": "Mapped from Ghidra Source: code/nu3dx/nurndr.c"
   },
@@ -7328,16 +5210,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nuscene.c"
   },
   {
-    "name": "ReadNuIFFGeom",
-    "address": "0x800B848C",
-    "size": 560,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ReadNuIFFGeom",
-    "source": "../code/src/nu3dx/nuscene.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuscene.c"
-  },
-  {
     "name": "ReadNuIFFGeomDef",
     "address": "0x800B86BC",
     "size": 72,
@@ -7408,16 +5280,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nuscene.c"
   },
   {
-    "name": "NuGSceneDestroy",
-    "address": "0x800B8A9C",
-    "size": 608,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuGSceneDestroy",
-    "source": "../code/src/nu3dx/nuscene.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuscene.c"
-  },
-  {
     "name": "ReadNuIFFUnknown",
     "address": "0x800B8CFC",
     "size": 4,
@@ -7464,26 +5326,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuSceneCalcCulling",
-    "source": "../code/src/nu3dx/nuscene.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuscene.c"
-  },
-  {
-    "name": "ReadNuIFFGScene",
-    "address": "0x800B9300",
-    "size": 540,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "ReadNuIFFGScene",
-    "source": "../code/src/nu3dx/nuscene.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuscene.c"
-  },
-  {
-    "name": "NuSceneLoad",
-    "address": "0x800B951C",
-    "size": 544,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuSceneLoad",
     "source": "../code/src/nu3dx/nuscene.c",
     "notes": "Mapped from Ghidra Source: code/nu3dx/nuscene.c"
   },
@@ -7598,16 +5440,6 @@
     "notes": "Mapped from Ghidra Source: code/nu3dx/nutex.c"
   },
   {
-    "name": "NuTexReadBitmapMM",
-    "address": "0x800B9D34",
-    "size": 908,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuTexReadBitmapMM",
-    "source": "../code/src/nu3dx/nutex.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nutex.c"
-  },
-  {
     "name": "NuTexReadBitmap",
     "address": "0x800BA0C0",
     "size": 92,
@@ -7644,26 +5476,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuDynamicWaterClose",
-    "source": "../code/src/nu3dx/nuwater.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuwater.c"
-  },
-  {
-    "name": "NuDynamicWaterExcite",
-    "address": "0x800BC478",
-    "size": 776,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuDynamicWaterExcite",
-    "source": "../code/src/nu3dx/nuwater.c",
-    "notes": "Mapped from Ghidra Source: code/nu3dx/nuwater.c"
-  },
-  {
-    "name": "NuDynamicWaterUpdate",
-    "address": "0x800BC780",
-    "size": 1120,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuDynamicWaterUpdate",
     "source": "../code/src/nu3dx/nuwater.c",
     "notes": "Mapped from Ghidra Source: code/nu3dx/nuwater.c"
   },
@@ -8178,36 +5990,6 @@
     "notes": "Mapped from Ghidra Source: code/numath/numtx.c"
   },
   {
-    "name": "NuMtxMul",
-    "address": "0x800BF2A0",
-    "size": 700,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuMtxMul",
-    "source": "../code/src/numath/numtx.c",
-    "notes": "Mapped from Ghidra Source: code/numath/numtx.c"
-  },
-  {
-    "name": "NuMtxMulH",
-    "address": "0x800BF55C",
-    "size": 948,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuMtxMulH",
-    "source": "../code/src/numath/numtx.c",
-    "notes": "Mapped from Ghidra Source: code/numath/numtx.c"
-  },
-  {
-    "name": "NuMtxMulR",
-    "address": "0x800BF910",
-    "size": 520,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuMtxMulR",
-    "source": "../code/src/numath/numtx.c",
-    "notes": "Mapped from Ghidra Source: code/numath/numtx.c"
-  },
-  {
     "name": "NuMtxTranspose",
     "address": "0x800BFB18",
     "size": 132,
@@ -8234,16 +6016,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuMtxInvR",
-    "source": "../code/src/numath/numtx.c",
-    "notes": "Mapped from Ghidra Source: code/numath/numtx.c"
-  },
-  {
-    "name": "NuMtxAlignZ",
-    "address": "0x800C023C",
-    "size": 720,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuMtxAlignZ",
     "source": "../code/src/numath/numtx.c",
     "notes": "Mapped from Ghidra Source: code/numath/numtx.c"
   },
@@ -8678,16 +6450,6 @@
     "notes": "Mapped from Ghidra Source: code/nuxbox/crash_xbox.c"
   },
   {
-    "name": "DrawMask",
-    "address": "0x800C2ABC",
-    "size": 704,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "DrawMask",
-    "source": "../code/src/nuxbox/crash_xbox.c",
-    "notes": "Mapped from Ghidra Source: code/nuxbox/crash_xbox.c"
-  },
-  {
     "name": "makenuvec",
     "address": "0x800C2D7C",
     "size": 28,
@@ -8778,16 +6540,6 @@
     "notes": "Mapped from Ghidra Source: code/nuxbox/dummyfunc.c"
   },
   {
-    "name": "NuHGobjEvalDwaBlend",
-    "address": "0x800C3F50",
-    "size": 672,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuHGobjEvalDwaBlend",
-    "source": "../code/src/nuxbox/dummyfunc.c",
-    "notes": "Mapped from Ghidra Source: code/nuxbox/dummyfunc.c"
-  },
-  {
     "name": "NuHGobjEvalDwa2",
     "address": "0x800C41F0",
     "size": 364,
@@ -8804,16 +6556,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuPs2Init",
-    "source": "../code/src/nuxbox/dummyfunc.c",
-    "notes": "Mapped from Ghidra Source: code/nuxbox/dummyfunc.c"
-  },
-  {
-    "name": "NuGScnUpdate",
-    "address": "0x800C437C",
-    "size": 672,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuGScnUpdate",
     "source": "../code/src/nuxbox/dummyfunc.c",
     "notes": "Mapped from Ghidra Source: code/nuxbox/dummyfunc.c"
   },
@@ -8854,16 +6596,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuRndrParticleGroup",
-    "source": "../code/src/nuxbox/dummyfunc.c",
-    "notes": "Mapped from Ghidra Source: code/nuxbox/dummyfunc.c"
-  },
-  {
-    "name": "renderpsdma",
-    "address": "0x800C4B7C",
-    "size": 760,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "renderpsdma",
     "source": "../code/src/nuxbox/dummyfunc.c",
     "notes": "Mapped from Ghidra Source: code/nuxbox/dummyfunc.c"
   },
@@ -9068,32 +6800,12 @@
     "notes": "Mapped from Ghidra Source: code/system/gs/gslight.c"
   },
   {
-    "name": "GS_Set3Lights",
-    "address": "0x800CA11C",
-    "size": 1264,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "GS_Set3Lights",
-    "source": "../code/src/system/gs/gslight.c",
-    "notes": "Mapped from Ghidra Source: code/system/gs/gslight.c"
-  },
-  {
     "name": "timeGetTime",
     "address": "0x800CEAF4",
     "size": 32,
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "timeGetTime",
-    "source": "../code/src/system/crashlib.c",
-    "notes": "Mapped from Ghidra Source: code/system/crashlib.c"
-  },
-  {
-    "name": "NudxTx_Create",
-    "address": "0x800CED3C",
-    "size": 1464,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NudxTx_Create",
     "source": "../code/src/system/crashlib.c",
     "notes": "Mapped from Ghidra Source: code/system/crashlib.c"
   },
@@ -9116,16 +6828,6 @@
     "symbol": "DBTimerEnd",
     "source": "../code/src/system/crashlib.c",
     "notes": "Mapped from Ghidra Source: code/system/crashlib.c"
-  },
-  {
-    "name": "MatMult",
-    "address": "0x800CF554",
-    "size": 712,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "MatMult",
-    "source": "../code/src/system/gsmatrix.c",
-    "notes": "Mapped from Ghidra Source: code/system/gsmatrix.c"
   },
   {
     "name": "MatReorder",
@@ -9178,16 +6880,6 @@
     "notes": "Mapped from Ghidra Source: code/system/port.c"
   },
   {
-    "name": "NuShaderAssignShader",
-    "address": "0x800D1004",
-    "size": 776,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuShaderAssignShader",
-    "source": "../code/src/system/port.c",
-    "notes": "Mapped from Ghidra Source: code/system/port.c"
-  },
-  {
     "name": "CloseShaders",
     "address": "0x800D130C",
     "size": 36,
@@ -9224,16 +6916,6 @@
     "kind": "ghidra_source",
     "status": "todo",
     "symbol": "NuShaderSetSkinningConstants",
-    "source": "../code/src/system/port.c",
-    "notes": "Mapped from Ghidra Source: code/system/port.c"
-  },
-  {
-    "name": "NuShaderSetLightConstants",
-    "address": "0x800D14F8",
-    "size": 640,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "NuShaderSetLightConstants",
     "source": "../code/src/system/port.c",
     "notes": "Mapped from Ghidra Source: code/system/port.c"
   },
@@ -9406,16 +7088,6 @@
     "symbol": "NuFileOpen",
     "source": "../code/src/nucore/nufile.c",
     "notes": "Mapped from Ghidra Source: code/nucore/nufile.c"
-  },
-  {
-    "name": "TerrShapeSideStep",
-    "address": "0x800EC598",
-    "size": 1040,
-    "kind": "ghidra_source",
-    "status": "todo",
-    "symbol": "TerrShapeSideStep",
-    "source": "../code/src/gamelib/terrain.c",
-    "notes": "Mapped from Ghidra Source: code/gamelib/terrain.c"
   },
   {
     "name": "GXSetCopyClear",

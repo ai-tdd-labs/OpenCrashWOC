@@ -37,6 +37,7 @@ def main() -> None:
 
     demo_n, demo_s = queue_stats(cfg / "demo_match_queue.json")
     ver_n, ver_s = queue_stats(cfg / "project_verified_queue.json")
+    ghidra_n, ghidra_s = queue_stats(cfg / "ghidra_verified_queue.json")
     leaf_n, leaf_s = queue_stats(cfg / "leaf_queue.json")
     proj_n, proj_s = queue_stats(cfg / "project_match_queue.json")
 
@@ -47,6 +48,7 @@ def main() -> None:
     lines.append("")
     lines.append(f"- demo queue: {demo_n} ({demo_s})")
     lines.append(f"- verified queue: {ver_n} ({ver_s})")
+    lines.append(f"- ghidra verified queue: {ghidra_n} ({ghidra_s})")
     lines.append(f"- leaf queue: {leaf_n} ({leaf_s})")
     lines.append(f"- project queue: {proj_n} ({proj_s})")
     lines.append("")

@@ -39,7 +39,13 @@ ninja regressions
 
 ## Next step to make it useful
 
-Populate `config/GC_USA/objdiff_units.json` with real `target_path/base_path` unit entries. Until then, report generation has no function units to compare.
+`config/GC_USA/objdiff_units.json` is now auto-generated from matched queues:
+
+```powershell
+python tools/build_objdiff_units_from_queue.py --out config/GC_USA/objdiff_units.json
+```
+
+`configure.py` runs this generator automatically before writing `objdiff.json`.
 
 ## Persistent workflow memory
 
@@ -112,6 +118,7 @@ Generate a full function/module map for project-level planning:
 ```powershell
 python tools/generate_function_module_map.py --out-func-map config/GC_USA/function_map.json --out-module-map config/GC_USA/module_map.json
 python tools/report_progress.py --version GC_USA --out build/GC_USA/progress_summary.md
+python tools/ci_progress_gate.py --version GC_USA --out build/GC_USA/ci_progress.md
 ```
 
 `build_mixed_manifest.py` reads C candidates from these queues by default:

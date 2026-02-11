@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import subprocess
 import sys
 from pathlib import Path
 
@@ -46,6 +47,12 @@ def load_version_config(version: str) -> dict[str, str]:
 
 
 def write_objdiff_json(version: str) -> None:
+    units_gen = Path("tools") / "build_objdiff_units_from_queue.py"
+    if units_gen.is_file():
+        subprocess.run(
+            [sys.executable, str(units_gen), "--out", f"config/{version}/objdiff_units.json"],
+            check=False,
+        )
     units_path = Path("config") / version / "objdiff_units.json"
     units = load_units(units_path)
 
