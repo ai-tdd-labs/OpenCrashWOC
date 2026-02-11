@@ -11,7 +11,7 @@
 - [x] Auto-build leaf queue from Ghidra exports (`functions.json` + decompiled C).
 - [x] Batch-run first N leaf candidates and write result statuses.
 - [ ] Improve candidate C shaping for branch-layout sensitive near-matches.
-- [ ] Resolve `compare_error` cases (symbol-size mismatch) in candidate runner.
+- [x] Resolve `compare_error` cases (symbol-size mismatch) in candidate runner.
 - [x] Add candidate full-DOL patch flow from matched queue slices.
 - [x] Add full-DOL byte/hash diff report against original.
 

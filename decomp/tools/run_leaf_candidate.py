@@ -103,13 +103,13 @@ def read_obj_symbol_bytes(obj_path: Path, symbol: str, size: int) -> bytes:
         sym_size = st_size if st_size else size
         out = data[sym_off : sym_off + min(size, sym_size)]
         if len(out) < size:
-            raise ValueError(f"Symbol too short for compare: {name}")
+            return out + (b"\x00" * (size - len(out)))
         return out
 
     text = find_section(sections, ".text")
     out = data[text["offset"] : text["offset"] + min(size, text["size"])]
     if len(out) < size:
-        raise ValueError(f".text too short for compare: {obj_path}")
+        return out + (b"\x00" * (size - len(out)))
     return out
 
 

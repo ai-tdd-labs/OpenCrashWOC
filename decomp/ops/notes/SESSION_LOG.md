@@ -30,3 +30,15 @@
 - NEXT: Fix compare_error handling for symbol-size edge cases (FUN_80009ab0).
 - NEXT: Iterate FUN_80080c6c source structure to close the final 5 branch-offset mismatches.
 - NEXT: Run next batch on remaining todo candidates.
+
+## 2026-02-11 11:53 UTC
+
+- Added full-DOL candidate patch and diff workflow; validated identical SHA1 for matched-only patch set and mismatch report for forced mismatch patch set.
+- NEXT: Drive leaf queue statuses toward matched and re-run full-dol-diff after each batch.
+- NEXT: Design real relink stage (object map + linker script path) toward full DOL rebuild parity.
+
+## 2026-02-11 11:54 UTC
+
+- Resolved compare_error path by treating short symbol code as mismatch; queue now has 5 mismatch and 8 todo.
+- NEXT: Focus on converting mismatches to matched starting with FUN_80080c6c near-match.
+- NEXT: Then run candidate-dol/full-dol-diff after each matched increment.

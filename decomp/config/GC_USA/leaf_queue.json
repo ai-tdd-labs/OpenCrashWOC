@@ -34,14 +34,14 @@
     "address": "0x80009AB0",
     "size": 68,
     "kind": "leaf",
-    "status": "compare_error",
+    "status": "mismatch",
     "symbol": "FUN_80009ab0",
     "source": "candidates/FUN_80009ab0/FUN_80009ab0.c",
     "notes": "Auto-imported from Ghidra leaf filter.",
     "last_result": {
-      "timestamp": "2026-02-11 11:47 UTC",
+      "timestamp": "2026-02-11 11:54 UTC",
       "match": false,
-      "error": "compare failed: Symbol too short for compare: FUN_80009ab0"
+      "build_object": "build/leaf_o/FUN_80009ab0.o"
     }
   },
   {
