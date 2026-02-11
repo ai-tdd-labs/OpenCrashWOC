@@ -14,6 +14,8 @@
 - [x] Resolve `compare_error` cases (symbol-size mismatch) in candidate runner.
 - [x] Add candidate full-DOL patch flow from matched queue slices.
 - [x] Add full-DOL byte/hash diff report against original.
+- [x] Add full mixed-manifest pipeline (C slices + ASM bins for all functions).
+- [x] Add mixed full-DOL reconstruction + diff report.
 
 ## Next (TP/TWW/MP4 style parity)
 

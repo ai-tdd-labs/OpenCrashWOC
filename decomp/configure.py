@@ -91,6 +91,10 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
     candidate_dol = out_dir / "main.candidate.dol"
     candidate_slices = out_dir / "candidate_slices.json"
     dol_diff_report = out_dir / "dol_diff.txt"
+    mixed_manifest = out_dir / "mixed_manifest.json"
+    mixed_dol = out_dir / "main.mixed.dol"
+    mixed_build_report = out_dir / "mixed_build_report.json"
+    mixed_dol_diff_report = out_dir / "mixed_dol_diff.txt"
     version_cfg = load_version_config(version)
     ref_dol = version_cfg.get("object", "../../crash_bandicoot/roms/gc/usa_v1.00/extracted/main.dol")
 
@@ -132,6 +136,14 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"  command = $python tools/dol_diff_report.py --base {ref_dol} --target $in --out $out",
         "  description = DOL_DIFF",
         "",
+        "rule mixed_manifest",
+        f"  command = $python tools/build_mixed_manifest.py --ref-dol {ref_dol} --out-manifest $out --asm-dir {unix(out_dir / 'asm_bins')}",
+        "  description = MIXED_MANIFEST",
+        "",
+        "rule mixed_dol",
+        f"  command = $python tools/build_mixed_dol.py --manifest $in --ref-dol {ref_dol} --out {unix(mixed_dol)} --report-out {unix(mixed_build_report)}",
+        "  description = MIXED_DOL",
+        "",
         f"build {unix(ok)}: check {unix(sha_path)}",
         f"build check: phony {unix(ok)}",
         f"build {unix(report)}: report objdiff.json",
@@ -142,12 +154,18 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"build {unix(demo_match_ok)}: demo_match | {unix(ok)}",
         f"build {unix(candidate_dol)}: candidate_dol | {unix(ok)}",
         f"build {unix(dol_diff_report)}: dol_diff {unix(candidate_dol)}",
+        f"build {unix(mixed_manifest)}: mixed_manifest | {unix(ok)}",
+        f"build {unix(mixed_dol)} {unix(mixed_build_report)}: mixed_dol {unix(mixed_manifest)}",
+        f"build {unix(mixed_dol_diff_report)}: dol_diff {unix(mixed_dol)}",
         f"build baseline: phony {unix(baseline)}",
         f"build changes: phony {unix(changes)}",
         f"build regressions: phony {unix(regressions)}",
         f"build demo-match: phony {unix(demo_match_ok)}",
         f"build candidate-dol: phony {unix(candidate_dol)}",
         f"build full-dol-diff: phony {unix(dol_diff_report)}",
+        f"build mixed-manifest: phony {unix(mixed_manifest)}",
+        f"build mixed-dol: phony {unix(mixed_dol)}",
+        f"build mixed-dol-diff: phony {unix(mixed_dol_diff_report)}",
     ]
 
     lines.append("default progress" if enable_progress else f"default {unix(ok)}")

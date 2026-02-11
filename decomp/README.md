@@ -26,6 +26,9 @@ ninja check
 ninja demo-match
 ninja candidate-dol
 ninja full-dol-diff
+ninja mixed-manifest
+ninja mixed-dol
+ninja mixed-dol-diff
 ninja progress
 ninja baseline
 ninja changes
@@ -75,6 +78,14 @@ Build a candidate full DOL from matched queue slices and diff it against origina
 ```powershell
 python tools/build_candidate_dol_from_queue.py --out build/GC_USA/main.candidate.dol
 python tools/dol_diff_report.py --target build/GC_USA/main.candidate.dol --out build/GC_USA/dol_diff.txt
+```
+
+Build a full mixed manifest (C object slices + ASM bins) and reconstruct full DOL:
+
+```powershell
+python tools/build_mixed_manifest.py --out-manifest build/GC_USA/mixed_manifest.json
+python tools/build_mixed_dol.py --manifest build/GC_USA/mixed_manifest.json --out build/GC_USA/main.mixed.dol --report-out build/GC_USA/mixed_build_report.json
+python tools/dol_diff_report.py --target build/GC_USA/main.mixed.dol --out build/GC_USA/mixed_dol_diff.txt
 ```
 
 ## Included demo unit
