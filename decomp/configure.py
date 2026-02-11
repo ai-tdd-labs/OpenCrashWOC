@@ -95,6 +95,9 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
     mixed_dol = out_dir / "main.mixed.dol"
     mixed_build_report = out_dir / "mixed_build_report.json"
     mixed_dol_diff_report = out_dir / "mixed_dol_diff.txt"
+    partial_relink_json = out_dir / "partial_relink_inputs.json"
+    partial_relink_ld = out_dir / "partial_relink.ld"
+    partial_relink_bundle = out_dir / "partial_relink_bundle.o"
     version_cfg = load_version_config(version)
     ref_dol = version_cfg.get("object", "../../crash_bandicoot/roms/gc/usa_v1.00/extracted/main.dol")
 
@@ -144,6 +147,14 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"  command = $python tools/build_mixed_dol.py --manifest $in --ref-dol {ref_dol} --out {unix(mixed_dol)} --report-out {unix(mixed_build_report)}",
         "  description = MIXED_DOL",
         "",
+        "rule partial_relink",
+        f"  command = $python tools/export_partial_relink_inputs.py --manifest $in --out-json {unix(partial_relink_json)} --out-ld {unix(partial_relink_ld)}",
+        "  description = PARTIAL_RELINK_INPUTS",
+        "",
+        "rule partial_relink_bundle",
+        f"  command = $python tools/run_partial_relink.py --inputs {unix(partial_relink_json)} --out $out",
+        "  description = PARTIAL_RELINK_BUNDLE",
+        "",
         f"build {unix(ok)}: check {unix(sha_path)}",
         f"build check: phony {unix(ok)}",
         f"build {unix(report)}: report objdiff.json",
@@ -157,6 +168,8 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"build {unix(mixed_manifest)}: mixed_manifest | {unix(ok)}",
         f"build {unix(mixed_dol)} {unix(mixed_build_report)}: mixed_dol {unix(mixed_manifest)}",
         f"build {unix(mixed_dol_diff_report)}: dol_diff {unix(mixed_dol)}",
+        f"build {unix(partial_relink_json)} {unix(partial_relink_ld)}: partial_relink {unix(mixed_manifest)}",
+        f"build {unix(partial_relink_bundle)}: partial_relink_bundle | {unix(partial_relink_json)}",
         f"build baseline: phony {unix(baseline)}",
         f"build changes: phony {unix(changes)}",
         f"build regressions: phony {unix(regressions)}",
@@ -166,6 +179,8 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"build mixed-manifest: phony {unix(mixed_manifest)}",
         f"build mixed-dol: phony {unix(mixed_dol)}",
         f"build mixed-dol-diff: phony {unix(mixed_dol_diff_report)}",
+        f"build partial-relink-inputs: phony {unix(partial_relink_json)} {unix(partial_relink_ld)}",
+        f"build partial-relink-bundle: phony {unix(partial_relink_bundle)}",
     ]
 
     lines.append("default progress" if enable_progress else f"default {unix(ok)}")

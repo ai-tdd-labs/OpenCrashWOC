@@ -48,3 +48,9 @@
 - Implemented mixed full-DOL pipeline (manifest + builder + diff). Verified full identity with ASM-only manifest and measurable divergence when forcing 5 C mismatch functions.
 - NEXT: Convert mismatch candidates to matched (start with FUN_80080c6c) to increase C coverage in mixed build.
 - NEXT: Prototype partial relink stage using mapped C objects and generated linker inputs.
+
+## 2026-02-11 12:04 UTC
+
+- Extended pipeline with partial relink prototype: generated relink inputs and produced ngcld -r bundle (1/5 objects linkable; 4 blocked by _SDA_BASE_/_SDA2_BASE_).
+- NEXT: Add SDA base symbol strategy so ngcld can relink SDA-referencing objects.
+- NEXT: Continue converting queue mismatches to matched and re-run mixed-dol-diff coverage.

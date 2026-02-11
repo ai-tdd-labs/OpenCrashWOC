@@ -29,6 +29,8 @@ ninja full-dol-diff
 ninja mixed-manifest
 ninja mixed-dol
 ninja mixed-dol-diff
+ninja partial-relink-inputs
+ninja partial-relink-bundle
 ninja progress
 ninja baseline
 ninja changes
@@ -86,6 +88,18 @@ Build a full mixed manifest (C object slices + ASM bins) and reconstruct full DO
 python tools/build_mixed_manifest.py --out-manifest build/GC_USA/mixed_manifest.json
 python tools/build_mixed_dol.py --manifest build/GC_USA/mixed_manifest.json --out build/GC_USA/main.mixed.dol --report-out build/GC_USA/mixed_build_report.json
 python tools/dol_diff_report.py --target build/GC_USA/main.mixed.dol --out build/GC_USA/mixed_dol_diff.txt
+```
+
+Export partial relink prototype inputs from mixed manifest:
+
+```powershell
+python tools/export_partial_relink_inputs.py --manifest build/GC_USA/mixed_manifest.json
+```
+
+Run partial relink bundle (prototype, currently skips objects with unresolved SDA bases):
+
+```powershell
+python tools/run_partial_relink.py --inputs build/GC_USA/partial_relink_inputs.json --out build/GC_USA/partial_relink_bundle.o
 ```
 
 ## Included demo unit
