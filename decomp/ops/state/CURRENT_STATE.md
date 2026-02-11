@@ -1,17 +1,17 @@
 # Current State
 
-- Updated: 2026-02-11 12:04 UTC
+- Updated: 2026-02-11 12:05 UTC
 - Branch: `main`
-- Commit: `c8023a5`
+- Commit: `3c56098`
 - Working tree dirty: `yes`
 - Objdiff unit count: `5`
 - Slice demo count: `5`
 
 ## Latest Summary
 
-- Extended pipeline with partial relink prototype: generated relink inputs and produced ngcld -r bundle (1/5 objects linkable; 4 blocked by _SDA_BASE_/_SDA2_BASE_).
+- Enabled -G 0 in leaf compile loop; ngcld partial relink now links all 5 current C objects (previously blocked by SDA base errors).
 
 ## Next
 
-- Add SDA base symbol strategy so ngcld can relink SDA-referencing objects.
-- Continue converting queue mismatches to matched and re-run mixed-dol-diff coverage.
+- Iterate mismatches to matched to raise C coverage in mixed full-DOL pipeline.
+- Implement full relink target that produces a linked text image from generated relink inputs.

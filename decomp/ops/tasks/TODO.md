@@ -25,7 +25,7 @@
 - [ ] Add relink stage for partial linked image.
 - [x] Generate partial relink input artifacts (C object list + linker script skeleton).
 - [x] Execute linker-based partial relink using generated script and validate section bytes.
-- [ ] Resolve `_SDA_BASE_` / `_SDA2_BASE_` to relink all C objects (not only SDA-free subset).
+- [x] Resolve `_SDA_BASE_` / `_SDA2_BASE_` blocker by compiling queue candidates with `-G 0` for relink stage.
 - [ ] Add full DOL relink + end hash target.
 
 ## Later

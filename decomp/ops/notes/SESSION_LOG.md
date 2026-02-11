@@ -54,3 +54,9 @@
 - Extended pipeline with partial relink prototype: generated relink inputs and produced ngcld -r bundle (1/5 objects linkable; 4 blocked by _SDA_BASE_/_SDA2_BASE_).
 - NEXT: Add SDA base symbol strategy so ngcld can relink SDA-referencing objects.
 - NEXT: Continue converting queue mismatches to matched and re-run mixed-dol-diff coverage.
+
+## 2026-02-11 12:05 UTC
+
+- Enabled -G 0 in leaf compile loop; ngcld partial relink now links all 5 current C objects (previously blocked by SDA base errors).
+- NEXT: Iterate mismatches to matched to raise C coverage in mixed full-DOL pipeline.
+- NEXT: Implement full relink target that produces a linked text image from generated relink inputs.

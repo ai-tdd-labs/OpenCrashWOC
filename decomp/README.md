@@ -67,6 +67,8 @@ Run one candidate compile-and-compare loop:
 python tools/run_leaf_candidate.py --name FUN_80080c6c --update-queue
 ```
 
+Note: `run_leaf_candidate.py` now passes `-G 0` by default to improve relinkability.
+
 Auto-build queue from Ghidra exports and run a batch:
 
 ```powershell

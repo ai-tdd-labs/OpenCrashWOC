@@ -9,7 +9,7 @@
     "source": "candidates/FUN_80080c6c/FUN_80080c6c.c",
     "notes": "Candidate from prior callgraph sweep; medium-size leaf function.",
     "last_result": {
-      "timestamp": "2026-02-11 11:47 UTC",
+      "timestamp": "2026-02-11 12:05 UTC",
       "match": false,
       "build_object": "build/leaf_o/FUN_80080c6c.o"
     }
@@ -24,7 +24,7 @@
     "source": "candidates/FUN_80003200/FUN_80003200.c",
     "notes": "Auto-imported from Ghidra leaf filter.",
     "last_result": {
-      "timestamp": "2026-02-11 11:47 UTC",
+      "timestamp": "2026-02-11 12:05 UTC",
       "match": false,
       "build_object": "build/leaf_o/FUN_80003200.o"
     }
@@ -39,7 +39,7 @@
     "source": "candidates/FUN_80009ab0/FUN_80009ab0.c",
     "notes": "Auto-imported from Ghidra leaf filter.",
     "last_result": {
-      "timestamp": "2026-02-11 11:54 UTC",
+      "timestamp": "2026-02-11 12:05 UTC",
       "match": false,
       "build_object": "build/leaf_o/FUN_80009ab0.o"
     }
@@ -54,7 +54,7 @@
     "source": "candidates/FUN_8000b0f8/FUN_8000b0f8.c",
     "notes": "Auto-imported from Ghidra leaf filter.",
     "last_result": {
-      "timestamp": "2026-02-11 11:47 UTC",
+      "timestamp": "2026-02-11 12:05 UTC",
       "match": false,
       "build_object": "build/leaf_o/FUN_8000b0f8.o"
     }
@@ -69,7 +69,7 @@
     "source": "candidates/FUN_80012e14/FUN_80012e14.c",
     "notes": "Auto-imported from Ghidra leaf filter.",
     "last_result": {
-      "timestamp": "2026-02-11 11:47 UTC",
+      "timestamp": "2026-02-11 12:05 UTC",
       "match": false,
       "build_object": "build/leaf_o/FUN_80012e14.o"
     }

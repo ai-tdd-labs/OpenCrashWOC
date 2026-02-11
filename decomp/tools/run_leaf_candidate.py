@@ -152,6 +152,13 @@ def main() -> None:
         help="Directory with cpp.exe, cc1.exe, NgcAs.exe",
     )
     parser.add_argument("--update-queue", action="store_true", help="Update queue entry status with result")
+    parser.add_argument(
+        "--no-g0",
+        dest="use_g0",
+        action="store_false",
+        help="Do not pass -G 0 to cc1 (default passes -G 0 to reduce SDA link constraints).",
+    )
+    parser.set_defaults(use_g0=True)
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[1]  # decomp/
@@ -182,7 +189,11 @@ def main() -> None:
 
     try:
         run([str(cpp), rel(source, root), "-o", rel(i_out, root)], root)
-        run([str(cc1), "-O2", "-mps-float", rel(i_out, root), "-o", rel(s_out, root)], root)
+        cc1_cmd = [str(cc1), "-O2", "-mps-float"]
+        if args.use_g0:
+            cc1_cmd += ["-G", "0"]
+        cc1_cmd += [rel(i_out, root), "-o", rel(s_out, root)]
+        run(cc1_cmd, root)
         run([str(asm), rel(s_out, root), "-o", rel(o_out, root)], root)
     except subprocess.CalledProcessError as e:
         print(f"{name}: COMPILE_ERROR (exit={e.returncode})")
