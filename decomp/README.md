@@ -66,12 +66,13 @@ This repo now includes a real-address pilot slice:
 Run:
 
 ```powershell
+python tools/build_demo_units.py
 python tools/match_dol_slices.py
 ```
 
 Expected:
 
-- exit code `0` and `MATCH` when using `test_nuvecadd.o`
-- mismatch when you switch object path in `slices_demo.json` to `test_broken.o`
+- exit code `0` and `MATCH` for all configured demo slices
+- mismatch when you swap one object to a broken variant (e.g. `nuvec_add_broken_demo.o`)
 
 This is the first building block toward full split+relink+hash flow.
