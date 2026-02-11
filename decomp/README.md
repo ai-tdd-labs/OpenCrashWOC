@@ -20,6 +20,7 @@ This folder adds a MKDD/TWW-style matching scaffold without touching the existin
 From this directory (`decomp/`):
 
 ```powershell
+python tools/build_demo_units.py
 python configure.py --version GC_USA --dtk D:\projects\ps2\crash_bandicoot\tools\dtk\dtk.exe --objdiff D:\projects\ps2\crash_bandicoot\tools\objdiff\objdiff-cli.exe
 ninja check
 ninja progress
@@ -34,11 +35,24 @@ Populate `config/GC_USA/objdiff_units.json` with real `target_path/base_path` un
 
 ## Included demo unit
 
-This scaffold includes one working demo unit:
+The scaffold can generate multiple demo units with:
 
-- `numath/NuVecAdd_demo`
+```powershell
+python tools/build_demo_units.py
+```
 
-It compares `test_nuvecadd.o` from `D:\projects\ps2\crash_bandicoot\decomp_test`.
-To intentionally produce a mismatch report, temporarily change `target_path` in `config/GC_USA/objdiff_units.json` to:
+Generated units:
 
-`../../crash_bandicoot/decomp_test/test_broken.o`
+- `demo/nuvec_add_demo`
+- `demo/nuvec_sub_demo`
+- `demo/nuvec_scale_demo`
+- `demo/nuvec_dot_demo`
+- `demo/nuvec_lensq_demo`
+
+Intentional mismatch mode:
+
+```powershell
+python tools/build_demo_units.py --include-mismatch
+```
+
+This adds `demo/nuvec_add_mismatch` so `progress` shows a controlled non-100% case.

@@ -1,11 +1,67 @@
 [
   {
-    "name": "numath/NuVecAdd_demo",
-    "target_path": "../../crash_bandicoot/decomp_test/test_nuvecadd.o",
-    "base_path": "../../crash_bandicoot/decomp_test/test_nuvecadd.o",
+    "name": "demo/nuvec_add_demo",
+    "target_path": "build/demo_o/nuvec_add_demo.o",
+    "base_path": "build/demo_o/nuvec_add_demo.o",
     "metadata": {
       "complete": true,
-      "source_path": "../../crash_bandicoot/decomp_test/test_nuvecadd.c",
+      "source_path": "demo_src/nuvec_add_demo.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": false
+    }
+  },
+  {
+    "name": "demo/nuvec_sub_demo",
+    "target_path": "build/demo_o/nuvec_sub_demo.o",
+    "base_path": "build/demo_o/nuvec_sub_demo.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "demo_src/nuvec_sub_demo.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": false
+    }
+  },
+  {
+    "name": "demo/nuvec_scale_demo",
+    "target_path": "build/demo_o/nuvec_scale_demo.o",
+    "base_path": "build/demo_o/nuvec_scale_demo.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "demo_src/nuvec_scale_demo.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": false
+    }
+  },
+  {
+    "name": "demo/nuvec_dot_demo",
+    "target_path": "build/demo_o/nuvec_dot_demo.o",
+    "base_path": "build/demo_o/nuvec_dot_demo.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "demo_src/nuvec_dot_demo.c",
+      "progress_categories": [
+        "dol",
+        "engine"
+      ],
+      "auto_generated": false
+    }
+  },
+  {
+    "name": "demo/nuvec_lensq_demo",
+    "target_path": "build/demo_o/nuvec_lensq_demo.o",
+    "base_path": "build/demo_o/nuvec_lensq_demo.o",
+    "metadata": {
+      "complete": true,
+      "source_path": "demo_src/nuvec_lensq_demo.c",
       "progress_categories": [
         "dol",
         "engine"
