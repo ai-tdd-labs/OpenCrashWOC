@@ -36,7 +36,7 @@ def main() -> None:
     for c in candidates:
         name = c["name"]
         print(f"=== {name} ===")
-        cmd = [sys.executable, str(script), "--name", name, "--update-queue"]
+        cmd = [sys.executable, str(script), "--queue", args.queue, "--name", name, "--update-queue"]
         proc = subprocess.run(cmd, cwd=root)
         results.append((name, proc.returncode))
 

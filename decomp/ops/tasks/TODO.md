@@ -16,6 +16,9 @@
 - [x] Add full-DOL byte/hash diff report against original.
 - [x] Add full mixed-manifest pipeline (C slices + ASM bins for all functions).
 - [x] Add mixed full-DOL reconstruction + diff report.
+- [x] Import project `NGC MATCH` functions into queue with address mapping.
+- [ ] Reduce `project_match_queue` compile errors (global/struct dependency stubs).
+- [ ] Promote `project_match_queue` mismatches to matched.
 
 ## Next (TP/TWW/MP4 style parity)
 
@@ -27,6 +30,7 @@
 - [x] Execute linker-based partial relink using generated script and validate section bytes.
 - [x] Resolve `_SDA_BASE_` / `_SDA2_BASE_` blocker by compiling queue candidates with `-G 0` for relink stage.
 - [ ] Add full DOL relink + end hash target.
+- [ ] Exit criteria: all known bitmatch C functions are compiled+linked from C artifacts, others from ASM bins, final full DOL reproducible from artifacts.
 
 ## Later
 

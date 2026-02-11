@@ -77,6 +77,14 @@ python tools/normalize_candidate_sources.py
 python tools/run_leaf_queue.py --limit 5
 ```
 
+Import project functions marked with `NGC MATCH` comments into a separate queue:
+
+```powershell
+python tools/import_project_match_queue.py --limit 30 --max-size 200
+python tools/normalize_candidate_sources.py --candidates-dir candidates_project
+python tools/run_leaf_queue.py --queue config/GC_USA/project_match_queue.json --limit 10
+```
+
 Build a candidate full DOL from matched queue slices and diff it against original:
 
 ```powershell
@@ -91,6 +99,10 @@ python tools/build_mixed_manifest.py --out-manifest build/GC_USA/mixed_manifest.
 python tools/build_mixed_dol.py --manifest build/GC_USA/mixed_manifest.json --out build/GC_USA/main.mixed.dol --report-out build/GC_USA/mixed_build_report.json
 python tools/dol_diff_report.py --target build/GC_USA/main.mixed.dol --out build/GC_USA/mixed_dol_diff.txt
 ```
+
+`build_mixed_manifest.py` reads C candidates from both queues by default:
+- `config/GC_USA/leaf_queue.json`
+- `config/GC_USA/project_match_queue.json`
 
 Export partial relink prototype inputs from mixed manifest:
 

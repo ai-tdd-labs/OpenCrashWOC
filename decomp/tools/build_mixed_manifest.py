@@ -34,7 +34,6 @@ def main() -> None:
         default=r"D:/projects/ps2/crash_bandicoot/analysis/ghidra/raw/main.dol_functions.json",
         help="Ghidra functions JSON",
     )
-    parser.add_argument("--queue", default="config/GC_USA/leaf_queue.json", help="Leaf queue path relative to decomp/")
     parser.add_argument(
         "--ref-dol",
         default="../../crash_bandicoot/roms/gc/usa_v1.00/extracted/main.dol",
@@ -42,6 +41,11 @@ def main() -> None:
     )
     parser.add_argument("--out-manifest", default="build/GC_USA/mixed_manifest.json", help="Output manifest JSON")
     parser.add_argument("--asm-dir", default="build/GC_USA/asm_bins", help="Output directory for ASM bins")
+    parser.add_argument(
+        "--queue-files",
+        default="config/GC_USA/leaf_queue.json,config/GC_USA/project_match_queue.json",
+        help="Comma-separated queue JSON files (relative to decomp/) used as C candidates",
+    )
     parser.add_argument(
         "--c-statuses",
         default="matched",
@@ -51,13 +55,16 @@ def main() -> None:
 
     root = Path(__file__).resolve().parents[1]
     funcs_path = Path(args.functions_json).resolve()
-    queue_path = (root / args.queue).resolve()
     ref_dol_path = (root / args.ref_dol).resolve()
     out_manifest = (root / args.out_manifest).resolve()
     asm_dir = (root / args.asm_dir).resolve()
 
     funcs = json.loads(funcs_path.read_text(encoding="utf-8"))
-    queue_items = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
+    queue_items: list[dict] = []
+    for qf in [x.strip() for x in args.queue_files.split(",") if x.strip()]:
+        qp = (root / qf).resolve()
+        if qp.exists():
+            queue_items.extend(json.loads(qp.read_text(encoding="utf-8")))
     queue = load_queue_index(queue_items)
     c_statuses = {x.strip() for x in args.c_statuses.split(",") if x.strip()}
     dol = ref_dol_path.read_bytes()

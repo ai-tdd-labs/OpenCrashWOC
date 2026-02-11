@@ -1,0 +1,352 @@
+[
+  {
+    "name": "FindAIType",
+    "address": "0x800032A0",
+    "size": 152,
+    "kind": "project_match",
+    "status": "compile_error",
+    "symbol": "FindAIType",
+    "source": "candidates_project/FindAIType/FindAIType.c",
+    "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:10 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
+  },
+  {
+    "name": "InitAI",
+    "address": "0x800034E4",
+    "size": 152,
+    "kind": "project_match",
+    "status": "compile_error",
+    "symbol": "InitAI",
+    "source": "candidates_project/InitAI/InitAI.c",
+    "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:10 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
+  },
+  {
+    "name": "UpdateDRAINDAMAGE",
+    "address": "0x800037E4",
+    "size": 68,
+    "kind": "project_match",
+    "status": "compile_error",
+    "symbol": "UpdateDRAINDAMAGE",
+    "source": "candidates_project/UpdateDRAINDAMAGE/UpdateDRAINDAMAGE.c",
+    "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:10 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
+  },
+  {
+    "name": "ResetCRUNCHTIME",
+    "address": "0x800050A8",
+    "size": 96,
+    "kind": "project_match",
+    "status": "compile_error",
+    "symbol": "ResetCRUNCHTIME",
+    "source": "candidates_project/ResetCRUNCHTIME/ResetCRUNCHTIME.c",
+    "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:10 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
+  },
+  {
+    "name": "SpaceCrunchFunction_NewPoint",
+    "address": "0x80005160",
+    "size": 64,
+    "kind": "project_match",
+    "status": "compile_error",
+    "symbol": "SpaceCrunchFunction_NewPoint",
+    "source": "candidates_project/SpaceCrunchFunction_NewPoint/SpaceCrunchFunction_NewPoint.c",
+    "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:10 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
+  },
+  {
+    "name": "RatioDifferenceAlongLine",
+    "address": "0x800051A0",
+    "size": 104,
+    "kind": "project_match",
+    "status": "compile_error",
+    "symbol": "RatioDifferenceAlongLine",
+    "source": "candidates_project/RatioDifferenceAlongLine/RatioDifferenceAlongLine.c",
+    "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:10 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
+  },
+  {
+    "name": "FindAILabel",
+    "address": "0x80005208",
+    "size": 64,
+    "kind": "project_match",
+    "status": "compile_error",
+    "symbol": "FindAILabel",
+    "source": "candidates_project/FindAILabel/FindAILabel.c",
+    "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:10 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
+  },
+  {
+    "name": "PlayerLateralInRange",
+    "address": "0x80005348",
+    "size": 108,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "PlayerLateralInRange",
+    "source": "candidates_project/PlayerLateralInRange/PlayerLateralInRange.c",
+    "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:10 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/PlayerLateralInRange.o"
+    }
+  },
+  {
+    "name": "PlayerLateralOutOfRange",
+    "address": "0x800053B4",
+    "size": 108,
+    "kind": "project_match",
+    "status": "mismatch",
+    "symbol": "PlayerLateralOutOfRange",
+    "source": "candidates_project/PlayerLateralOutOfRange/PlayerLateralOutOfRange.c",
+    "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:10 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/PlayerLateralOutOfRange.o"
+    }
+  },
+  {
+    "name": "InitBugAreas",
+    "address": "0x80078F2C",
+    "size": 68,
+    "kind": "project_match",
+    "status": "compile_error",
+    "symbol": "InitBugAreas",
+    "source": "candidates_project/InitBugAreas/InitBugAreas.c",
+    "notes": "Imported from gamecode\\bug.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:10 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
+  },
+  {
+    "name": "JudderGameCamera",
+    "address": "0x80009AF4",
+    "size": 132,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "JudderGameCamera",
+    "source": "candidates_project/JudderGameCamera/JudderGameCamera.c",
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment."
+  },
+  {
+    "name": "BlendGameCamera",
+    "address": "0x80009B78",
+    "size": 76,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "BlendGameCamera",
+    "source": "candidates_project/BlendGameCamera/BlendGameCamera.c",
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment."
+  },
+  {
+    "name": "GetALONG",
+    "address": "0x8004967C",
+    "size": 180,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "GetALONG",
+    "source": "candidates_project/GetALONG/GetALONG.c",
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment."
+  },
+  {
+    "name": "FurtherALONG",
+    "address": "0x8000E25C",
+    "size": 120,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "FurtherALONG",
+    "source": "candidates_project/FurtherALONG/FurtherALONG.c",
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment."
+  },
+  {
+    "name": "FurtherBEHIND",
+    "address": "0x8000E2D4",
+    "size": 120,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "FurtherBEHIND",
+    "source": "candidates_project/FurtherBEHIND/FurtherBEHIND.c",
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment."
+  },
+  {
+    "name": "NuSplineFindPartial",
+    "address": "0x8000E3B8",
+    "size": 148,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "NuSplineFindPartial",
+    "source": "candidates_project/NuSplineFindPartial/NuSplineFindPartial.c",
+    "notes": "Imported from gamecode\\chase.c NGC MATCH comment."
+  },
+  {
+    "name": "NextCrate",
+    "address": "0x80010EE4",
+    "size": 40,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "NextCrate",
+    "source": "candidates_project/NextCrate/NextCrate.c",
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+  },
+  {
+    "name": "CloseCrates",
+    "address": "0x8001101C",
+    "size": 52,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "CloseCrates",
+    "source": "candidates_project/CloseCrates/CloseCrates.c",
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+  },
+  {
+    "name": "InitCrateExplosions",
+    "address": "0x80015190",
+    "size": 44,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "InitCrateExplosions",
+    "source": "candidates_project/InitCrateExplosions/InitCrateExplosions.c",
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+  },
+  {
+    "name": "DestroyAllNitroCrates",
+    "address": "0x800128AC",
+    "size": 136,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "DestroyAllNitroCrates",
+    "source": "candidates_project/DestroyAllNitroCrates/DestroyAllNitroCrates.c",
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+  },
+  {
+    "name": "HitCrates",
+    "address": "0x800A1358",
+    "size": 180,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "HitCrates",
+    "source": "candidates_project/HitCrates/HitCrates.c",
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+  },
+  {
+    "name": "CrateRayCast",
+    "address": "0x80016330",
+    "size": 180,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "CrateRayCast",
+    "source": "candidates_project/CrateRayCast/CrateRayCast.c",
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+  },
+  {
+    "name": "ResetPlayer",
+    "address": "0x8005082C",
+    "size": 32,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "ResetPlayer",
+    "source": "candidates_project/ResetPlayer/ResetPlayer.c",
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+  },
+  {
+    "name": "RemoveCreature",
+    "address": "0x800176A0",
+    "size": 56,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "RemoveCreature",
+    "source": "candidates_project/RemoveCreature/RemoveCreature.c",
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+  },
+  {
+    "name": "CloseCreatures",
+    "address": "0x800176D8",
+    "size": 144,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "CloseCreatures",
+    "source": "candidates_project/CloseCreatures/CloseCreatures.c",
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+  },
+  {
+    "name": "PurgeCharacterModels",
+    "address": "0x80018664",
+    "size": 96,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "PurgeCharacterModels",
+    "source": "candidates_project/PurgeCharacterModels/PurgeCharacterModels.c",
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+  },
+  {
+    "name": "NewRumble",
+    "address": "0x80019580",
+    "size": 60,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "NewRumble",
+    "source": "candidates_project/NewRumble/NewRumble.c",
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+  },
+  {
+    "name": "DrawCharacterModel",
+    "address": "0x800DB00C",
+    "size": 148,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "DrawCharacterModel",
+    "source": "candidates_project/DrawCharacterModel/DrawCharacterModel.c",
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+  },
+  {
+    "name": "UpdateAnimPacket",
+    "address": "0x800195BC",
+    "size": 20,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "UpdateAnimPacket",
+    "source": "candidates_project/UpdateAnimPacket/UpdateAnimPacket.c",
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+  },
+  {
+    "name": "ResetAnimPacket",
+    "address": "0x8001F9C0",
+    "size": 48,
+    "kind": "project_match",
+    "status": "todo",
+    "symbol": "ResetAnimPacket",
+    "source": "candidates_project/ResetAnimPacket/ResetAnimPacket.c",
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+  }
+]
