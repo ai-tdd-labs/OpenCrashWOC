@@ -70,3 +70,5 @@ decomp/decomp/
 analysis/ghidra/projects/
 analysis/ghidra/raw/*
 !analysis/ghidra/raw/.gitkeep
+
+analysis/ghidra/tooling/__pycache__/
