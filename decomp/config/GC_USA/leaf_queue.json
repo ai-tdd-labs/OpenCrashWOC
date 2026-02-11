@@ -1,0 +1,10 @@
+[
+  {
+    "name": "FUN_80080c6c",
+    "address": "0x80080C6C",
+    "size": 80,
+    "kind": "leaf",
+    "status": "todo",
+    "notes": "Candidate from prior callgraph sweep; medium-size leaf function."
+  }
+]

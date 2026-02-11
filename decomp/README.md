@@ -34,6 +34,26 @@ ninja regressions
 
 Populate `config/GC_USA/objdiff_units.json` with real `target_path/base_path` unit entries. Until then, report generation has no function units to compare.
 
+## Persistent workflow memory
+
+Use the ops folder to keep stable context across sessions:
+
+```powershell
+python tools/update_ops_state.py --summary "added X" --next "do Y"
+```
+
+See:
+- `ops/tasks/TODO.md`
+- `ops/state/CURRENT_STATE.md`
+- `ops/notes/SESSION_LOG.md`
+- `ops/roadmap/PHASES.md`
+
+Leaf-first queue helper:
+
+```powershell
+python tools/next_leaf_candidate.py
+```
+
 ## Included demo unit
 
 The scaffold can generate multiple demo units with:
