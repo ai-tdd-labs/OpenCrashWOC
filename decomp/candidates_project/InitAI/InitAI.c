@@ -1,3 +1,10 @@
+extern int AIType;
+extern int CRemap;
+extern int LEVELAICOUNT;
+extern int LEVELAITYPES;
+extern int Level;
+extern int LevelAIType;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

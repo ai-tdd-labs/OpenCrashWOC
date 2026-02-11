@@ -1,3 +1,19 @@
+extern int CModel;
+extern int CRemap;
+extern int Character;
+extern int DRAINWAWADY;
+extern int GameCam;
+extern int NuTrigTable;
+extern int drain_ang;
+extern int drain_wawa_anim;
+extern int drain_wawa_model;
+extern int drain_wawa_ok;
+extern int drain_wawa_pos;
+extern int drain_wawa_xrot;
+extern int drain_wawa_yrot;
+extern int player;
+extern int temp_creature_i;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

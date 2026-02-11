@@ -9,7 +9,7 @@
     "source": "candidates_project/FindAIType/FindAIType.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:10 UTC",
+      "timestamp": "2026-02-11 12:14 UTC",
       "match": false,
       "error": "compile failed (exit 33)"
     }
@@ -24,7 +24,7 @@
     "source": "candidates_project/InitAI/InitAI.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:10 UTC",
+      "timestamp": "2026-02-11 12:14 UTC",
       "match": false,
       "error": "compile failed (exit 33)"
     }
@@ -39,7 +39,7 @@
     "source": "candidates_project/UpdateDRAINDAMAGE/UpdateDRAINDAMAGE.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:10 UTC",
+      "timestamp": "2026-02-11 12:14 UTC",
       "match": false,
       "error": "compile failed (exit 33)"
     }
@@ -54,7 +54,7 @@
     "source": "candidates_project/ResetCRUNCHTIME/ResetCRUNCHTIME.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:10 UTC",
+      "timestamp": "2026-02-11 12:14 UTC",
       "match": false,
       "error": "compile failed (exit 33)"
     }
@@ -69,7 +69,7 @@
     "source": "candidates_project/SpaceCrunchFunction_NewPoint/SpaceCrunchFunction_NewPoint.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:10 UTC",
+      "timestamp": "2026-02-11 12:14 UTC",
       "match": false,
       "error": "compile failed (exit 33)"
     }
@@ -84,7 +84,7 @@
     "source": "candidates_project/RatioDifferenceAlongLine/RatioDifferenceAlongLine.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:10 UTC",
+      "timestamp": "2026-02-11 12:14 UTC",
       "match": false,
       "error": "compile failed (exit 33)"
     }
@@ -99,7 +99,7 @@
     "source": "candidates_project/FindAILabel/FindAILabel.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:10 UTC",
+      "timestamp": "2026-02-11 12:14 UTC",
       "match": false,
       "error": "compile failed (exit 33)"
     }
@@ -114,7 +114,7 @@
     "source": "candidates_project/PlayerLateralInRange/PlayerLateralInRange.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:10 UTC",
+      "timestamp": "2026-02-11 12:14 UTC",
       "match": false,
       "build_object": "build/leaf_o/PlayerLateralInRange.o"
     }
@@ -129,7 +129,7 @@
     "source": "candidates_project/PlayerLateralOutOfRange/PlayerLateralOutOfRange.c",
     "notes": "Imported from gamecode\\ai.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:10 UTC",
+      "timestamp": "2026-02-11 12:14 UTC",
       "match": false,
       "build_object": "build/leaf_o/PlayerLateralOutOfRange.o"
     }
@@ -144,7 +144,7 @@
     "source": "candidates_project/InitBugAreas/InitBugAreas.c",
     "notes": "Imported from gamecode\\bug.c NGC MATCH comment.",
     "last_result": {
-      "timestamp": "2026-02-11 12:10 UTC",
+      "timestamp": "2026-02-11 12:14 UTC",
       "match": false,
       "error": "compile failed (exit 33)"
     }
@@ -154,199 +154,299 @@
     "address": "0x80009AF4",
     "size": 132,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "JudderGameCamera",
     "source": "candidates_project/JudderGameCamera/JudderGameCamera.c",
-    "notes": "Imported from gamecode\\camera.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "BlendGameCamera",
     "address": "0x80009B78",
     "size": 76,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "BlendGameCamera",
     "source": "candidates_project/BlendGameCamera/BlendGameCamera.c",
-    "notes": "Imported from gamecode\\camera.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "GetALONG",
     "address": "0x8004967C",
     "size": 180,
     "kind": "project_match",
-    "status": "todo",
+    "status": "mismatch",
     "symbol": "GetALONG",
     "source": "candidates_project/GetALONG/GetALONG.c",
-    "notes": "Imported from gamecode\\camera.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/GetALONG.o"
+    }
   },
   {
     "name": "FurtherALONG",
     "address": "0x8000E25C",
     "size": 120,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "FurtherALONG",
     "source": "candidates_project/FurtherALONG/FurtherALONG.c",
-    "notes": "Imported from gamecode\\camera.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "FurtherBEHIND",
     "address": "0x8000E2D4",
     "size": 120,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "FurtherBEHIND",
     "source": "candidates_project/FurtherBEHIND/FurtherBEHIND.c",
-    "notes": "Imported from gamecode\\camera.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\camera.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "NuSplineFindPartial",
     "address": "0x8000E3B8",
     "size": 148,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "NuSplineFindPartial",
     "source": "candidates_project/NuSplineFindPartial/NuSplineFindPartial.c",
-    "notes": "Imported from gamecode\\chase.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\chase.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "NextCrate",
     "address": "0x80010EE4",
     "size": 40,
     "kind": "project_match",
-    "status": "todo",
+    "status": "mismatch",
     "symbol": "NextCrate",
     "source": "candidates_project/NextCrate/NextCrate.c",
-    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/NextCrate.o"
+    }
   },
   {
     "name": "CloseCrates",
     "address": "0x8001101C",
     "size": 52,
     "kind": "project_match",
-    "status": "todo",
+    "status": "mismatch",
     "symbol": "CloseCrates",
     "source": "candidates_project/CloseCrates/CloseCrates.c",
-    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/CloseCrates.o"
+    }
   },
   {
     "name": "InitCrateExplosions",
     "address": "0x80015190",
     "size": 44,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "InitCrateExplosions",
     "source": "candidates_project/InitCrateExplosions/InitCrateExplosions.c",
-    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "DestroyAllNitroCrates",
     "address": "0x800128AC",
     "size": 136,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "DestroyAllNitroCrates",
     "source": "candidates_project/DestroyAllNitroCrates/DestroyAllNitroCrates.c",
-    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "HitCrates",
     "address": "0x800A1358",
     "size": 180,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "HitCrates",
     "source": "candidates_project/HitCrates/HitCrates.c",
-    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "CrateRayCast",
     "address": "0x80016330",
     "size": 180,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "CrateRayCast",
     "source": "candidates_project/CrateRayCast/CrateRayCast.c",
-    "notes": "Imported from gamecode\\crate.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\crate.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "ResetPlayer",
     "address": "0x8005082C",
     "size": 32,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "ResetPlayer",
     "source": "candidates_project/ResetPlayer/ResetPlayer.c",
-    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "RemoveCreature",
     "address": "0x800176A0",
     "size": 56,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "RemoveCreature",
     "source": "candidates_project/RemoveCreature/RemoveCreature.c",
-    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "CloseCreatures",
     "address": "0x800176D8",
     "size": 144,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "CloseCreatures",
     "source": "candidates_project/CloseCreatures/CloseCreatures.c",
-    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "PurgeCharacterModels",
     "address": "0x80018664",
     "size": 96,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "PurgeCharacterModels",
     "source": "candidates_project/PurgeCharacterModels/PurgeCharacterModels.c",
-    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "NewRumble",
     "address": "0x80019580",
     "size": 60,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "NewRumble",
     "source": "candidates_project/NewRumble/NewRumble.c",
-    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "DrawCharacterModel",
     "address": "0x800DB00C",
     "size": 148,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "DrawCharacterModel",
     "source": "candidates_project/DrawCharacterModel/DrawCharacterModel.c",
-    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "UpdateAnimPacket",
     "address": "0x800195BC",
     "size": 20,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "UpdateAnimPacket",
     "source": "candidates_project/UpdateAnimPacket/UpdateAnimPacket.c",
-    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   },
   {
     "name": "ResetAnimPacket",
     "address": "0x8001F9C0",
     "size": 48,
     "kind": "project_match",
-    "status": "todo",
+    "status": "compile_error",
     "symbol": "ResetAnimPacket",
     "source": "candidates_project/ResetAnimPacket/ResetAnimPacket.c",
-    "notes": "Imported from gamecode\\creature.c NGC MATCH comment."
+    "notes": "Imported from gamecode\\creature.c NGC MATCH comment.",
+    "last_result": {
+      "timestamp": "2026-02-11 12:14 UTC",
+      "match": false,
+      "error": "compile failed (exit 33)"
+    }
   }
 ]

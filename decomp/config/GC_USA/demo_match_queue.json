@@ -1,0 +1,67 @@
+[
+  {
+    "name": "NuVecAdd",
+    "address": "0x800C173C",
+    "size": 52,
+    "source": "",
+    "symbol": "NuVecAdd_demo",
+    "status": "matched",
+    "last_result": {
+      "timestamp": "imported-from-demo-slices",
+      "match": true,
+      "build_object": "build/demo_o/nuvec_add_demo.o"
+    }
+  },
+  {
+    "name": "FUN_8007b178",
+    "address": "0x8007B178",
+    "size": 40,
+    "source": "",
+    "symbol": "NuVecDot_demo",
+    "status": "matched",
+    "last_result": {
+      "timestamp": "imported-from-demo-slices",
+      "match": true,
+      "build_object": "build/demo_o/nuvec_dot_demo.o"
+    }
+  },
+  {
+    "name": "NuVecMagSqr",
+    "address": "0x800C18A4",
+    "size": 28,
+    "source": "",
+    "symbol": "NuVecLenSq_demo",
+    "status": "matched",
+    "last_result": {
+      "timestamp": "imported-from-demo-slices",
+      "match": true,
+      "build_object": "build/demo_o/nuvec_lensq_demo.o"
+    }
+  },
+  {
+    "name": "NuVecScale",
+    "address": "0x800C17A4",
+    "size": 40,
+    "source": "",
+    "symbol": "NuVecScale_demo",
+    "status": "matched",
+    "last_result": {
+      "timestamp": "imported-from-demo-slices",
+      "match": true,
+      "build_object": "build/demo_o/nuvec_scale_demo.o"
+    }
+  },
+  {
+    "name": "NuVecSub",
+    "address": "0x800C1770",
+    "size": 52,
+    "source": "",
+    "symbol": "NuVecSub_demo",
+    "status": "matched",
+    "last_result": {
+      "timestamp": "imported-from-demo-slices",
+      "match": true,
+      "build_object": "build/demo_o/nuvec_sub_demo.o"
+    }
+  }
+]

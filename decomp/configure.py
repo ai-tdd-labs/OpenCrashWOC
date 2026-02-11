@@ -95,6 +95,7 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
     mixed_dol = out_dir / "main.mixed.dol"
     mixed_build_report = out_dir / "mixed_build_report.json"
     mixed_dol_diff_report = out_dir / "mixed_dol_diff.txt"
+    demo_match_queue = Path("config") / version / "demo_match_queue.json"
     partial_relink_json = out_dir / "partial_relink_inputs.json"
     partial_relink_ld = out_dir / "partial_relink.ld"
     partial_relink_bundle = out_dir / "partial_relink_bundle.o"
@@ -143,6 +144,10 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"  command = $python tools/build_mixed_manifest.py --ref-dol {ref_dol} --out-manifest $out --asm-dir {unix(out_dir / 'asm_bins')}",
         "  description = MIXED_MANIFEST",
         "",
+        "rule demo_match_queue",
+        "  command = $python tools/import_demo_match_queue.py --out $out",
+        "  description = DEMO_MATCH_QUEUE",
+        "",
         "rule mixed_dol",
         f"  command = $python tools/build_mixed_dol.py --manifest $in --ref-dol {ref_dol} --out {unix(mixed_dol)} --report-out {unix(mixed_build_report)}",
         "  description = MIXED_DOL",
@@ -163,9 +168,10 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"build {unix(changes)}: report_changes {unix(report)} | {unix(baseline)}",
         f"build {unix(regressions)}: changes_md {unix(changes)}",
         f"build {unix(demo_match_ok)}: demo_match | {unix(ok)}",
+        f"build {unix(demo_match_queue)}: demo_match_queue | {unix(demo_match_ok)}",
         f"build {unix(candidate_dol)}: candidate_dol | {unix(ok)}",
         f"build {unix(dol_diff_report)}: dol_diff {unix(candidate_dol)}",
-        f"build {unix(mixed_manifest)}: mixed_manifest | {unix(ok)}",
+        f"build {unix(mixed_manifest)}: mixed_manifest | {unix(ok)} {unix(demo_match_queue)}",
         f"build {unix(mixed_dol)} {unix(mixed_build_report)}: mixed_dol {unix(mixed_manifest)}",
         f"build {unix(mixed_dol_diff_report)}: dol_diff {unix(mixed_dol)}",
         f"build {unix(partial_relink_json)} {unix(partial_relink_ld)}: partial_relink {unix(mixed_manifest)}",
@@ -176,6 +182,7 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"build demo-match: phony {unix(demo_match_ok)}",
         f"build candidate-dol: phony {unix(candidate_dol)}",
         f"build full-dol-diff: phony {unix(dol_diff_report)}",
+        f"build demo-match-queue: phony {unix(demo_match_queue)}",
         f"build mixed-manifest: phony {unix(mixed_manifest)}",
         f"build mixed-dol: phony {unix(mixed_dol)}",
         f"build mixed-dol-diff: phony {unix(mixed_dol_diff_report)}",

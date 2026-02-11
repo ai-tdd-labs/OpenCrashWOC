@@ -1,3 +1,21 @@
+extern int CModel;
+extern int CRemap;
+extern int ChrisJointList;
+extern int ChrisJointOveride;
+extern int ChrisNumJoints;
+extern int GameTimer;
+extern int LBIT;
+extern int NUSTENCIL_NOSTENCIL;
+extern int NUSTENCIL_REPLACE_NODRAW;
+extern int Paused;
+extern int VEHICLECONTROL;
+extern int glass_draw;
+extern int jeep_draw;
+extern int player;
+extern int plr_render;
+extern int tmtx;
+extern int u8;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

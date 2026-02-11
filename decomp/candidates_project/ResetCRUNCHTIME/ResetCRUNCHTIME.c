@@ -1,3 +1,18 @@
+extern int CrunchTime_Intro;
+extern int crunch_vulnerable;
+extern int crunchtime_arena_midpos;
+extern int crunchtime_attack_phase;
+extern int earth_attack_on;
+extern int earth_attack_wait;
+extern int fire_attack_on;
+extern int fire_attack_wait;
+extern int jcrunch;
+extern int water_attack_on;
+extern int water_attack_wait;
+extern int water_last_chute;
+extern int weather_attack_on;
+extern int weather_attack_wait;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

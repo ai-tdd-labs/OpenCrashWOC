@@ -1,3 +1,8 @@
+extern int level_part_2;
+extern int temp_crate_type;
+extern int temp_pCrate;
+extern int temp_pGroup;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

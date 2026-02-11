@@ -67,3 +67,13 @@
 - NEXT: Fix project queue compile errors via targeted extern/struct stubs for low-dependency functions.
 - NEXT: Promote mismatches to matched and increase C coverage incrementally.
 - NEXT: Complete linker-based full relink target and validate full DOL hash from artifacts.
+
+## 2026-02-11 12:44 UTC
+
+- Added `import_demo_match_queue.py` and wired demo queue into mixed-manifest defaults.
+- Re-ran demo auto-slice+match and imported 5 proven C matches into `config/GC_USA/demo_match_queue.json`.
+- Rebuilt full mixed DOL with active C entries: 5 C + 2634 ASM, SHA1 identical to original DOL.
+- Ran `autostub_candidate_globals.py` + project queue batch: project queue now 25 compile errors, 5 mismatches (still pending).
+- NEXT: improve auto-stubbing/type shims for project queue compile errors.
+- NEXT: convert project mismatches to matched and increase C coverage in mixed full build.
+- NEXT: finish full linker-based relink target (not only patch-based mixed DOL reconstruction).

@@ -1,3 +1,11 @@
+extern int BugArea;
+extern int Rail;
+extern int SplTab;
+extern int bug_splratio;
+extern int temp_fALONG;
+extern int temp_iALONG;
+extern int temp_iRAIL;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

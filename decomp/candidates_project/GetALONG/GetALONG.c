@@ -1,3 +1,8 @@
+extern int TempRPos;
+extern int nRAILS;
+extern int temp_iALONG;
+extern int temp_iRAIL;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

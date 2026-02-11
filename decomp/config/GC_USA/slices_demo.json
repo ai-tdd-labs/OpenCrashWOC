@@ -7,13 +7,6 @@
     "symbol": "NuVecAdd_demo"
   },
   {
-    "name": "nuvec_dot_demo",
-    "address": "0x8007B178",
-    "size": 40,
-    "object": "build/demo_o/nuvec_dot_demo.o",
-    "symbol": "NuVecDot_demo"
-  },
-  {
     "name": "nuvec_lensq_demo",
     "address": "0x800C18A4",
     "size": 28,

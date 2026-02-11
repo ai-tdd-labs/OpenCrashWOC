@@ -1,3 +1,5 @@
+extern int u8;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

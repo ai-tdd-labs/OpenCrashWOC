@@ -1,3 +1,19 @@
+extern int CRATEGROUPCOUNT;
+extern int Crate;
+extern int CrateCube;
+extern int CrateCubeGroup;
+extern int CrateGroup;
+extern int GameCam;
+extern int crate;
+extern int crate2;
+extern int group;
+extern int group2;
+extern int i;
+extern int j;
+extern int pos;
+extern int temp_pCrate;
+extern int temp_pGroup;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

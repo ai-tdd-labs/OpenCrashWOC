@@ -1,3 +1,9 @@
+extern int crunchtime_attack_phase;
+extern int crunchtime_phase1tab;
+extern int crunchtime_phase2tab;
+extern int crunchtime_phase3tab;
+extern int crunchtime_phase4tab;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

@@ -1,3 +1,13 @@
+extern int CRATEGROUPCOUNT;
+extern int Crate;
+extern int CrateCube;
+extern int CrateCubeGroup;
+extern int CrateGroup;
+extern int crate;
+extern int group;
+extern int temp_face;
+extern int temp_ratio;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

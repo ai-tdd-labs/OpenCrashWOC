@@ -1,3 +1,6 @@
+extern int CModel;
+extern int Character;
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;

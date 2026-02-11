@@ -83,6 +83,10 @@ Import project functions marked with `NGC MATCH` comments into a separate queue:
 python tools/import_project_match_queue.py --limit 30 --max-size 200
 python tools/normalize_candidate_sources.py --candidates-dir candidates_project
 python tools/run_leaf_queue.py --queue config/GC_USA/project_match_queue.json --limit 10
+
+# Seed queue with proven demo bitmatches (NuVec* pilot functions)
+python tools/build_demo_units.py --auto-slices --match-dol
+python tools/import_demo_match_queue.py --out config/GC_USA/demo_match_queue.json
 ```
 
 Build a candidate full DOL from matched queue slices and diff it against original:
@@ -100,7 +104,8 @@ python tools/build_mixed_dol.py --manifest build/GC_USA/mixed_manifest.json --ou
 python tools/dol_diff_report.py --target build/GC_USA/main.mixed.dol --out build/GC_USA/mixed_dol_diff.txt
 ```
 
-`build_mixed_manifest.py` reads C candidates from both queues by default:
+`build_mixed_manifest.py` reads C candidates from these queues by default:
+- `config/GC_USA/demo_match_queue.json`
 - `config/GC_USA/leaf_queue.json`
 - `config/GC_USA/project_match_queue.json`
 

@@ -17,6 +17,7 @@
 - [x] Add full mixed-manifest pipeline (C slices + ASM bins for all functions).
 - [x] Add mixed full-DOL reconstruction + diff report.
 - [x] Import project `NGC MATCH` functions into queue with address mapping.
+- [x] Add demo-match queue integration so mixed manifest can auto-use proven bitmatch C objects.
 - [ ] Reduce `project_match_queue` compile errors (global/struct dependency stubs).
 - [ ] Promote `project_match_queue` mismatches to matched.
 
