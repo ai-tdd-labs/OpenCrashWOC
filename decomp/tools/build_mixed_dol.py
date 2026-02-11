@@ -145,7 +145,44 @@ def link_object_with_abs_symbols(
     return out_obj
 
 
-def read_obj_symbol_bytes(obj_path: Path, symbol: str, size: int) -> bytes:
+def link_bundle_with_abs_symbols(
+    c_entries: list[dict],
+    root: Path,
+    addr_by_name: dict[str, int],
+    ngcld_path: Path,
+) -> Path | None:
+    if not c_entries:
+        return None
+    tmp_dir = Path(tempfile.mkdtemp(prefix="mixed_bundle_", dir=str((root / "build").resolve())))
+    ld_script = tmp_dir / "bundle.ld"
+    out_obj = tmp_dir / "c_bundle.linked.o"
+
+    lines = ["SECTIONS", "{"]
+    link_inputs: list[str] = []
+    for e in c_entries:
+        path = (root / e["path"]).resolve()
+        if not path.exists():
+            continue
+        addr = int(str(e["address"]), 16)
+        sec_name = f".text_{e['name']}"
+        lines.append(f"  {sec_name} 0x{addr:08X} : {{ {path.as_posix()}(.text) }}")
+        link_inputs.append(str(path))
+    lines.append("}")
+    for name, addr in sorted(addr_by_name.items()):
+        lines.append(f"{name} = 0x{addr:08X};")
+    ld_script.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    if not link_inputs:
+        return None
+
+    cmd = [str(ngcld_path), *link_inputs, "-T", str(ld_script), "-o", str(out_obj)]
+    proc = subprocess.run(cmd, cwd=root, capture_output=True, text=True)
+    if proc.returncode != 0 or not out_obj.exists():
+        return None
+    return out_obj
+
+
+def read_obj_symbol_bytes(obj_path: Path, symbol: str, size: int, strict_symbol: bool = False) -> bytes:
     data = obj_path.read_bytes()
     sections = elf32_be_sections(data)
     symtab = find_section(sections, ".symtab")
@@ -161,12 +198,17 @@ def read_obj_symbol_bytes(obj_path: Path, symbol: str, size: int) -> bytes:
         name = strings[st_name:end].decode("ascii", "ignore") if end != -1 else ""
         if name != symbol:
             continue
+        if st_shndx >= len(sections):
+            continue
         sec = sections[st_shndx]
         sym_off = sec["offset"] + st_value
         out = data[sym_off : sym_off + min(size, st_size if st_size else size)]
         if len(out) < size:
             return out + (b"\x00" * (size - len(out)))
         return out
+
+    if strict_symbol:
+        raise ValueError(f"Symbol not found in object: {symbol}")
 
     text = find_section(sections, ".text")
     out = data[text["offset"] : text["offset"] + min(size, text["size"])]
@@ -201,6 +243,11 @@ def main() -> None:
         action="store_false",
         help="Disable relink-based extern symbol resolution for c_obj entries.",
     )
+    parser.add_argument(
+        "--bundle-link",
+        action="store_true",
+        help="Link all C object entries in one bundle before patching function bytes.",
+    )
     parser.set_defaults(resolve_link=True)
     args = parser.parse_args()
 
@@ -232,7 +279,16 @@ def main() -> None:
         "c_obj_bytes": 0,
         "asm_bin_bytes": 0,
         "skipped_entries": 0,
+        "bundle_link_used": False,
+        "bundle_link_failed": False,
     }
+
+    c_entries = [m for m in manifest if m.get("kind") == "c_obj"]
+    bundle_obj = None
+    if args.resolve_link and args.bundle_link:
+        bundle_obj = link_bundle_with_abs_symbols(c_entries, root, addr_by_name, Path(args.ngcld).resolve())
+        stats["bundle_link_used"] = bundle_obj is not None
+        stats["bundle_link_failed"] = bundle_obj is None and bool(c_entries)
 
     for item in manifest:
         stats["total_entries"] += 1
@@ -247,19 +303,39 @@ def main() -> None:
 
         if kind == "c_obj":
             code: bytes
-            linked_obj = None
-            if args.resolve_link:
-                linked_obj = link_object_with_abs_symbols(
-                    path,
-                    address,
-                    addr_by_name,
-                    Path(args.ngcld).resolve(),
-                    root,
-                )
-            if linked_obj is not None:
-                code = read_text_section_bytes(linked_obj, size)
+            if bundle_obj is not None:
+                try:
+                    code = read_obj_symbol_bytes(bundle_obj, item.get("symbol", item.get("name", "")), size, strict_symbol=True)
+                    if code == (b"\x00" * size):
+                        raise ValueError("bundle returned zeroed bytes")
+                except Exception:
+                    linked_obj = None
+                    if args.resolve_link:
+                        linked_obj = link_object_with_abs_symbols(
+                            path,
+                            address,
+                            addr_by_name,
+                            Path(args.ngcld).resolve(),
+                            root,
+                        )
+                    if linked_obj is not None:
+                        code = read_text_section_bytes(linked_obj, size)
+                    else:
+                        code = read_obj_symbol_bytes(path, item.get("symbol", item.get("name", "")), size)
             else:
-                code = read_obj_symbol_bytes(path, item.get("symbol", item.get("name", "")), size)
+                linked_obj = None
+                if args.resolve_link:
+                    linked_obj = link_object_with_abs_symbols(
+                        path,
+                        address,
+                        addr_by_name,
+                        Path(args.ngcld).resolve(),
+                        root,
+                    )
+                if linked_obj is not None:
+                    code = read_text_section_bytes(linked_obj, size)
+                else:
+                    code = read_obj_symbol_bytes(path, item.get("symbol", item.get("name", "")), size)
             stats["c_obj_entries"] += 1
             stats["c_obj_bytes"] += size
         else:

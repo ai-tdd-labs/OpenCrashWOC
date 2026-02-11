@@ -88,3 +88,20 @@
 - Result: mixed full build with `7` C entries (`5` demo + `2` project matches) and `2632` ASM entries now reproduces original DOL SHA1 exactly.
 - Project queue now has `2 matched`, `157 mismatch`, `0 compile_error`.
 - NEXT: convert more project mismatches to matched and keep full mixed build SHA1-identical after each promotion.
+
+## 2026-02-11 14:02 UTC
+
+- Added project-level mapping tooling:
+  - `tools/generate_function_module_map.py`
+  - outputs: `config/GC_USA/function_map.json` (2639 funcs), `config/GC_USA/module_map.json`
+- Added stricter relink flow to `tools/build_mixed_dol.py`:
+  - bundle-link mode for C objects with absolute-symbol resolution
+  - safe fallback for zeroed bundle symbols to per-object resolve path
+- Added progress reporting and CI:
+  - `tools/report_progress.py`
+  - `.github/workflows/decomp-progress.yml`
+- Revalidated mixed full build with bundle-link enabled:
+  - C entries: 7
+  - ASM entries: 2632
+  - SHA1 identical to original DOL
+- NEXT: improve module mapping coverage and auto-generate richer objdiff units from map data.

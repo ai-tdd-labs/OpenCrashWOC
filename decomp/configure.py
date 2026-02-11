@@ -95,6 +95,9 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
     mixed_dol = out_dir / "main.mixed.dol"
     mixed_build_report = out_dir / "mixed_build_report.json"
     mixed_dol_diff_report = out_dir / "mixed_dol_diff.txt"
+    progress_summary = out_dir / "progress_summary.md"
+    function_map = Path("config") / version / "function_map.json"
+    module_map = Path("config") / version / "module_map.json"
     demo_match_queue = Path("config") / version / "demo_match_queue.json"
     partial_relink_json = out_dir / "partial_relink_inputs.json"
     partial_relink_ld = out_dir / "partial_relink.ld"
@@ -149,8 +152,16 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         "  description = DEMO_MATCH_QUEUE",
         "",
         "rule mixed_dol",
-        f"  command = $python tools/build_mixed_dol.py --manifest $in --ref-dol {ref_dol} --out {unix(mixed_dol)} --report-out {unix(mixed_build_report)}",
+        f"  command = $python tools/build_mixed_dol.py --manifest $in --ref-dol {ref_dol} --bundle-link --out {unix(mixed_dol)} --report-out {unix(mixed_build_report)}",
         "  description = MIXED_DOL",
+        "",
+        "rule function_map",
+        f"  command = $python tools/generate_function_module_map.py --out-func-map {unix(function_map)} --out-module-map {unix(module_map)}",
+        "  description = FUNCTION_MAP",
+        "",
+        "rule progress_summary",
+        f"  command = $python tools/report_progress.py --version {version} --out {unix(progress_summary)}",
+        "  description = PROGRESS_SUMMARY",
         "",
         "rule partial_relink",
         f"  command = $python tools/export_partial_relink_inputs.py --manifest $in --out-json {unix(partial_relink_json)} --out-ld {unix(partial_relink_ld)}",
@@ -171,9 +182,11 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"build {unix(demo_match_queue)}: demo_match_queue | {unix(demo_match_ok)}",
         f"build {unix(candidate_dol)}: candidate_dol | {unix(ok)}",
         f"build {unix(dol_diff_report)}: dol_diff {unix(candidate_dol)}",
+        f"build {unix(function_map)} {unix(module_map)}: function_map | {unix(ok)}",
         f"build {unix(mixed_manifest)}: mixed_manifest | {unix(ok)} {unix(demo_match_queue)}",
         f"build {unix(mixed_dol)} {unix(mixed_build_report)}: mixed_dol {unix(mixed_manifest)}",
         f"build {unix(mixed_dol_diff_report)}: dol_diff {unix(mixed_dol)}",
+        f"build {unix(progress_summary)}: progress_summary | {unix(function_map)} {unix(module_map)} {unix(mixed_build_report)}",
         f"build {unix(partial_relink_json)} {unix(partial_relink_ld)}: partial_relink {unix(mixed_manifest)}",
         f"build {unix(partial_relink_bundle)}: partial_relink_bundle | {unix(partial_relink_json)}",
         f"build baseline: phony {unix(baseline)}",
@@ -186,6 +199,8 @@ def write_ninja(version: str, build_dir: Path, dtk: str, objdiff: str, enable_pr
         f"build mixed-manifest: phony {unix(mixed_manifest)}",
         f"build mixed-dol: phony {unix(mixed_dol)}",
         f"build mixed-dol-diff: phony {unix(mixed_dol_diff_report)}",
+        f"build function-map: phony {unix(function_map)} {unix(module_map)}",
+        f"build progress-summary: phony {unix(progress_summary)}",
         f"build partial-relink-inputs: phony {unix(partial_relink_json)} {unix(partial_relink_ld)}",
         f"build partial-relink-bundle: phony {unix(partial_relink_bundle)}",
     ]

@@ -25,17 +25,18 @@
 ## Next (TP/TWW/MP4 style parity)
 
 - [ ] Add stable split config coverage for larger DOL regions.
-- [ ] Introduce source/object mapping conventions per module.
+- [x] Introduce source/object mapping conventions per module.
+- [x] Generate project-level function/module maps (`function_map.json`, `module_map.json`).
 - [ ] Generate objdiff units from mapping data (not hand-edited JSON).
 - [ ] Add relink stage for partial linked image.
 - [x] Generate partial relink input artifacts (C object list + linker script skeleton).
 - [x] Execute linker-based partial relink using generated script and validate section bytes.
 - [x] Resolve `_SDA_BASE_` / `_SDA2_BASE_` blocker by compiling queue candidates with `-G 0` for relink stage.
-- [ ] Add full DOL relink + end hash target.
+- [x] Add full DOL relink + end hash target (bundle-link resolve path in mixed DOL builder).
 - [ ] Exit criteria: all known bitmatch C functions are compiled+linked from C artifacts, others from ASM bins, final full DOL reproducible from artifacts.
 
 ## Later
 
 - [x] Integrate Ghidra export helper into candidate queue.
-- [ ] Add CI checks for `demo-match` and regression reports.
+- [x] Add CI checks for tooling/progress summary generation.
 - [ ] Track match metrics history in CSV/JSON.

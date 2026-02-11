@@ -1,0 +1,72 @@
+[
+  {
+    "module": "asm/unmapped",
+    "total_functions": 1924,
+    "mapped_source": 0,
+    "matched_c": 5,
+    "queue_hits": 30
+  },
+  {
+    "module": "gamecode",
+    "total_functions": 404,
+    "mapped_source": 404,
+    "matched_c": 0,
+    "queue_hits": 81
+  },
+  {
+    "module": "gamelib",
+    "total_functions": 65,
+    "mapped_source": 65,
+    "matched_c": 0,
+    "queue_hits": 12
+  },
+  {
+    "module": "nu3dx",
+    "total_functions": 143,
+    "mapped_source": 143,
+    "matched_c": 2,
+    "queue_hits": 32
+  },
+  {
+    "module": "nucore",
+    "total_functions": 22,
+    "mapped_source": 22,
+    "matched_c": 0,
+    "queue_hits": 7
+  },
+  {
+    "module": "numath",
+    "total_functions": 1,
+    "mapped_source": 1,
+    "matched_c": 0,
+    "queue_hits": 0
+  },
+  {
+    "module": "nuxbox",
+    "total_functions": 21,
+    "mapped_source": 21,
+    "matched_c": 0,
+    "queue_hits": 4
+  },
+  {
+    "module": "system",
+    "total_functions": 25,
+    "mapped_source": 25,
+    "matched_c": 0,
+    "queue_hits": 4
+  },
+  {
+    "module": "system/gc",
+    "total_functions": 6,
+    "mapped_source": 6,
+    "matched_c": 0,
+    "queue_hits": 1
+  },
+  {
+    "module": "system/gs",
+    "total_functions": 28,
+    "mapped_source": 28,
+    "matched_c": 0,
+    "queue_hits": 6
+  }
+]

@@ -100,11 +100,18 @@ Build a full mixed manifest (C object slices + ASM bins) and reconstruct full DO
 
 ```powershell
 python tools/build_mixed_manifest.py --out-manifest build/GC_USA/mixed_manifest.json
-python tools/build_mixed_dol.py --manifest build/GC_USA/mixed_manifest.json --out build/GC_USA/main.mixed.dol --report-out build/GC_USA/mixed_build_report.json
+python tools/build_mixed_dol.py --manifest build/GC_USA/mixed_manifest.json --bundle-link --out build/GC_USA/main.mixed.dol --report-out build/GC_USA/mixed_build_report.json
 python tools/dol_diff_report.py --target build/GC_USA/main.mixed.dol --out build/GC_USA/mixed_dol_diff.txt
 ```
 
 `build_mixed_dol.py` now resolves external call relocations for `c_obj` entries via `ngcld` + absolute symbol addresses from `main.dol_functions.json` before patching bytes. This allows non-leaf C functions to be injected into mixed build without introducing unresolved-branch placeholder bytes.
+
+Generate a full function/module map for project-level planning:
+
+```powershell
+python tools/generate_function_module_map.py --out-func-map config/GC_USA/function_map.json --out-module-map config/GC_USA/module_map.json
+python tools/report_progress.py --version GC_USA --out build/GC_USA/progress_summary.md
+```
 
 `build_mixed_manifest.py` reads C candidates from these queues by default:
 - `config/GC_USA/demo_match_queue.json`
