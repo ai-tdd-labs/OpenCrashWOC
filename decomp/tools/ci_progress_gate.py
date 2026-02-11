@@ -33,6 +33,7 @@ def main() -> None:
 
     mixed = load_json(bld / "mixed_build_report.json") or {}
     ghidra_total, ghidra_matched = queue_matched(cfg / "ghidra_verified_queue.json")
+    other_total, other_matched = queue_matched(cfg / "othertools_verified_queue.json")
     project_total, project_matched = queue_matched(cfg / "project_match_queue.json")
 
     prev = None
@@ -48,6 +49,9 @@ def main() -> None:
     delta_ghidra = None
     if prev is not None and "ghidra_verified_matched" in prev:
         delta_ghidra = ghidra_matched - int(prev.get("ghidra_verified_matched", 0))
+    delta_other = None
+    if prev is not None and "othertools_verified_matched" in prev:
+        delta_other = other_matched - int(prev.get("othertools_verified_matched", 0))
 
     lines: list[str] = []
     lines.append("# CI Progress Gate")
@@ -61,11 +65,16 @@ def main() -> None:
     lines.append("## Queue Match State")
     lines.append("")
     lines.append(f"- ghidra verified matched: {ghidra_matched} / {ghidra_total}")
+    lines.append(f"- othertools verified matched: {other_matched} / {other_total}")
     lines.append(f"- project queue matched: {project_matched} / {project_total}")
     if delta_ghidra is None:
         lines.append("- ghidra verified delta vs previous run: n/a")
     else:
         lines.append(f"- ghidra verified delta vs previous run: {delta_ghidra:+d}")
+    if delta_other is None:
+        lines.append("- othertools verified delta vs previous run: n/a")
+    else:
+        lines.append(f"- othertools verified delta vs previous run: {delta_other:+d}")
 
     out_path = (root / args.out).resolve()
     out_path.parent.mkdir(parents=True, exist_ok=True)

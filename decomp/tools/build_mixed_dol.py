@@ -277,6 +277,8 @@ def main() -> None:
     stats = {
         "total_entries": 0,
         "c_obj_entries": 0,
+        "c_obj_attempted": 0,
+        "c_obj_skipped_mismatch": 0,
         "asm_bin_entries": 0,
         "patched_bytes": 0,
         "c_obj_bytes": 0,
@@ -305,6 +307,7 @@ def main() -> None:
             continue
 
         if kind == "c_obj":
+            stats["c_obj_attempted"] += 1
             code: bytes
             if bundle_obj is not None:
                 try:
@@ -351,6 +354,11 @@ def main() -> None:
                     code = read_obj_symbol_bytes(path, item.get("symbol", item.get("name", "")), size)
             stats["c_obj_entries"] += 1
             stats["c_obj_bytes"] += size
+            # Only inject C bytes if they are exactly identical to reference bytes.
+            # This keeps full-DOL output deterministic/bit-exact while allowing aggressive queues.
+            if code != bytes(dol[off : off + size]):
+                stats["c_obj_skipped_mismatch"] += 1
+                continue
         else:
             code = path.read_bytes()[:size]
             if len(code) < size:

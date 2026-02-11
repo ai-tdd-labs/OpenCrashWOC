@@ -23,8 +23,13 @@ def find_dol_offset(dol_data: bytes, address: int, size: int) -> int:
     raise ValueError(f"Address not fully in text section: 0x{address:08X}+0x{size:X}")
 
 
-def load_queue_index(queue_items: list[dict]) -> dict[str, dict]:
-    return {str(x.get("name")): x for x in queue_items}
+def norm_addr(addr: str) -> str:
+    a = str(addr or "").strip().upper()
+    if not a:
+        return ""
+    if not a.startswith("0X"):
+        a = "0X" + a
+    return a
 
 
 def main() -> None:
@@ -43,7 +48,7 @@ def main() -> None:
     parser.add_argument("--asm-dir", default="build/GC_USA/asm_bins", help="Output directory for ASM bins")
     parser.add_argument(
         "--queue-files",
-        default="config/GC_USA/demo_match_queue.json,config/GC_USA/project_verified_queue.json,config/GC_USA/ghidra_verified_queue.json,config/GC_USA/leaf_queue.json,config/GC_USA/project_match_queue.json",
+        default="config/GC_USA/demo_match_queue.json,config/GC_USA/project_verified_queue.json,config/GC_USA/ghidra_verified_queue.json,config/GC_USA/othertools_verified_queue.json,config/GC_USA/leaf_queue.json,config/GC_USA/project_match_queue.json",
         help="Comma-separated queue JSON files (relative to decomp/) used as C candidates",
     )
     parser.add_argument(
@@ -65,7 +70,13 @@ def main() -> None:
         qp = (root / qf).resolve()
         if qp.exists():
             queue_items.extend(json.loads(qp.read_text(encoding="utf-8")))
-    queue = load_queue_index(queue_items)
+    queue_by_name: dict[str, list[dict]] = {}
+    for x in queue_items:
+        n = str(x.get("name", ""))
+        if not n:
+            continue
+        queue_by_name.setdefault(n, []).append(x)
+    queue_by_addr = {norm_addr(x.get("address", "")): x for x in queue_items if norm_addr(x.get("address", ""))}
     c_statuses = {x.strip() for x in args.c_statuses.split(",") if x.strip()}
     dol = ref_dol_path.read_bytes()
 
@@ -85,7 +96,19 @@ def main() -> None:
             continue
         address = int(str(f.get("address")), 16)
 
-        q = queue.get(name)
+        q = None
+        by_name = queue_by_name.get(name, [])
+        if len(by_name) == 1:
+            cand = by_name[0]
+            if norm_addr(cand.get("address", "")) == norm_addr(f"0x{address:08X}"):
+                q = cand
+        elif len(by_name) > 1:
+            for cand in by_name:
+                if norm_addr(cand.get("address", "")) == norm_addr(f"0x{address:08X}"):
+                    q = cand
+                    break
+        if q is None:
+            q = queue_by_addr.get(norm_addr(f"0x{address:08X}"))
         if q and q.get("status") in c_statuses:
             obj_rel = q.get("last_result", {}).get("build_object", f"build/leaf_o/{name}.o")
             manifest.append(

@@ -36,6 +36,7 @@ def main() -> None:
     parser.add_argument("--history-jsonl", default="build/GC_USA/metrics_history.jsonl")
     parser.add_argument("--history-csv", default="build/GC_USA/metrics_history.csv")
     parser.add_argument("--skip-source-rebuild", action="store_true")
+    parser.add_argument("--skip-othertools", action="store_true")
     args = parser.parse_args()
 
     decomp_root = Path(__file__).resolve().parents[1]
@@ -45,6 +46,37 @@ def main() -> None:
     if not args.skip_source_rebuild:
         run_cmd(["python", str((decomp_root / "tools" / "build_ghidra_source_queue.py").resolve())], decomp_root)
     run_cmd(["python", str((decomp_root / "tools" / "build_verified_ghidra_queue.py").resolve())], decomp_root)
+
+    if not args.skip_othertools:
+        ot_funcs = Path(r"D:/projects/ps2/crash_bandicoot/analysis/ghidra/raw/othertools/crashwocOG.elf_functions.json")
+        ot_decomp = Path(r"D:/projects/ps2/crash_bandicoot/analysis/ghidra/raw/othertools/crashwocOG.elf_decompiled.c")
+        if ot_funcs.exists() and ot_decomp.exists():
+            run_cmd(
+                [
+                    "python",
+                    str((decomp_root / "tools" / "build_ghidra_source_queue.py").resolve()),
+                    "--functions-json",
+                    str(ot_funcs),
+                    "--ghidra-decompiled-c",
+                    str(ot_decomp),
+                    "--out-queue",
+                    "config/GC_USA/othertools_source_queue.json",
+                ],
+                decomp_root,
+            )
+            run_cmd(
+                [
+                    "python",
+                    str((decomp_root / "tools" / "build_verified_ghidra_queue.py").resolve()),
+                    "--queue-file",
+                    "config/GC_USA/othertools_source_queue.json",
+                    "--functions-json",
+                    str(ot_funcs),
+                    "--out-queue",
+                    "config/GC_USA/othertools_verified_queue.json",
+                ],
+                decomp_root,
+            )
     run_cmd(
         ["python", str((decomp_root / "tools" / "promote_verified_into_project_queue.py").resolve()), "--append-missing"],
         decomp_root,
@@ -65,6 +97,7 @@ def main() -> None:
     run_cmd(["python", str((decomp_root / "tools" / "report_progress.py").resolve()), "--version", args.version], decomp_root)
 
     ghidra_total, ghidra_matched = matched_count(cfg / "ghidra_verified_queue.json")
+    other_total, other_matched = matched_count(cfg / "othertools_verified_queue.json")
     project_total, project_matched = matched_count(cfg / "project_match_queue.json")
     mixed = load_json(bld / "mixed_build_report.json") or {}
 
@@ -72,6 +105,8 @@ def main() -> None:
         "timestamp_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
         "ghidra_verified_total": ghidra_total,
         "ghidra_verified_matched": ghidra_matched,
+        "othertools_verified_total": other_total,
+        "othertools_verified_matched": other_matched,
         "project_queue_total": project_total,
         "project_queue_matched": project_matched,
         "c_obj_entries": int(mixed.get("c_obj_entries", 0)),

@@ -18,7 +18,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--queue-files",
-        default="config/GC_USA/demo_match_queue.json,config/GC_USA/project_verified_queue.json,config/GC_USA/ghidra_verified_queue.json,config/GC_USA/leaf_queue.json,config/GC_USA/project_match_queue.json",
+        default="config/GC_USA/demo_match_queue.json,config/GC_USA/project_verified_queue.json,config/GC_USA/ghidra_verified_queue.json,config/GC_USA/othertools_verified_queue.json,config/GC_USA/leaf_queue.json,config/GC_USA/project_match_queue.json",
         help="Comma-separated queue json files relative to decomp/",
     )
     parser.add_argument("--status", default="matched", help="Queue status required for unit inclusion")

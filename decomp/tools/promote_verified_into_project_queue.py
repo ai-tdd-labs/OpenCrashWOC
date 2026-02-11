@@ -17,7 +17,7 @@ def main() -> None:
     parser.add_argument("--project-queue", default="config/GC_USA/project_match_queue.json", help="Project queue relative to decomp/")
     parser.add_argument(
         "--verified-queues",
-        default="config/GC_USA/project_verified_queue.json,config/GC_USA/ghidra_verified_queue.json",
+        default="config/GC_USA/project_verified_queue.json,config/GC_USA/ghidra_verified_queue.json,config/GC_USA/othertools_verified_queue.json",
         help="Comma-separated verified queues relative to decomp/",
     )
     parser.add_argument("--append-missing", action="store_true", help="Append verified entries not present in project queue")

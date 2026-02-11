@@ -76,6 +76,22 @@
     }
   },
   {
+    "name": "GetTotalSpaceBossObjectives",
+    "address": "0x80005108",
+    "size": 8,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "GetTotalSpaceBossObjectives",
+    "source": "../code/src/gamecode/ai.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__gamecode__ai__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
     "name": "SpaceCrunchFunction_NewPoint",
     "address": "0x80005160",
     "size": 64,
@@ -912,6 +928,22 @@
     }
   },
   {
+    "name": "WesternRaceManager",
+    "address": "0x80049678",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "WesternRaceManager",
+    "source": "../code/src/gamecode/jeep.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__gamecode__jeep__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
     "name": "GetALONG",
     "address": "0x8004967C",
     "size": 180,
@@ -948,6 +980,22 @@
       "first_diff_word": 3,
       "obj_all_zero": false
     }
+  },
+  {
+    "name": "GetTotalFireBossObjectives",
+    "address": "0x8004C0FC",
+    "size": 8,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "GetTotalFireBossObjectives",
+    "source": "../code/src/gamecode/jeep.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__gamecode__jeep__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "NewLanguage",
@@ -1387,6 +1435,22 @@
     }
   },
   {
+    "name": "ProcessCrashteroidsIntro",
+    "address": "0x80071C5C",
+    "size": 32,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "ProcessCrashteroidsIntro",
+    "source": "../code/src/gamecode/vehicle.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__gamecode__vehicle__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
     "name": "DrawWeatherBoss",
     "address": "0x80072438",
     "size": 44,
@@ -1634,6 +1698,38 @@
     }
   },
   {
+    "name": "reverse_endian_32",
+    "address": "0x80085F94",
+    "size": 32,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "reverse_endian_32",
+    "source": "../code/src/gamelib/edobj.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__gamelib__edobj__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "edppRegisterPointerToGameCharLocation",
+    "address": "0x80088478",
+    "size": 36,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "edppRegisterPointerToGameCharLocation",
+    "source": "../code/src/gamelib/edptl.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__gamelib__edptl__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
     "name": "edppPtlDestroy",
     "address": "0x8008849C",
     "size": 80,
@@ -1838,6 +1934,22 @@
       "first_diff_word": 0,
       "obj_all_zero": false
     }
+  },
+  {
+    "name": "AddMtxToPrimDef",
+    "address": "0x800AE7E4",
+    "size": 100,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "AddMtxToPrimDef",
+    "source": "../code/src/nu3dx/nucvtskin.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nucvtskin__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "NuPs2CreateSkin",
@@ -2120,6 +2232,22 @@
       "first_diff_word": 4,
       "obj_all_zero": false
     }
+  },
+  {
+    "name": "NuHGobjGetPOI",
+    "address": "0x800B14A8",
+    "size": 52,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuHGobjGetPOI",
+    "source": "../code/src/nu3dx/nuhgobj.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nuhgobj__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "NuLightGetLight",
@@ -2509,6 +2637,22 @@
     }
   },
   {
+    "name": "NuTexLoadTextureFromDDSFile",
+    "address": "0x800BA11C",
+    "size": 8,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuTexLoadTextureFromDDSFile",
+    "source": "../code/src/nu3dx/nutex.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nutex__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
     "name": "NuDynamicWaterClose",
     "address": "0x800BBD60",
     "size": 88,
@@ -2526,6 +2670,38 @@
       "first_diff_word": 2,
       "obj_all_zero": false
     }
+  },
+  {
+    "name": "NuDynamicWaterSetVertexShaderUVOffsets",
+    "address": "0x800BC408",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuDynamicWaterSetVertexShaderUVOffsets",
+    "source": "../code/src/nu3dx/nuwater.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nuwater__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "Powr2",
+    "address": "0x800BCBE0",
+    "size": 32,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "Powr2",
+    "source": "../code/src/nu3dx/nuwater.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nuwater__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "NuWaterLoad",
@@ -2566,6 +2742,22 @@
     }
   },
   {
+    "name": "NuWaterSetup",
+    "address": "0x800BD214",
+    "size": 16,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuWaterSetup",
+    "source": "../code/src/nu3dx/nuwater.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nu3dx__nuwater__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
     "name": "NuFileExists",
     "address": "0x800BD4C0",
     "size": 92,
@@ -2583,6 +2775,102 @@
       "first_diff_word": 0,
       "obj_all_zero": false
     }
+  },
+  {
+    "name": "checkmemfile",
+    "address": "0x800BD51C",
+    "size": 8,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "checkmemfile",
+    "source": "../code/src/nucore/nufile.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nucore__nufile__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "checkdiscfile",
+    "address": "0x800BD524",
+    "size": 8,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "checkdiscfile",
+    "source": "../code/src/nucore/nufile.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nucore__nufile__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuDatFilePos",
+    "address": "0x800BD728",
+    "size": 8,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuDatFilePos",
+    "source": "../code/src/nucore/nufile.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nucore__nufile__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuDatFileRead",
+    "address": "0x800BD730",
+    "size": 8,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuDatFileRead",
+    "source": "../code/src/nucore/nufile.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nucore__nufile__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuDatFileSeek",
+    "address": "0x800BD738",
+    "size": 8,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuDatFileSeek",
+    "source": "../code/src/nucore/nufile.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nucore__nufile__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "NuDatFileClose",
+    "address": "0x800BD740",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuDatFileClose",
+    "source": "../code/src/nucore/nufile.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nucore__nufile__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "NuFileReadFloat",
@@ -2776,6 +3064,22 @@
     "notes": "Promoted from verified queue."
   },
   {
+    "name": "NudxFw_DestroyBackBufferCopy",
+    "address": "0x800C1C9C",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NudxFw_DestroyBackBufferCopy",
+    "source": "../code/src/nuraster/dxframe.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nuraster__dxframe__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
     "name": "SetRenderTarget",
     "address": "0x800C1FAC",
     "size": 8,
@@ -2844,6 +3148,22 @@
       "first_diff_word": 2,
       "obj_all_zero": false
     }
+  },
+  {
+    "name": "NuRndrInitEx",
+    "address": "0x800C2FB8",
+    "size": 32,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "NuRndrInitEx",
+    "source": "../code/src/nuxbox/dummyfunc.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__nuxbox__dummyfunc__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "NuRndrGScnObj",
@@ -2936,6 +3256,38 @@
       "first_diff_word": 0,
       "obj_all_zero": false
     }
+  },
+  {
+    "name": "VecMatMulAndWeight1",
+    "address": "0x800C5E18",
+    "size": 84,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "VecMatMulAndWeight1",
+    "source": "../code/src/system/skinning.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__system__skinning__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "VecMatMulAndWeight3",
+    "address": "0x800C5EDC",
+    "size": 268,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "VecMatMulAndWeight3",
+    "source": "../code/src/system/skinning.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__system__skinning__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "GCFileSize",
@@ -3052,6 +3404,22 @@
     }
   },
   {
+    "name": "GS_SetRenderState",
+    "address": "0x800C93B8",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "GS_SetRenderState",
+    "source": "../code/src/system/gs/gs.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__system__gs__gs__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
     "name": "GS_LoadWorldMatrixIdentity",
     "address": "0x800C9904",
     "size": 60,
@@ -3069,6 +3437,54 @@
       "first_diff_word": 3,
       "obj_all_zero": false
     }
+  },
+  {
+    "name": "GS_CopyTextureFromFB",
+    "address": "0x800C9A6C",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "GS_CopyTextureFromFB",
+    "source": "../code/src/system/gs/gs.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__system__gs__gs__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "GS_DrawQuadListEndBlock",
+    "address": "0x800CB51C",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "GS_DrawQuadListEndBlock",
+    "source": "../code/src/system/gs/gsprim.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__system__gs__gsprim__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
+  },
+  {
+    "name": "GS_SetTextureStageState",
+    "address": "0x800CC0F0",
+    "size": 4,
+    "kind": "project_match",
+    "status": "matched",
+    "symbol": "GS_SetTextureStageState",
+    "source": "../code/src/system/gs/gstex.c",
+    "last_result": {
+      "timestamp": "verified-from-ghidra-source-queue",
+      "match": true,
+      "build_object": "build/ghidra_o/code__src__system__gs__gstex__g0.o",
+      "build_variant": "g0"
+    },
+    "notes": "Promoted from verified queue."
   },
   {
     "name": "timeGetTime",
