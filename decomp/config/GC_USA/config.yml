@@ -1,0 +1,4 @@
+# Version metadata for decomp scaffold
+version: GC_USA
+object: ../roms/gc/usa_v1.00/extracted/main.dol
+hash: c9cbd49a9eb0006f55533eb7d0fb5ebe2a73b72f
