@@ -41,6 +41,14 @@ This README will be more complete and detailed with instructions to contribute, 
 
 WIP..
 
+## Ghidra (public-safe workflow)
+
+This fork includes a public-safe headless Ghidra workflow in:
+
+- `analysis/ghidra/README.md`
+
+It is designed so contributors can run analysis locally with their own legally dumped `main.dol`, while keeping binaries/raw dumps out of git.
+
 ## Contributing
 Check the function list on the `issue section` of this repository, those that have the percentage next to them have already started and are available on the `decomp.me` website, 
 just search for the name in the search bar and then fork and you will have your scratch to work on.
@@ -56,4 +64,3 @@ If want to help the project or have any troubles, reach out on the Discord serve
 ## Warning
 Currently there are problems with the compiler flags for branch prediction (+\-) , so some functions will not fully match. 
 If that's the only difference, you can still share the completed function.
-

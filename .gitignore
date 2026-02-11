@@ -60,3 +60,13 @@ OpenCrashWOC.code-workspace
 
 cmake_install.cmake
 .vscode/
+
+# Local build/generated artifacts
+build/
+decomp/build/
+decomp/decomp/
+
+# Ghidra local project/output (public-safe workflow keeps scripts only)
+analysis/ghidra/projects/
+analysis/ghidra/raw/*
+!analysis/ghidra/raw/.gitkeep
