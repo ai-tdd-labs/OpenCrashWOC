@@ -60,6 +60,14 @@ Run one candidate compile-and-compare loop:
 python tools/run_leaf_candidate.py --name FUN_80080c6c --update-queue
 ```
 
+Auto-build queue from Ghidra exports and run a batch:
+
+```powershell
+python tools/build_leaf_queue_from_ghidra.py --limit 12
+python tools/normalize_candidate_sources.py
+python tools/run_leaf_queue.py --limit 5
+```
+
 ## Included demo unit
 
 The scaffold can generate multiple demo units with:

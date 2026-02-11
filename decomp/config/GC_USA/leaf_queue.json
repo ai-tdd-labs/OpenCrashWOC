@@ -9,9 +9,149 @@
     "source": "candidates/FUN_80080c6c/FUN_80080c6c.c",
     "notes": "Candidate from prior callgraph sweep; medium-size leaf function.",
     "last_result": {
-      "timestamp": "2026-02-11 11:38 UTC",
+      "timestamp": "2026-02-11 11:47 UTC",
       "match": false,
       "build_object": "build/leaf_o/FUN_80080c6c.o"
     }
+  },
+  {
+    "name": "FUN_80003200",
+    "address": "0x80003200",
+    "size": 108,
+    "kind": "leaf",
+    "status": "mismatch",
+    "symbol": "FUN_80003200",
+    "source": "candidates/FUN_80003200/FUN_80003200.c",
+    "notes": "Auto-imported from Ghidra leaf filter.",
+    "last_result": {
+      "timestamp": "2026-02-11 11:47 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/FUN_80003200.o"
+    }
+  },
+  {
+    "name": "FUN_80009ab0",
+    "address": "0x80009AB0",
+    "size": 68,
+    "kind": "leaf",
+    "status": "compare_error",
+    "symbol": "FUN_80009ab0",
+    "source": "candidates/FUN_80009ab0/FUN_80009ab0.c",
+    "notes": "Auto-imported from Ghidra leaf filter.",
+    "last_result": {
+      "timestamp": "2026-02-11 11:47 UTC",
+      "match": false,
+      "error": "compare failed: Symbol too short for compare: FUN_80009ab0"
+    }
+  },
+  {
+    "name": "FUN_8000b0f8",
+    "address": "0x8000B0F8",
+    "size": 160,
+    "kind": "leaf",
+    "status": "mismatch",
+    "symbol": "FUN_8000b0f8",
+    "source": "candidates/FUN_8000b0f8/FUN_8000b0f8.c",
+    "notes": "Auto-imported from Ghidra leaf filter.",
+    "last_result": {
+      "timestamp": "2026-02-11 11:47 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/FUN_8000b0f8.o"
+    }
+  },
+  {
+    "name": "FUN_80012e14",
+    "address": "0x80012E14",
+    "size": 124,
+    "kind": "leaf",
+    "status": "mismatch",
+    "symbol": "FUN_80012e14",
+    "source": "candidates/FUN_80012e14/FUN_80012e14.c",
+    "notes": "Auto-imported from Ghidra leaf filter.",
+    "last_result": {
+      "timestamp": "2026-02-11 11:47 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/FUN_80012e14.o"
+    }
+  },
+  {
+    "name": "FUN_80012e90",
+    "address": "0x80012E90",
+    "size": 136,
+    "kind": "leaf",
+    "status": "todo",
+    "symbol": "FUN_80012e90",
+    "source": "candidates/FUN_80012e90/FUN_80012e90.c",
+    "notes": "Auto-imported from Ghidra leaf filter."
+  },
+  {
+    "name": "FUN_80012f18",
+    "address": "0x80012F18",
+    "size": 112,
+    "kind": "leaf",
+    "status": "todo",
+    "symbol": "FUN_80012f18",
+    "source": "candidates/FUN_80012f18/FUN_80012f18.c",
+    "notes": "Auto-imported from Ghidra leaf filter."
+  },
+  {
+    "name": "FUN_80013064",
+    "address": "0x80013064",
+    "size": 76,
+    "kind": "leaf",
+    "status": "todo",
+    "symbol": "FUN_80013064",
+    "source": "candidates/FUN_80013064/FUN_80013064.c",
+    "notes": "Auto-imported from Ghidra leaf filter."
+  },
+  {
+    "name": "FUN_800130b0",
+    "address": "0x800130B0",
+    "size": 104,
+    "kind": "leaf",
+    "status": "todo",
+    "symbol": "FUN_800130b0",
+    "source": "candidates/FUN_800130b0/FUN_800130b0.c",
+    "notes": "Auto-imported from Ghidra leaf filter."
+  },
+  {
+    "name": "FUN_80014570",
+    "address": "0x80014570",
+    "size": 100,
+    "kind": "leaf",
+    "status": "todo",
+    "symbol": "FUN_80014570",
+    "source": "candidates/FUN_80014570/FUN_80014570.c",
+    "notes": "Auto-imported from Ghidra leaf filter."
+  },
+  {
+    "name": "FUN_800145d4",
+    "address": "0x800145D4",
+    "size": 72,
+    "kind": "leaf",
+    "status": "todo",
+    "symbol": "FUN_800145d4",
+    "source": "candidates/FUN_800145d4/FUN_800145d4.c",
+    "notes": "Auto-imported from Ghidra leaf filter."
+  },
+  {
+    "name": "FUN_8001461c",
+    "address": "0x8001461C",
+    "size": 124,
+    "kind": "leaf",
+    "status": "todo",
+    "symbol": "FUN_8001461c",
+    "source": "candidates/FUN_8001461c/FUN_8001461c.c",
+    "notes": "Auto-imported from Ghidra leaf filter."
+  },
+  {
+    "name": "FUN_80018fd8",
+    "address": "0x80018FD8",
+    "size": 72,
+    "kind": "leaf",
+    "status": "todo",
+    "symbol": "FUN_80018fd8",
+    "source": "candidates/FUN_80018fd8/FUN_80018fd8.c",
+    "notes": "Auto-imported from Ghidra leaf filter."
   }
 ]

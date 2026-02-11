@@ -180,13 +180,42 @@ def main() -> None:
     s_out = build_s / f"{name}.s"
     o_out = build_o / f"{name}.o"
 
-    run([str(cpp), rel(source, root), "-o", rel(i_out, root)], root)
-    run([str(cc1), "-O2", "-mps-float", rel(i_out, root), "-o", rel(s_out, root)], root)
-    run([str(asm), rel(s_out, root), "-o", rel(o_out, root)], root)
+    try:
+        run([str(cpp), rel(source, root), "-o", rel(i_out, root)], root)
+        run([str(cc1), "-O2", "-mps-float", rel(i_out, root), "-o", rel(s_out, root)], root)
+        run([str(asm), rel(s_out, root), "-o", rel(o_out, root)], root)
+    except subprocess.CalledProcessError as e:
+        print(f"{name}: COMPILE_ERROR (exit={e.returncode})")
+        if args.update_queue:
+            now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+            items[idx]["status"] = "compile_error"
+            items[idx]["last_result"] = {
+                "timestamp": now,
+                "match": False,
+                "error": f"compile failed (exit {e.returncode})",
+            }
+            save_queue(queue_path, items)
+            print(f"Updated queue: {queue_path}")
+        raise SystemExit(2)
 
-    dol_data = (root / args.dol).resolve().read_bytes()
-    dol_b = read_dol_bytes(dol_data, address, size)
-    obj_b = read_obj_symbol_bytes(o_out, symbol, size)
+    try:
+        dol_data = (root / args.dol).resolve().read_bytes()
+        dol_b = read_dol_bytes(dol_data, address, size)
+        obj_b = read_obj_symbol_bytes(o_out, symbol, size)
+    except Exception as e:
+        print(f"{name}: COMPARE_ERROR ({e})")
+        if args.update_queue:
+            now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+            items[idx]["status"] = "compare_error"
+            items[idx]["last_result"] = {
+                "timestamp": now,
+                "match": False,
+                "error": f"compare failed: {e}",
+            }
+            save_queue(queue_path, items)
+            print(f"Updated queue: {queue_path}")
+        raise SystemExit(3)
+
     is_match = dol_b == obj_b
 
     print(f"{name} @ 0x{address:08X} size={size}: {'MATCH' if is_match else 'MISMATCH'}")

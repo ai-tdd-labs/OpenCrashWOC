@@ -7,7 +7,11 @@
 - [x] Add auto-slice discovery from object bytes.
 - [x] Add one-shot demo match flow (`demo-match`).
 - [x] Add function queue JSON for batch attempts.
-- [ ] Add first non-demo unmatched leaf function workflow (candidate + compile loop).
+- [x] Add first non-demo unmatched leaf function workflow (candidate + compile loop).
+- [x] Auto-build leaf queue from Ghidra exports (`functions.json` + decompiled C).
+- [x] Batch-run first N leaf candidates and write result statuses.
+- [ ] Improve candidate C shaping for branch-layout sensitive near-matches.
+- [ ] Resolve `compare_error` cases (symbol-size mismatch) in candidate runner.
 
 ## Next (TP/TWW/MP4 style parity)
 
@@ -19,6 +23,6 @@
 
 ## Later
 
-- [ ] Integrate Ghidra export helper into candidate queue.
+- [x] Integrate Ghidra export helper into candidate queue.
 - [ ] Add CI checks for `demo-match` and regression reports.
 - [ ] Track match metrics history in CSV/JSON.

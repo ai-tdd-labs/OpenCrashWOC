@@ -23,3 +23,10 @@
 - Implemented first real leaf compile-compare loop for FUN_80080c6c; first attempt is near-match with only branch-offset mismatches (5 words).
 - NEXT: Iterate FUN_80080c6c source shape until full 80-byte match.
 - NEXT: Add more leaf candidates to queue from callgraph export.
+
+## 2026-02-11 11:47 UTC
+
+- Executed queue automation: imported 12 new leaf candidates from Ghidra, normalized candidate sources, and batch-ran first 5 candidates (4 mismatch, 1 compare_error).
+- NEXT: Fix compare_error handling for symbol-size edge cases (FUN_80009ab0).
+- NEXT: Iterate FUN_80080c6c source structure to close the final 5 branch-offset mismatches.
+- NEXT: Run next batch on remaining todo candidates.

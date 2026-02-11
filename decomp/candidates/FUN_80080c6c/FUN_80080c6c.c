@@ -1,3 +1,11 @@
+typedef unsigned char undefined;
+typedef unsigned char undefined1;
+typedef unsigned short undefined2;
+typedef unsigned int undefined4;
+typedef unsigned long long undefined8;
+typedef unsigned int uint;
+typedef int bool32;
+
 void FUN_80080c6c(int param_1, int *param_2) {
     int iVar1;
 
