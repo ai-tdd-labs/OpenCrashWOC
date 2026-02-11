@@ -17,3 +17,9 @@
 - Added ops memory structure and first leaf-function queue helper.
 - NEXT: Implement compile-compare loop for FUN_80080c6c with source scaffold.
 - NEXT: Expand queue with more unmatched leaf candidates from callgraph scan.
+
+## 2026-02-11 11:40 UTC
+
+- Implemented first real leaf compile-compare loop for FUN_80080c6c; first attempt is near-match with only branch-offset mismatches (5 words).
+- NEXT: Iterate FUN_80080c6c source shape until full 80-byte match.
+- NEXT: Add more leaf candidates to queue from callgraph export.

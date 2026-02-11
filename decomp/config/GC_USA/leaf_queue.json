@@ -4,7 +4,14 @@
     "address": "0x80080C6C",
     "size": 80,
     "kind": "leaf",
-    "status": "todo",
-    "notes": "Candidate from prior callgraph sweep; medium-size leaf function."
+    "status": "mismatch",
+    "symbol": "FUN_80080c6c",
+    "source": "candidates/FUN_80080c6c/FUN_80080c6c.c",
+    "notes": "Candidate from prior callgraph sweep; medium-size leaf function.",
+    "last_result": {
+      "timestamp": "2026-02-11 11:38 UTC",
+      "match": false,
+      "build_object": "build/leaf_o/FUN_80080c6c.o"
+    }
   }
 ]

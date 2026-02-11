@@ -54,6 +54,12 @@ Leaf-first queue helper:
 python tools/next_leaf_candidate.py
 ```
 
+Run one candidate compile-and-compare loop:
+
+```powershell
+python tools/run_leaf_candidate.py --name FUN_80080c6c --update-queue
+```
+
 ## Included demo unit
 
 The scaffold can generate multiple demo units with:

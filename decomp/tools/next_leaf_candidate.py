@@ -21,12 +21,13 @@ def main() -> None:
     queue_path = (root / args.queue).resolve()
     items = json.loads(queue_path.read_text(encoding="utf-8"))
 
-    for item in items:
-        if item.get("status") == "todo":
-            print(json.dumps(item, indent=2))
-            return
+    for wanted in ("todo", "mismatch"):
+        for item in items:
+            if item.get("status") == wanted:
+                print(json.dumps(item, indent=2))
+                return
 
-    print("No todo leaf candidates found.")
+    print("No pending leaf candidates found.")
 
 
 if __name__ == "__main__":
