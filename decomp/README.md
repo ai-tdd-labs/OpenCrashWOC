@@ -104,6 +104,8 @@ python tools/build_mixed_dol.py --manifest build/GC_USA/mixed_manifest.json --ou
 python tools/dol_diff_report.py --target build/GC_USA/main.mixed.dol --out build/GC_USA/mixed_dol_diff.txt
 ```
 
+`build_mixed_dol.py` now resolves external call relocations for `c_obj` entries via `ngcld` + absolute symbol addresses from `main.dol_functions.json` before patching bytes. This allows non-leaf C functions to be injected into mixed build without introducing unresolved-branch placeholder bytes.
+
 `build_mixed_manifest.py` reads C candidates from these queues by default:
 - `config/GC_USA/demo_match_queue.json`
 - `config/GC_USA/leaf_queue.json`

@@ -77,3 +77,14 @@
 - NEXT: improve auto-stubbing/type shims for project queue compile errors.
 - NEXT: convert project mismatches to matched and increase C coverage in mixed full build.
 - NEXT: finish full linker-based relink target (not only patch-based mixed DOL reconstruction).
+
+## 2026-02-11 13:26 UTC
+
+- Expanded `project_match_queue` import to 159 NGC-MATCH candidates and normalized/stubbed sources.
+- Updated `run_leaf_candidate.py`:
+  - warning-tolerant compile handling (ProDG can return non-zero with usable outputs),
+  - optional extern-symbol resolve link step before compare.
+- Updated `build_mixed_dol.py` to resolve C object extern relocations via `ngcld` + absolute symbol map before patching DOL bytes.
+- Result: mixed full build with `7` C entries (`5` demo + `2` project matches) and `2632` ASM entries now reproduces original DOL SHA1 exactly.
+- Project queue now has `2 matched`, `157 mismatch`, `0 compile_error`.
+- NEXT: convert more project mismatches to matched and keep full mixed build SHA1-identical after each promotion.

@@ -7,6 +7,8 @@ import argparse
 import hashlib
 import json
 import struct
+import subprocess
+import tempfile
 from pathlib import Path
 
 
@@ -71,6 +73,78 @@ def find_section(sections: list[dict], name: str) -> dict:
     raise ValueError(f"Section not found: {name}")
 
 
+def load_elf_symbols(obj_data: bytes) -> list[dict]:
+    sections = elf32_be_sections(obj_data)
+    symtab = find_section(sections, ".symtab")
+    strtab = sections[symtab["link"]]
+    strings = obj_data[strtab["offset"] : strtab["offset"] + strtab["size"]]
+    entsize = symtab["entsize"] or 16
+    out: list[dict] = []
+    for off in range(symtab["offset"], symtab["offset"] + symtab["size"], entsize):
+        st_name, st_value, st_size, st_info, st_other, st_shndx = struct.unpack_from(">IIIBBH", obj_data, off)
+        name = ""
+        if st_name:
+            end = strings.find(b"\x00", st_name)
+            name = strings[st_name:end].decode("ascii", "ignore") if end != -1 else ""
+        out.append(
+            {
+                "name": name,
+                "value": st_value,
+                "size": st_size,
+                "info": st_info,
+                "other": st_other,
+                "shndx": st_shndx,
+            }
+        )
+    return out
+
+
+def read_text_section_bytes(obj_path: Path, size: int) -> bytes:
+    data = obj_path.read_bytes()
+    sections = elf32_be_sections(data)
+    text = find_section(sections, ".text")
+    out = data[text["offset"] : text["offset"] + min(size, text["size"])]
+    if len(out) < size:
+        return out + (b"\x00" * (size - len(out)))
+    return out
+
+
+def link_object_with_abs_symbols(
+    obj_path: Path,
+    func_addr: int,
+    addr_by_name: dict[str, int],
+    ngcld_path: Path,
+    root: Path,
+) -> Path | None:
+    obj_data = obj_path.read_bytes()
+    symbols = load_elf_symbols(obj_data)
+    undef_names = sorted({s["name"] for s in symbols if s["shndx"] == 0 and s["name"]})
+    mapped = []
+    for name in undef_names:
+        if name in addr_by_name:
+            mapped.append((name, addr_by_name[name]))
+    if not mapped:
+        return None
+
+    tmp_dir = Path(tempfile.mkdtemp(prefix="mixed_link_", dir=str((root / "build").resolve())))
+    ld_script = tmp_dir / "link.ld"
+    out_obj = tmp_dir / f"{obj_path.stem}.linked.o"
+    lines = [
+        "SECTIONS {",
+        f"  .text 0x{func_addr:08X} : {{ {obj_path.as_posix()}(.text) }}",
+        "}",
+    ]
+    for name, addr in mapped:
+        lines.append(f"{name} = 0x{addr:08X};")
+    ld_script.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    cmd = [str(ngcld_path), str(obj_path), "-T", str(ld_script), "-o", str(out_obj)]
+    proc = subprocess.run(cmd, cwd=root, capture_output=True, text=True)
+    if proc.returncode != 0 or not out_obj.exists():
+        return None
+    return out_obj
+
+
 def read_obj_symbol_bytes(obj_path: Path, symbol: str, size: int) -> bytes:
     data = obj_path.read_bytes()
     sections = elf32_be_sections(data)
@@ -111,6 +185,23 @@ def main() -> None:
     )
     parser.add_argument("--out", default="build/GC_USA/main.mixed.dol", help="Output mixed DOL path relative to decomp/")
     parser.add_argument("--report-out", default="build/GC_USA/mixed_build_report.json", help="Output report JSON")
+    parser.add_argument(
+        "--functions-json",
+        default=r"D:/projects/ps2/crash_bandicoot/analysis/ghidra/raw/main.dol_functions.json",
+        help="Function metadata JSON used to resolve extern symbol addresses for C relink.",
+    )
+    parser.add_argument(
+        "--ngcld",
+        default=r"D:/projects/ps2/crash_bandicoot/tools/compilers/ProDG-v3.5/ngcld.exe",
+        help="Path to ngcld.exe for C object resolve-link step.",
+    )
+    parser.add_argument(
+        "--no-resolve-link",
+        dest="resolve_link",
+        action="store_false",
+        help="Disable relink-based extern symbol resolution for c_obj entries.",
+    )
+    parser.set_defaults(resolve_link=True)
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[1]
@@ -121,6 +212,17 @@ def main() -> None:
 
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     dol = bytearray(ref_dol_path.read_bytes())
+    funcs = json.loads(Path(args.functions_json).resolve().read_text(encoding="utf-8"))
+    addr_by_name: dict[str, int] = {}
+    for f in funcs:
+        name = str(f.get("name", ""))
+        addr_hex = str(f.get("address", ""))
+        if not name or not addr_hex:
+            continue
+        try:
+            addr_by_name[name] = int(addr_hex, 16)
+        except ValueError:
+            continue
 
     stats = {
         "total_entries": 0,
@@ -144,7 +246,20 @@ def main() -> None:
             continue
 
         if kind == "c_obj":
-            code = read_obj_symbol_bytes(path, item.get("symbol", item.get("name", "")), size)
+            code: bytes
+            linked_obj = None
+            if args.resolve_link:
+                linked_obj = link_object_with_abs_symbols(
+                    path,
+                    address,
+                    addr_by_name,
+                    Path(args.ngcld).resolve(),
+                    root,
+                )
+            if linked_obj is not None:
+                code = read_text_section_bytes(linked_obj, size)
+            else:
+                code = read_obj_symbol_bytes(path, item.get("symbol", item.get("name", "")), size)
             stats["c_obj_entries"] += 1
             stats["c_obj_bytes"] += size
         else:

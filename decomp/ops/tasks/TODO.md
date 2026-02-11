@@ -18,8 +18,9 @@
 - [x] Add mixed full-DOL reconstruction + diff report.
 - [x] Import project `NGC MATCH` functions into queue with address mapping.
 - [x] Add demo-match queue integration so mixed manifest can auto-use proven bitmatch C objects.
-- [ ] Reduce `project_match_queue` compile errors (global/struct dependency stubs).
+- [x] Reduce `project_match_queue` compile errors (global/struct dependency stubs + warning-tolerant compile handling).
 - [ ] Promote `project_match_queue` mismatches to matched.
+- [x] Resolve mixed-build C relocation placeholders by link-resolving `c_obj` entries before DOL patching.
 
 ## Next (TP/TWW/MP4 style parity)
 
