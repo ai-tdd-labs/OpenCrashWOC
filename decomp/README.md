@@ -87,6 +87,7 @@ python tools/run_leaf_queue.py --queue config/GC_USA/project_match_queue.json --
 # Seed queue with proven demo bitmatches (NuVec* pilot functions)
 python tools/build_demo_units.py --auto-slices --match-dol
 python tools/import_demo_match_queue.py --out config/GC_USA/demo_match_queue.json
+python tools/build_verified_project_queue.py --out-queue config/GC_USA/project_verified_queue.json
 ```
 
 Build a candidate full DOL from matched queue slices and diff it against original:
@@ -115,6 +116,7 @@ python tools/report_progress.py --version GC_USA --out build/GC_USA/progress_sum
 
 `build_mixed_manifest.py` reads C candidates from these queues by default:
 - `config/GC_USA/demo_match_queue.json`
+- `config/GC_USA/project_verified_queue.json`
 - `config/GC_USA/leaf_queue.json`
 - `config/GC_USA/project_match_queue.json`
 

@@ -21,6 +21,7 @@
 - [x] Reduce `project_match_queue` compile errors (global/struct dependency stubs + warning-tolerant compile handling).
 - [ ] Promote `project_match_queue` mismatches to matched.
 - [x] Resolve mixed-build C relocation placeholders by link-resolving `c_obj` entries before DOL patching.
+- [x] Add full-source verified queue generation (`project_verified_queue`) from NGC MATCH files.
 
 ## Next (TP/TWW/MP4 style parity)
 

@@ -24,8 +24,8 @@
     "module": "nu3dx",
     "total_functions": 143,
     "mapped_source": 143,
-    "matched_c": 2,
-    "queue_hits": 32
+    "matched_c": 3,
+    "queue_hits": 33
   },
   {
     "module": "nucore",

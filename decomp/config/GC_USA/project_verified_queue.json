@@ -1,0 +1,16 @@
+[
+  {
+    "name": "isGlassInstance",
+    "address": "0x800AEF98",
+    "size": 100,
+    "kind": "project_verified",
+    "status": "matched",
+    "symbol": "isGlassInstance",
+    "source": "code/src/nu3dx/nuglass.c",
+    "last_result": {
+      "timestamp": "verified-from-full-source",
+      "match": true,
+      "build_object": "build/project_o/code__src__nu3dx__nuglass.o"
+    }
+  }
+]

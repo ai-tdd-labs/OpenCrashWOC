@@ -41,6 +41,7 @@ def main() -> None:
     )
     parser.add_argument("--code-root", default="../code/src", help="Project source root relative to decomp/")
     parser.add_argument("--demo-queue", default="config/GC_USA/demo_match_queue.json", help="Demo queue JSON")
+    parser.add_argument("--verified-queue", default="config/GC_USA/project_verified_queue.json", help="Verified queue JSON")
     parser.add_argument("--leaf-queue", default="config/GC_USA/leaf_queue.json", help="Leaf queue JSON")
     parser.add_argument("--project-queue", default="config/GC_USA/project_match_queue.json", help="Project queue JSON")
     parser.add_argument("--out-func-map", default="config/GC_USA/function_map.json", help="Output function map JSON")
@@ -54,6 +55,7 @@ def main() -> None:
     queues: dict[str, dict] = {}
     for qname, rel in (
         ("demo", args.demo_queue),
+        ("verified", args.verified_queue),
         ("leaf", args.leaf_queue),
         ("project", args.project_queue),
     ):

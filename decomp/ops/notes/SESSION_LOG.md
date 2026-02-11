@@ -105,3 +105,17 @@
   - ASM entries: 2632
   - SHA1 identical to original DOL
 - NEXT: improve module mapping coverage and auto-generate richer objdiff units from map data.
+
+## 2026-02-11 14:28 UTC
+
+- Added `tools/build_verified_project_queue.py`:
+  - compiles full source files with match comments,
+  - link-resolves externs with absolute symbol map,
+  - verifies per-function bytes against DOL,
+  - writes `config/GC_USA/project_verified_queue.json`.
+- Wired verified queue into mixed manifest defaults.
+- Fixed absolute symbol-value handling in `build_mixed_dol.py` symbol extraction, so linked object symbol bytes are read correctly.
+- Revalidated mixed build:
+  - C entries: 8
+  - ASM entries: 2631
+  - final DOL hash identical.

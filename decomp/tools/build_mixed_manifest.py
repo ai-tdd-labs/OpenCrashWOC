@@ -43,7 +43,7 @@ def main() -> None:
     parser.add_argument("--asm-dir", default="build/GC_USA/asm_bins", help="Output directory for ASM bins")
     parser.add_argument(
         "--queue-files",
-        default="config/GC_USA/demo_match_queue.json,config/GC_USA/leaf_queue.json,config/GC_USA/project_match_queue.json",
+        default="config/GC_USA/demo_match_queue.json,config/GC_USA/project_verified_queue.json,config/GC_USA/leaf_queue.json,config/GC_USA/project_match_queue.json",
         help="Comma-separated queue JSON files (relative to decomp/) used as C candidates",
     )
     parser.add_argument(

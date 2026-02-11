@@ -15,7 +15,7 @@
 - Added project-level map generation: `config/GC_USA/function_map.json` (2639 functions) and `config/GC_USA/module_map.json`.
 - Added stricter bundle-link relink mode in `build_mixed_dol.py` (module/object oriented C relink before patching).
 - Added progress summary generator (`tools/report_progress.py`) and CI workflow (`.github/workflows/decomp-progress.yml`).
-- Current mixed build now uses `7` C entries (`5` demo + `2` project matched: `NuRndrFlush`, `NuTexSetTexture`) and `2632` ASM entries, with final full DOL SHA1 identical to reference.
+- Current mixed build now uses `8` C entries (`5` demo + `2` project matched + `1` verified-from-full-source) and `2631` ASM entries, with final full DOL SHA1 identical to reference.
 - Current `project_match_queue` status: `2 matched`, `157 mismatch`, `0 compile_error`.
 
 ## Next

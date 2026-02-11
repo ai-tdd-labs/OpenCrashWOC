@@ -201,7 +201,10 @@ def read_obj_symbol_bytes(obj_path: Path, symbol: str, size: int, strict_symbol:
         if st_shndx >= len(sections):
             continue
         sec = sections[st_shndx]
-        sym_off = sec["offset"] + st_value
+        local_val = st_value
+        if local_val >= sec["size"] and sec["addr"] <= local_val < sec["addr"] + sec["size"]:
+            local_val = local_val - sec["addr"]
+        sym_off = sec["offset"] + local_val
         out = data[sym_off : sym_off + min(size, st_size if st_size else size)]
         if len(out) < size:
             return out + (b"\x00" * (size - len(out)))

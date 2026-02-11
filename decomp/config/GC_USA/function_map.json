@@ -11615,9 +11615,9 @@
     "size": 100,
     "module": "nu3dx",
     "source_file": "D:/projects/ps2/opencrashwoc-fork/code/src/nu3dx/nuglass.c",
-    "queue": "",
-    "status": "",
-    "kind": "asm_bin"
+    "queue": "verified",
+    "status": "matched",
+    "kind": "c_obj"
   },
   {
     "name": "NuGlassProcessScene",
